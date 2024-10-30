@@ -56,7 +56,7 @@ video{
     flex-direction: column;
     align-items: flex-start;
     gap: 2rem;
-    position: absolute;
+    position: fixed;
     top: 0;
     text-align: left;
     right: 0;
@@ -219,4 +219,61 @@ video{
 
 .i-g-3{
     background: url(../img/inge-hablando.webp) no-repeat center/cover;
+}
+
+/*Somos la mejor opcion*/
+
+.opcion{
+    background: url(../img/fondo-nuevo-azul.webp) no-repeat center/cover;
+    padding: 1em 0;
+}
+
+.opcion-info{
+    padding: 0 .5em;
+    gap: .5em;
+}
+
+.opcion-info-tit{
+    background-color: rgba(240, 240, 240, 0.466);
+    backdrop-filter: blur(15px);
+    padding: 1em;
+    border-radius: 10px;
+}
+
+.opcion-info-tit h1{
+    padding-bottom: .5em;
+    color: rgb(0, 0, 128);
+    text-align: center;
+    font-size: 1.8em;
+}
+
+.opcion-info-tit p{
+    text-align: center;
+}
+
+.opc-info-div{
+    background-color: rgb(255, 255, 255);
+    margin: 1em 0;
+    border-radius: 10px;
+    padding: .6em ;
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+}
+
+.opc-info-div-txt h2{
+    font-size: 1.8em;
+    padding: .8em 0;
+    color: rgb(0, 0, 128);
+    font-weight: 700;
+    position: relative;
+    z-index: 990;
+}
+
+.opc-info-div-img img{
+    width: 100%;
+    border-radius: 10px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
