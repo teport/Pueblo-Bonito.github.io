@@ -56,7 +56,7 @@ video{
     flex-direction: column;
     align-items: flex-start;
     gap: 2rem;
-    position: fixed;
+    position: absolute;
     top: 0;
     text-align: left;
     right: 0;
@@ -276,4 +276,57 @@ video{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+/*Servicios*/
+
+.servicios{
+    padding: 1em;
+    text-align: center;
+}
+
+.servicios h1{
+    color: rgb(0, 0, 128);
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.servicios small{
+    font-size: 1.2em;
+}
+
+.servicios-grid{
+    margin: 1em 0;
+    display: grid;
+    grid-template-rows:12em 17em 12em 12em;
+    gap: 1em;
+}
+
+.serv-grid{
+    position: relative;
+    border-radius: 10px;
+}
+
+.serv-grid h2{
+    position: absolute;
+    bottom: 0;
+    margin: 1em;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.ser-g-1{
+    background: url(/img/asesorai.webp) no-repeat center/cover;
+}
+
+.ser-g-2{
+    background: url(/img/hoja-3.webp) no-repeat center/cover;
+}
+
+.ser-g-3{
+    background: url(/img/asessssss.webp) no-repeat center/cover;
+}
+
+.ser-g-4{
+    background: url(/img/sistema-rie.webp) no-repeat center/cover;
 }
