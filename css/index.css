@@ -41,12 +41,12 @@ video{
 }
 
 .header .logo{
-    max-width: 5rem;
+    max-width: 7rem;
 }
 
 .btn-abrir{
     border: none;
-    background-color: rgba(255, 255, 255, 0);
+    background-color: rgba(255, 0, 0, 0.952);
 }
 
 .nav{
@@ -69,7 +69,7 @@ video{
 
 
 .logo-bar-mov{
-    max-width: 5rem;
+    max-width: 7rem;
 }
 
 .logos-nav-res{
@@ -112,6 +112,10 @@ video{
 .abrir-menu, .cerrar-menu{
     border: none;
     background-color: rgba(255, 255, 255, 0);
+}
+
+.abrir-menu img, .cerrar-menu img{
+    width: 2.5em;
 }
 
 .header-center{
