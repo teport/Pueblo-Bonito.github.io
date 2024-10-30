@@ -143,3 +143,62 @@ video{
     border: none;
     color: rgb(0, 0, 128);
 }
+
+/*Tercia de imagenes*/
+.trio-img-ini{
+    display: none;
+}
+
+/*Identidad*/
+
+.identidad{
+    position: relative;
+    padding: 2em 0 2em;
+}
+
+.identidad h1{
+    text-align: center;
+    color: rgb(0, 0, 128);
+    font-weight: 700;
+    font-size: 2.5em;
+    padding-bottom: .5em;
+}
+
+.identidad p{
+    text-align: center;
+    padding: 0 1.5em;
+    line-height: 1.4;
+}
+
+.identidad-grid{
+    margin: 1em 1.5em;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 15em);
+    gap: 1em;
+}
+
+.ident-grid{
+    border-radius: 10px;
+    position: relative;
+}
+
+.ident-grid-img h2{
+    font-size: 1.5em;
+    position: absolute;
+    bottom: 0;
+    margin: 1.5em 0 1.5em .5em;
+    color: white;
+}
+
+.i-g-1{
+    background: url(../img/ags.webp) no-repeat center/cover;
+}
+
+.i-g-2{
+    background: url(../img/todo-parsela.webp) no-repeat center/cover;
+}
+
+.i-g-3{
+    background: url(../img/inge-hablando.webp) no-repeat center/cover;
+}
