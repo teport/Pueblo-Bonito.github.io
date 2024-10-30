@@ -5,6 +5,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/*Header*/
 header{
     position: relative;
     height: 100vh;
@@ -144,6 +145,8 @@ video{
     color: rgb(0, 0, 128);
 }
 
+/*Inicio de mi contenido main*/
+
 /*Tercia de imagenes*/
 .trio-img-ini{
     display: none;
@@ -174,13 +177,19 @@ video{
     margin: 1em 1.5em;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 15em);
+    grid-template-rows: repeat(3, 20em);
     gap: 1em;
 }
 
 .ident-grid{
-    border-radius: 10px;
     position: relative;
+    display: grid;
+    grid-template-rows: 70% 30%;
+}
+
+.ident-grid-img{
+    position: relative;
+    border-radius: 10px;
 }
 
 .ident-grid-img h2{
@@ -189,6 +198,11 @@ video{
     bottom: 0;
     margin: 1.5em 0 1.5em .5em;
     color: white;
+}
+
+.ident-grid-txt p{
+    text-align: left;
+    padding: .5em 1em 0;
 }
 
 .i-g-1{
