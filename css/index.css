@@ -196,12 +196,14 @@ video{
 }
 
 .identidad-grid{
-    margin: 1em 1.5em;
+    margin: 1em .8em;
+    padding: 0 1.5em;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 20em);
     gap: 1em;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 10px;
 }
 
 .ident-grid{
