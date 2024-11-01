@@ -6,10 +6,11 @@
 }
 
 :root{
-    --margen-principal: 1.5em;
-    --titulo-principal-res: 1.5em;
-    --titulo-secundario-res: 1.2em;
-    --titulo-p:.8em;
+
+    --titulo-principal-mobile: 1.5em;
+    --titulo-secundario-mobile: 1.2em;
+    --titulo-p-mobile:.8em;
+    --margen-principal: 1.5em; 
     --padding-principal-res: 2em 1.5em;
     --color-principal:rgb(0,0,128);
     --shadow-fondo: 0 0 0 100vmax rgba(0, 0, 0, .5);
@@ -194,7 +195,7 @@ video{
     text-align: center;
     color:var(--color-principal);
     font-weight: 700;
-    font-size: var(--titulo-principal-res);
+    font-size: var(--titulo-principal-mobile);
     line-height: 1.75rem;
     padding-bottom: .5em;
 }
@@ -229,7 +230,7 @@ video{
 }
 
 .ident-grid-img h2{
-    font-size: var(--titulo-secundario-res);
+    font-size: var(--titulo-secundario-mobile);
     position: absolute;
     bottom: 0;
     margin: 1.5em 0 1.5em .5em;
@@ -275,7 +276,7 @@ video{
     padding-bottom: .5em;
     color: rgb(255, 255, 255);
     text-align: center;
-    font-size: var(--titulo-principal-res);
+    font-size: var(--titulo-principal-mobile);
 }
 
 .opcion-info-tit p{
@@ -293,7 +294,7 @@ video{
 }
 
 .opc-info-div-txt h2{
-    font-size: var(--titulo-principal-res);
+    font-size: var(--titulo-principal-mobile);
     padding: .8em 0 0;
     color: var(--color-principal);
     font-weight: 700;
@@ -320,7 +321,7 @@ video{
 .servicios h1{
     color: var(--color-principal);
     text-align: center;
-    font-size: var(--titulo-principal-res);
+    font-size: var(--titulo-principal-mobile);
 }
 
 .servicios small{
@@ -347,7 +348,7 @@ video{
     margin: 1em;
     color: rgb(255, 255, 255);
     text-decoration: none;
-    font-size: var(--titulo-principal-res);
+    font-size: var(--titulo-principal-mobile);
 }
 
 .ser-g-1{
@@ -378,7 +379,7 @@ footer{
 
 .header-footer h1{
     color: white;
-    font-size: var(--titulo-principal-res);
+    font-size: var(--titulo-principal-mobile);
 }
 
 .header-footer p{
