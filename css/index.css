@@ -5,6 +5,14 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+:root{
+    --margen-principal: 1.5em;
+    --titulo-principal-res: 1.5em;
+    --titulo-secundario-res: 1.2em;
+    --padding-principal-res: 2em 1.5em;
+    --color-principal:rgb(0,0,128);
+}
+
 /*Header*/
 header{
     position: relative;
@@ -120,7 +128,7 @@ video{
 
 .nav li a{
     text-decoration: none;
-    color: rgb(0, 0, 128);
+    color: var(--color-principal);
     font-size: 1.4rem;
     font-weight: 700;
 }
@@ -162,7 +170,7 @@ video{
     background-color: rgba(255, 255, 255, 0.562);
     backdrop-filter: blur(10px);
     border: none;
-    color: rgb(0, 0, 128);
+    color: var(--color-principal);
 }
 
 /*Inicio de mi contenido main*/
@@ -181,9 +189,9 @@ video{
 
 .identidad h1{
     text-align: center;
-    color: rgb(0, 0, 128);
+    color:var(--color-principal);
     font-weight: 700;
-    font-size: 1.5em;
+    font-size: var(--titulo-principal-res);
     line-height: 1.75rem;
     padding-bottom: .5em;
 }
@@ -197,12 +205,12 @@ video{
 
 .identidad-grid{
     margin: 1em .8em;
-    padding: 1em 1.5em;
+    padding: .7em .7em;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 20em);
-    gap: 1em;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    gap: 1em;
     border-radius: 10px;
 }
 
@@ -218,7 +226,7 @@ video{
 }
 
 .ident-grid-img h2{
-    font-size: 1.2em;
+    font-size: var(--titulo-secundario-res);
     position: absolute;
     bottom: 0;
     margin: 1.5em 0 1.5em .5em;
@@ -246,11 +254,10 @@ video{
 
 .opcion{
     background: url(../img/fondo-nuevo-azul.webp) no-repeat center/cover;
-    padding: 1em 0;
 }
 
 .opcion-info{
-    padding: 0 1.5em;
+    padding: var(--padding-principal-res);
     gap: .5em;
 }
 
@@ -265,7 +272,7 @@ video{
     padding-bottom: .5em;
     color: rgb(255, 255, 255);
     text-align: center;
-    font-size: 1.5em;
+    font-size: var(--titulo-principal-res);
 }
 
 .opcion-info-tit p{
@@ -283,9 +290,9 @@ video{
 }
 
 .opc-info-div-txt h2{
-    font-size: 1.5em;
+    font-size: var(--titulo-principal-res);
     padding: .8em 0 0;
-    color: rgb(0, 0, 128);
+    color: var(--color-principal);
     font-weight: 700;
     position: relative;
     z-index: 990;
@@ -303,14 +310,14 @@ video{
 /*Servicios*/
 
 .servicios{
-    padding: 3em 1.5em;
+    padding: var(--margen-principal);
     text-align: center;
 }
 
 .servicios h1{
-    color: rgb(0, 0, 128);
+    color: var(--color-principal);
     text-align: center;
-    font-size: 1.5em;
+    font-size: var(--titulo-principal-res);
 }
 
 .servicios small{
@@ -335,7 +342,7 @@ video{
     margin: 1em;
     color: rgb(255, 255, 255);
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: var(--titulo-principal-res);
 }
 
 .ser-g-1{
