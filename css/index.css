@@ -6,21 +6,56 @@
 }
 
 :root{
-
+    --titulo-importante-mobile:2.5em;
     --titulo-principal-mobile: 1.5em;
     --titulo-secundario-mobile: 1.2em;
-    --titulo-p-mobile:.8em;
-    --margen-principal: 1.5em; 
-    --padding-principal-res: 2em 1.5em;
+    --padding-principal-mobile: 2em 1.5em;
+    --movile-p:.9em;
+
+    --titulo-importante-tablet:3.2em;
+    --titulo-principal-tablet: 2.5em;
+    --titulo-secundario-tablet: 2em;
+    --tablet-p:1.2em;
+    --margen-principal: 1.5em;
+
+
+
     --color-principal:rgb(0,0,128);
     --shadow-fondo: 0 0 0 100vmax rgba(0, 0, 0, .5);
     --shadow-sencillo:rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
+.logo-whats{
+    max-width: 3.5em;
+    position: fixed;
+    z-index: 999;
+    bottom: 0;
+    right: 0;
+    margin: 1em;
+    padding: .5em;
+    background-color: white;
+    border-radius: 50%;
+    animation: pulse 1s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%{
+        scale: 1;
+    }
+
+    50%{
+        scale:.9;
+    }
+
+    100%{
+        scale: 1;
+    }
+}
+
 /*Header*/
 header{
     position: relative;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 video{
@@ -156,16 +191,17 @@ video{
 }
 
 .header-center h1{
-    font-size: 2.5em;
+    font-size: var(--titulo-importante-mobile);
     letter-spacing: 1.2px;
 }
 
 .header-center small{
-    font-size: 1.5em;
+    font-size: var(--titulo-principal-mobile);
 }
 
 .header-center p{
     margin: 1em;
+    font-size: var(--movile-p);
 }
 
 .btn-header{
@@ -204,7 +240,7 @@ video{
     text-align: center;
     padding: 0 1.5em;
     line-height: 1.4;
-    font-size: .8em;
+    font-size: var(--movile-p);
 }
 
 .identidad-grid{
@@ -217,6 +253,11 @@ video{
     gap: 1em;
     border-radius: 10px;
 }
+
+.ident-grid:nth-child(4){
+    display: none;
+}
+
 
 .ident-grid{
     position: relative;
@@ -240,6 +281,7 @@ video{
 .ident-grid-txt p{
     text-align: left;
     padding: .5em 1em 0;
+    font-size: var(--movile-p);
 }
 
 .i-g-1{
@@ -254,6 +296,7 @@ video{
     background: url(../img/inge-hablando.webp) no-repeat center/cover;
 }
 
+
 /*Somos la mejor opcion*/
 
 .opcion{
@@ -261,9 +304,10 @@ video{
 }
 
 .opcion-info{
-    padding: var(--padding-principal-res);
+    padding: var(--padding-principal-mobile);
     gap: .5em;
 }
+
 
 .opcion-info-tit{
     background-color: rgba(241, 241, 241, 0.39);
@@ -271,6 +315,7 @@ video{
     padding: 1em;
     border-radius: 10px;
 }
+
 
 .opcion-info-tit h1{
     padding-bottom: .5em;
@@ -282,6 +327,7 @@ video{
 .opcion-info-tit p{
     font-size: .8em;
     text-align: center;
+    color: white;
 }
 
 .opc-info-div{
@@ -369,7 +415,7 @@ video{
 
 footer{
     background-color: var(--color-principal);
-    padding: var(--padding-principal-res);
+    padding: var(--padding-principal-mobile);
 }
 
 .header-footer{
@@ -383,7 +429,7 @@ footer{
 }
 
 .header-footer p{
-    font-size: var(--titulo-p);
+    font-size: var(--movile-pp);
     color: white;
 }
 
@@ -414,4 +460,145 @@ footer{
 .footer-fot ul li a{
     text-decoration: none;
     color: white;
+}
+
+@media screen and (min-width:750px) { 
+
+    .logo-whats{
+        max-width: 5.5em;
+        margin: 2em;
+    }
+
+    .header{
+        padding: 2em;
+    }
+
+    .nav-list{
+        padding: 2em 0;
+    }
+
+    .nav li a{
+        font-size: var(--tablet-p);
+    }
+
+    .header .logo{
+        max-width: 10rem;
+    }
+
+    .logo-bar-mov{
+        max-width: 10rem;
+    }
+
+    .abrir-menu img, .cerrar-menu img {
+        width: 4em;
+    }
+
+    .header-center h1{
+        font-size: var(--titulo-importante-tablet);
+    }
+
+    .header-center small{
+        font-size: 2em;
+    }
+
+    .header-center p{
+        font-size: 1.5em;
+    }
+
+    .header-center .btn-header{
+        font-size: 1.5em;
+    }
+
+    .nav-list li a{
+        font-size: var(--titulo-principal-tablet);
+    }
+
+    .identidad-grid{
+        width: 45em;
+        left: 50%;
+        transform: translateX(-50%);
+        position: relative;
+        grid-template-rows: repeat(2, 25em);
+        grid-template-columns: repeat(2 , 1fr);
+    }
+
+    .identidad h1{
+        font-size: var(--titulo-principal-tablet);
+    }
+
+    .identidad p{
+        font-size: var(--tablet-p);
+    }
+
+    .identidad h2{
+        font-size: var(--titulo-secundario-tablet);
+    }
+
+    .ident-grid-txt p{
+        padding: 1em;
+        font-size: var(--tablet-p);
+    }
+
+    .ident-grid:first-child{
+        grid-column: 1/3;
+    }
+    .opcion-info-div{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 1em;
+        padding: 3em 0em;
+    }
+    
+
+    .opcion h1{
+        font-size: var(--titulo-principal-tablet);
+    }
+
+    .opcion p{
+        font-size: var(--tablet-p);
+    }
+
+    .opcion h2{
+        font-size: var(--titulo-secundario-tablet);
+    }
+
+    .servicios{
+        padding: 3em 3.5em;
+    }
+
+    .servicios h1{
+        font-size: var(--titulo-importante-tablet);
+    }
+
+    .servicios h2{
+        font-size: var(--titulo-secundario-tablet);
+    }
+
+    .servicios small{
+        font-size: var(--tablet-p);
+    }
+
+    .servicios-grid{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 15em);
+        min-height: 15em;
+    }
+
+    .ser-g-2:nth-child(2){
+        grid-column: 2/3;
+        grid-row: 1/4;
+    }
+
+    .ser-g-4:nth-child(4){
+        grid-column: 1/2;
+    }
+
+    .header-footer h1{
+        font-size: var(--titulo-principal-tablet);
+    }
+
+    .footer-fot ul{
+        display: flex;  
+        justify-content: space-around;
+    }
 }
