@@ -419,7 +419,7 @@ footer{
 }
 
 .header-footer{
-    background: url(../img/inge.webp) no-repeat center/cover;
+    background: url(/img/inge.webp) no-repeat center/cover;
     border-radius: 10px;
     height: 25em;
     position: relative;
@@ -447,7 +447,7 @@ footer{
 
 .header-footer-txt h1{
     font-size: var(--titulo-principal-mobile);
-    margin-bottom: 1em;
+    margin-bottom: .3em;
     color: white;
 }
 
