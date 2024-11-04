@@ -61,7 +61,7 @@ header{
 video{
     position: absolute;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     object-fit: cover;
     top: 0;
     left: 0;
@@ -71,7 +71,7 @@ video{
 .capa{
     position: absolute;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 128, 0.411);
@@ -419,7 +419,7 @@ footer{
 }
 
 .header-footer{
-    background: url(../img/inge.webp) no-repeat center/cover;
+    background: url(/img/inge.webp) no-repeat center/cover;
     border-radius: 10px;
     height: 25em;
     position: relative;
@@ -447,14 +447,19 @@ footer{
 
 .header-footer-txt h1{
     font-size: var(--titulo-principal-mobile);
-    margin-bottom: .3em;
+    color: white;
+}
+
+.header-footer-txt small{
+    font-size: var(--movile-p);
     color: white;
 }
 
 .header-footer-txt button{
-    padding: .5em 1em;
+    padding: .4em .8em;
     border-radius: 10px;
     border: none;
+    margin: 1em 0 0 0;
 }
 
 .footer-fot{
@@ -478,9 +483,10 @@ footer{
 @media screen and (min-width:750px) { 
 
     .logo-whats{
-        max-width: 5.5em;
+        max-width: 4em;
         margin: 2em;
     }
+
 
     .header{
         padding: 2em;
@@ -519,7 +525,7 @@ footer{
     }
 
     .header-center .btn-header{
-        font-size: 1.5em;
+        font-size: 1em;
     }
 
     .nav-list li a{
@@ -538,12 +544,11 @@ footer{
     .trio-img-ini .trio-img img{
         width: 13em;
         border-radius: 10px;
+        object-fit: cover;
     }
 
     .identidad-grid{
-        width: 45em;
-        left: 50%;
-        transform: translateX(-50%);
+        margin: 0 1.5em;
         position: relative;
         grid-template-rows: repeat(2, 25em);
         grid-template-columns: repeat(2 , 1fr);
@@ -590,7 +595,7 @@ footer{
     }
 
     .servicios{
-        padding: 3em 3.5em;
+        padding: 4.5em 1.5em;
     }
 
     .servicios h1{
@@ -631,13 +636,20 @@ footer{
 }
 
 @media screen and (min-width:990px) {
+    header{
+        height: 115vh;
+    }
 
     .header{
-        padding: 3em 1em;
+        padding: 1em 2em;
         justify-content: space-evenly;
         gap: 4em;
     }
 
+    .header-center p{
+        padding: 0em 5em;
+    }
+    
     .abrir-menu, .cerrar-menu, .logo-bar-mov, .logos-nav-res{
         display: none;
     }
@@ -656,7 +668,7 @@ footer{
     .nav ul {
         flex-direction: row;
         align-items: center;
-        gap: .8em;
+        justify-content: space-evenly;
     }
 
     .nav li {
@@ -671,5 +683,28 @@ footer{
 
     .nav-list .li-1 {
         background-color: rgba(236, 236, 236, 0);
+    }
+
+    .trio-img-ini{
+        justify-content: space-evenly;
+    }
+
+    .trio-img-ini .trio-img img{
+        width: 16em;
+        height: 15em;
+        object-fit: cover;
+    }
+
+    .identidad{
+        padding: 3em 0 4em;
+    }
+
+    .identidad-grid{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 28em;
+    }
+
+    .ident-grid:first-child{
+        grid-column: 1/2;
     }
 }
