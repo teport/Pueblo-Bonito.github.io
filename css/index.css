@@ -79,8 +79,8 @@ video{
 }
 
 .no-scroll {
-    overflow: hidden; /* Desactiva el scroll */
-    height: 100%; /* Asegura que no haya espacio para desplazarse */
+    overflow: hidden; 
+    height: 100%; 
 }
 
 .header{
@@ -94,6 +94,10 @@ video{
 
 .header .logo{
     max-width: 7rem;
+}
+
+.header .logo-2{
+    display: none;
 }
 
 .btn-abrir{
@@ -535,14 +539,15 @@ footer{
 
     .trio-img-ini{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
         margin: -5em 0 2em;
         position: relative;
         z-index: 995;
     }
 
     .trio-img-ini .trio-img img{
-        width: 13em;
+        width: 14em;
+        height: 14em;
         border-radius: 10px;
         object-fit: cover;
     }
@@ -636,6 +641,46 @@ footer{
 }
 
 @media screen and (min-width:990px) {
+
+    .header.sticky{
+        background-color: white;
+        position: fixed;
+        width: 100%;
+        color: var(--color-principal);
+        padding: 0 0;
+        gap: 0;
+        justify-content: space-between;
+    }
+
+    .header.sticky .logo{
+        display: none;
+    }
+
+    .header.sticky .logo-2{
+        display: block;
+        max-width: 8em;
+        margin-left: 4em;
+    }
+
+    .header.sticky #nav{
+        width: auto;
+    }
+
+
+    .header.sticky .nav-list li a{
+        color: var(--color-principal);
+        font-size: 1.2em;
+    }
+
+    .header.sticky .nav ul{
+        padding: 1em 0;
+        justify-content: end;
+    }
+
+    .header{
+        transition: .4s ease-in-out all;
+    }
+
     header{
         height: 115vh;
     }
@@ -655,11 +700,11 @@ footer{
     }
 
     #nav{
-        display: flex; /* Mostrar siempre en desktop */
-        opacity: 1; /* Mantener visible */
-        visibility: visible; /* Mantener visible */
-        position: static; /* Cambiar posición para que no sea absoluta */
-        height: auto; /* Ajustar altura */
+        display: flex; 
+        opacity: 1; 
+        visibility: visible; 
+        position: static; 
+        height: auto; 
         background-color: rgba(255, 255, 255, 0);
         box-shadow: none;
         flex-direction: row;
@@ -672,12 +717,12 @@ footer{
     }
 
     .nav li {
-        padding: 0 1em; /* Espaciado en horizontal */
+        padding: 0 1em; 
         background-color: rgba(245, 222, 179, 0);
     }
 
     .nav-list li a {
-        font-size: 1.5em;
+        font-size: 1.4em;
         color: white;
     }
 
@@ -690,7 +735,7 @@ footer{
     }
 
     .trio-img-ini .trio-img img{
-        width: 16em;
+        width: 18em;
         height: 15em;
         object-fit: cover;
     }
@@ -701,7 +746,11 @@ footer{
 
     .identidad-grid{
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 28em;
+        grid-template-rows: 32em;
+    }
+
+    .identidad p{
+        margin-bottom: 2em;
     }
 
     .ident-grid:first-child{
@@ -738,4 +787,8 @@ footer{
     .serv-grid:hover{
         scale: 1.01;
     }
+}
+
+@media screen and (min-width:1200px) {
+    
 }
