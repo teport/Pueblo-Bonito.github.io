@@ -691,6 +691,19 @@ footer{
         gap: 4em;
     }
 
+    .header-center{
+        top: 50%;
+    }
+
+    .header-center .btn-header{
+        transition: .4s ease-in-out;
+    }
+
+    .header-center .btn-header:hover{
+        background-color: var(--color-principal);
+        color: white;
+    }
+
     .header-center p{
         padding: 0em 5em;
     }
