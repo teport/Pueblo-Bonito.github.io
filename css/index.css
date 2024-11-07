@@ -764,6 +764,18 @@ footer{
 
     .identidad p{
         margin-bottom: 2em;
+        width: 70%;
+        text-align: center;
+        left: 50%;
+        transform: translateX(-50%);
+        position: relative;
+    }
+
+    .ident-grid-txt p{
+        text-align: left;
+        left: 0;
+        transform: translateX(0);
+        width: auto;
     }
 
     .ident-grid:first-child{
@@ -777,6 +789,14 @@ footer{
         grid-template-columns: repeat(2, 1fr) 35%;
         grid-template-rows: repeat(2, 20em);
         gap: 1em;
+    }
+
+    .servicios{
+        text-align: left;
+    }
+
+    .servicios h1{
+        text-align: left;
     }
 
     .ser-g-1:first-child{
@@ -803,5 +823,20 @@ footer{
 }
 
 @media screen and (min-width:1200px) {
+    .trio-img-ini{
+        max-width: 63em;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .identidad-grid{
+        max-width: 1250px;
+        left: 50%;
+        transform: translateX(-50%);
+        position: relative;
+        margin: 0;
+    }
+
     
 }
