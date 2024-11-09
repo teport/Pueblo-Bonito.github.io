@@ -832,10 +832,23 @@ footer{
 
     .identidad-grid{
         max-width: 1250px;
-        left: 50%;
-        transform: translateX(-50%);
-        position: relative;
-        margin: 0;
+        margin: 0 auto;
+    }
+
+    .opcion-info-tit{
+        max-width: 1250px;
+        margin: 0 auto;
+    }
+
+
+    .opcion-info-div{
+        max-width: 1250px;
+        margin: 0 auto;
+    }
+
+    .opc-info-div-txt p{
+        line-height: 1.8;
+        padding-top: .7em;
     }
 
     
