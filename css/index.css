@@ -851,5 +851,11 @@ footer{
         padding-top: .7em;
     }
 
+    .servicios{
+        max-width: 1250px;
+        margin: 4em auto;
+        padding: 0 0px;
+    }
+
     
 }
