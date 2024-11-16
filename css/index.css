@@ -460,10 +460,11 @@ footer{
 }
 
 .header-footer-txt button{
-    padding: .4em .8em;
+    padding: 1em 2em;
     border-radius: 10px;
     border: none;
     margin: 1em 0 0 0;
+    color: var(--color-principal);
 }
 
 .footer-fot{
@@ -586,6 +587,9 @@ footer{
         padding: 3em 0em;
     }
     
+    .opcion{
+        background-attachment: fixed;
+    }
 
     .opcion h1{
         font-size: var(--titulo-principal-tablet);
@@ -593,6 +597,11 @@ footer{
 
     .opcion p{
         font-size: var(--tablet-p);
+    }
+
+    .opc-info-div-txt p{
+        line-height: 1.4;
+        padding-top: .7em;
     }
 
     .opcion h2{
@@ -782,6 +791,11 @@ footer{
         grid-column: 1/2;
     }
 
+    .opc-info-div-txt p {
+        line-height: 1.8;
+        padding-top: .7em;
+    }
+
     
     .servicios-grid {
         margin: 2.5em 0;
@@ -794,6 +808,7 @@ footer{
     .servicios{
         text-align: left;
     }
+    
 
     .servicios h1{
         text-align: left;
@@ -819,6 +834,15 @@ footer{
 
     .serv-grid:hover{
         scale: 1.01;
+    }
+
+    .header-footer button{
+        transition: .4s ease-in-out;
+    }
+
+    .header-footer button:hover{
+        background-color: var(--color-principal);
+        color: white;
     }
 }
 
@@ -857,5 +881,9 @@ footer{
         padding: 0 0px;
     }
 
-    
+    .header-footer{
+        max-width: 1250px;
+        margin: 0 auto;
+    }
+
 }
