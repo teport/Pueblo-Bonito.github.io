@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pueblo Bonito</title>
+    <link rel="stylesheet" href="../css/agroquimicos.css">
+    <link rel="icon" href="../img/favicon2.webp">
+</head>
+<body style="background-color: red;">
+    <div class="header">
+        <img class="logo" src="../img/icono-nuevo.webp" alt="Icono de pueblo bonito">
+        <img class="logo logo-2" src="../img/favicon-azul.webp" alt="icono de pueblo bonito en color azul">
+        <button id="abrir" class="abrir-menu"><img src="../img/iconizer-align-right.svg" alt="Icono de menu"></button>
+        <nav class="nav" id="nav">
+            <div class="logos-nav-res">
+                <img class="logo-bar-mov" src="../img/favicon-azul.webp" alt="">
+                <button id="cerrar" class="cerrar-menu"><img src="img/x.svg" alt=""></button>
+            </div>
+            <ul class="nav-list">
+                <li class="li-1"><a href="/index.html">Inicio</a></li>
+                <li class="li-2"><a href="..#servicios" id="cerrar">Servicios</a></li>
+                <li class="li-1"><a href="..#presencia">Presencia</a></li>
+                <li class="li-2"><a href="#">Bolsa de Trabajo</a></li>
+                <li class="li-1"><a href="#">Nosotros</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="rol">
+
+    </div>
+
+    <script src="../js/main.js"></script>
+    <script type="text/javascript">
+        window.addEventListener("scroll", function () {
+            var header = document.querySelector(".header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>
+</body>
+</html>

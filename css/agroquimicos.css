@@ -1,0 +1,229 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root{
+    --titulo-importante-mobile:2.5em;
+    --titulo-principal-mobile: 1.5em;
+    --titulo-secundario-mobile: 1.2em;
+    --padding-principal-mobile: 2em 1.5em;
+    --movile-p:.9em;
+
+    --titulo-importante-tablet:3.2em;
+    --titulo-principal-tablet: 2.5em;
+    --titulo-secundario-tablet: 2em;
+    --tablet-p:1.2em;
+    --margen-principal: 1.5em;
+
+
+
+    --color-principal:rgb(0,0,128);
+    --shadow-fondo: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    --shadow-sencillo:rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.no-scroll {
+    overflow: hidden; /* Desactiva el scroll */
+    height: 100%; /* Asegura que no haya espacio para desplazarse */
+}
+
+.header{
+    position: relative;
+    z-index: 998;
+    display: flex;
+    align-items: center;
+    padding: 1.5em;
+    justify-content: space-between;
+}
+
+.header .logo{
+    max-width: 7rem;
+}
+
+.header .logo-2{
+    display: none;
+}
+
+.btn-abrir{
+    border: none;
+}
+
+.nav{
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+    position: absolute;
+    top: 0;
+    text-align: left;
+    right: 0;
+    background-color: rgb(255, 255, 255);
+    bottom: 0;
+    box-shadow: var(--shadow-fondo);
+    height: 100vh;
+    width: 100%;
+}
+
+#nav {
+    display: none;
+    transition: opacity 0.3s ease;
+}
+
+#nav.visible {
+    display: block;
+    opacity: 1;
+}
+
+
+
+.logo-bar-mov{
+    max-width: 7rem;
+}
+
+.logos-nav-res{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 2em 0 2em;
+}
+
+.nav.visible{
+    opacity: 1;
+    visibility: visible;
+}
+
+.nav-list{
+    width: 100%;
+}
+
+.nav ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav li{
+    padding: 1em 2em;
+}
+
+.nav-list .li-1{
+    background-color: rgba(236, 236, 236, 0.527);
+}
+
+.nav li a{
+    text-decoration: none;
+    color: var(--color-principal);
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.abrir-menu, .cerrar-menu{
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.abrir-menu img, .cerrar-menu img{
+    width: 2.5em;
+}
+
+.rol{
+    height: 200vh;
+}
+
+
+@media screen and (min-width:750px) { 
+
+    .header.sticky{
+        background-color: white;
+        position: fixed;
+        width: 100%;
+        color: var(--color-principal);
+        padding: 0 0;
+        gap: 0;
+        justify-content: space-between;
+    }
+
+    .header.sticky .logo{
+        display: none;
+    }
+
+    .header.sticky .logo-2{
+        display: block;
+        max-width: 8em;
+        margin-left: 4em;
+    }
+
+    .header.sticky #nav{
+        width: auto;
+    }
+
+
+    .header.sticky .nav-list li a{
+        color: var(--color-principal);
+        font-size: 1.2em;
+    }
+
+    .header.sticky .nav ul{
+        padding: 1em;
+        justify-content: end;
+    }
+
+    .header{
+        transition: .4s ease-in-out all;
+    }
+
+}
+
+@media screen and (min-width:990px) {
+
+    .header{
+            padding: 1em 2em;
+            justify-content: space-evenly;
+            gap: 4em;
+        }
+    
+        .header-center p{
+            padding: 0em 5em;
+        }
+        
+        .abrir-menu, .cerrar-menu, .logo-bar-mov, .logos-nav-res{
+            display: none;
+        }
+    
+        #nav{
+            display: flex; /* Mostrar siempre en desktop */
+            opacity: 1; /* Mantener visible */
+            visibility: visible; /* Mantener visible */
+            position: static; /* Cambiar posición para que no sea absoluta */
+            height: auto; /* Ajustar altura */
+            background-color: rgba(255, 255, 255, 0);
+            box-shadow: none;
+            flex-direction: row;
+        }
+    
+        .nav ul {
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+    
+        .nav li {
+            padding: 0 1em; /* Espaciado en horizontal */
+            background-color: rgba(245, 222, 179, 0);
+        }
+    
+        .nav-list li a {
+            font-size: 1.5em;
+            color: white;
+        }
+    
+        .nav-list .li-1 {
+            background-color: rgba(236, 236, 236, 0);
+        }
+    
+    }
