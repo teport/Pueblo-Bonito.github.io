@@ -25,6 +25,33 @@
     --shadow-sencillo:rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
+.logo-whats{
+    max-width: 3.5em;
+    position: fixed;
+    z-index: 999;
+    bottom: 0;
+    right: 0;
+    margin: 1em;
+    padding: .5em;
+    background-color: white;
+    border-radius: 50%;
+    animation: pulse 1s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%{
+        scale: 1;
+    }
+
+    50%{
+        scale:.9;
+    }
+
+    100%{
+        scale: 1;
+    }
+}
+
 .no-scroll {
     overflow: hidden; /* Desactiva el scroll */
     height: 100%; /* Asegura que no haya espacio para desplazarse */
@@ -138,6 +165,11 @@
 
 @media screen and (min-width:750px) { 
 
+    .logo-whats {
+        max-width: 4em;
+        margin: 2em;
+    }
+
     .header.sticky{
         background-color: white;
         position: fixed;
@@ -218,7 +250,7 @@
         }
     
         .nav-list li a {
-            font-size: 1.5em;
+            font-size: 1.4em;
             color: white;
         }
     
