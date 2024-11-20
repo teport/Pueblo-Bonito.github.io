@@ -41,6 +41,7 @@
     transform: translateY(-50%);
     color: white;
     padding: 1em;
+    max-width: 700px;
 }
 
 .principal-txt h1{
@@ -52,6 +53,7 @@
 .principal-txt p{
     padding-bottom: .8em;
     font-size: var(--movile-p);
+    line-height: 1.5;
 }
 
 .principal-txt button{
@@ -62,3 +64,56 @@
     color: white;
 }
 
+.principal-grid{
+    display: none;
+}
+
+@media screen and (min-width:750px){
+    .principal-txt h1{
+        font-size: var(--titulo-importante-tablet);
+    }
+
+    .principal-txt p{
+        width: 75%;
+    }
+
+    .principal-txt button{
+        font-size: var(--tablet-p);
+    }
+
+    .principal-txt small{
+        font-size: var(--tablet-p);
+    }
+}
+
+@media screen and (min-width:990px) {
+    .principal-grid{
+        display: grid;
+        grid-template-columns: 16em;
+        grid-template-rows: repeat(3, 11em);
+        right: 0;
+        top: 0;
+        position: absolute;
+        margin-top: 1em;
+        margin-right: 10em;
+        gap: 2em;
+    }
+
+    .p-grid{
+        border: .1em solid;
+        border-radius: 10px;
+        box-shadow: var(--shadow-sencillo);
+    }
+
+    .grid-1{
+        background: url(../img/inge-hablando.webp) no-repeat center/cover;
+    }
+
+    .grid-2{
+        background: url(../img/ags.webp) no-repeat center/cover;
+    }
+
+    .grid-3{
+        background: url(../img/parsela.webp) no-repeat center/cover;
+    }
+}
