@@ -183,7 +183,7 @@
     margin: 1em 0;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 10em;
+    grid-template-rows: 12em;
     grid-auto-rows: 12em;
     border-radius: 12px;
     gap: .5em;
