@@ -366,6 +366,7 @@
             transform: translateX(-50%);
         }
 
+
         .principal-grid{
             position: relative;
             left: 50%;
@@ -374,6 +375,14 @@
             grid-template-columns: repeat(5 ,1fr);
             grid-template-rows: 12em 12em;
             gap: .7em;
+        }
+
+        .prin-grid{
+            transition: .4s ease-in-out all;
+        }
+
+        .prin-grid:hover{
+            scale: 1.02;
         }
 
         .p-grid-2:nth-child(2){
@@ -390,4 +399,6 @@
             grid-column: 3/5;
             grid-row: 1/3;
         }
+
+        
     }
