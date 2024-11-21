@@ -32,6 +32,10 @@
     padding: var(--margen-principal);
 }
 
+.div-principal{
+    height: 100%;
+}
+
 .principal-txt{
     background-color: rgba(0, 0, 0, 0.116);
     backdrop-filter: blur(5px);
@@ -41,7 +45,6 @@
     transform: translateY(-50%);
     color: white;
     padding: 1em;
-    max-width: 700px;
 }
 
 .principal-txt h1{
@@ -69,12 +72,34 @@
 }
 
 @media screen and (min-width:750px){
+
+    .div-principal{
+        padding: 3em 0;
+        max-width: 750px;
+        position: relative;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        height: auto;
+    }
+
+    .principal-txt{
+        text-align: center;
+        top: 0;
+        transform: translateY(0);
+        position: relative; 
+        margin-bottom: 2em;
+    }
+
     .principal-txt h1{
         font-size: var(--titulo-importante-tablet);
     }
 
     .principal-txt p{
         width: 75%;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     .principal-txt button{
@@ -84,25 +109,18 @@
     .principal-txt small{
         font-size: var(--tablet-p);
     }
-}
 
-@media screen and (min-width:990px) {
     .principal-grid{
         display: grid;
-        grid-template-columns: 16em;
-        grid-template-rows: repeat(3, 11em);
-        right: 0;
-        top: 0;
-        position: absolute;
-        margin-top: 1em;
-        margin-right: 10em;
-        gap: 2em;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 15em 15em;
+        position: relative;
+
+        gap: 1em;
     }
 
     .p-grid{
-        border: .1em solid;
         border-radius: 10px;
-        box-shadow: var(--shadow-sencillo);
     }
 
     .grid-1{
@@ -116,4 +134,34 @@
     .grid-3{
         background: url(../img/parsela.webp) no-repeat center/cover;
     }
+
+    .grid-4{
+        background: url(../img/todo-parsela.webp) no-repeat center/cover;
+    }
+}
+
+@media screen and (min-width:990px) {
+    .principal-grid{
+        display: none;
+    }    
+}
+
+@media screen and (min-width: 1200px) {
+    .principal-grid{
+        display: grid;
+        grid-template-columns: 16em;
+        grid-template-rows: repeat(3, 11em);
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+        margin-right: 8em;
+        gap: 2em;
+    }
+
+    .p-grid{
+        border-radius: 10px;
+        box-shadow: var(--shadow-sencillo);
+    }
+
 }
