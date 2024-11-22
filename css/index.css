@@ -352,6 +352,10 @@ video{
     z-index: 990;
 }
 
+.opc-info-div-txt p{
+    line-height: 1.5;
+}
+
 .opc-info-div-img img{
     width: 100%;
     border-radius: 10px;

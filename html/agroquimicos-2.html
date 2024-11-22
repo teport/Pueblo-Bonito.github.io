@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/agroquimicos-2.css">
+</head>
+
+<body>
+    <!-- Sidebar -->
+    <div id="sidebar" class="sidebar">
+      <button class="closebtn" onclick="closeNav()">X</button>
+      <a href="#">Inicio</a>
+      <a href="#">Nosotros</a>
+      <a href="#">Presencia</a>
+      <a href="#">Contacto</a>
+    </div>
+    <!-- Botón para abrir el menú -->
+    <div id="main">
+      <img class="main-img" src="../img/favicon-azul.webp" alt="Icono nuevo">
+      <button id="openbtn" class="openbtn" onclick="openNav()">☰</button>
+    </div>
+      <main>
+          <section class="principal">
+              <div class="principal-txt">
+                  <h1>Agroquímicos de la mejor calidad</h1>
+                  <p>La mejor elección para maximizar tu producción agrícola: productos de alta calidad y
+                      soluciones innovadoras para proteger tus cultivos, aumentar el rendimiento y garantizar tu
+                      éxito en el campo.</p>
+              </div>
+              <div class="principal-grid">
+                  <div class="prin-grid p-grid-1">
+                      <h2>Herbicidas</h2>
+                  </div>
+                  <div class="prin-grid p-grid-2">
+                      <h2>Fungicidas</h2>
+                  </div>
+                  <div class="prin-grid p-grid-3">
+                      <h2>Fertilizantes</h2>
+                  </div>
+                  <div class="prin-grid p-grid-4">
+                      <h2>Insecticidas</h2>
+                  </div>
+                  <div class="prin-grid p-grid-5">
+                      <h2>Nutrición</h2>
+                  </div>
+                  <div class="prin-grid p-grid-6">
+                      <h2>Otros</h2>
+                  </div>
+              </div>
+          </section>
+      </main>
+  
+    <!-- Scripts -->
+    <script>
+      function openNav() {
+        document.getElementById("sidebar").style.width = "250px";
+        document.getElementById("openbtn").style.visibility = "hidden";
+      }
+  
+      function closeNav() {
+        document.getElementById("sidebar").style.width = "0";
+        document.getElementById("openbtn").style.visibility = "visible";
+      }
+    </script>
+  
+  </body>
+</html>
