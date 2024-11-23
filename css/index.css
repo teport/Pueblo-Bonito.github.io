@@ -855,6 +855,10 @@ footer{
     .header-footer-txt small {
         font-size: var(--tablet-p);
     }
+
+    .opc-info-div{
+        margin: 0;
+    }
 }
 
 @media screen and (min-width:1200px) {
