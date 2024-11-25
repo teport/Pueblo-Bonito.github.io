@@ -354,6 +354,7 @@ video{
 
 .opc-info-div-txt p{
     line-height: 1.5;
+    padding: 1em 0;
 }
 
 .opc-info-div-img img{
@@ -761,6 +762,14 @@ footer{
 
     .trio-img-ini{
         justify-content: space-evenly;
+    }
+
+    .trio-img{
+        transition: 0.3s ease-in-out all;
+    }
+
+    .trio-img:hover{
+        transform: translateY(-20px);
     }
 
     .trio-img-ini .trio-img img{
