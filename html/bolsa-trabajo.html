@@ -10,6 +10,19 @@
 </head>
 
 <body>
+    <div id="sidebar" class="sidebar">
+        <button class="closebtn" onclick="closeNav()">X</button>
+        <a href="../index.html" class="a-1">Inicio</a>
+        <a href="..#servicios" class="a-2">Servicios</a>
+        <a href="..#presencia" class="a-1">Presencia</a>
+        <a href="bolsa-trabajo.html" class="a-2">Bolsa de Trabajo</a>
+        <a href="#" class="a-1">Nosotros</a>
+      </div>
+  
+      <div id="main">
+        <button id="openbtn" class="openbtn" onclick="openNav()">☰</button>
+        <img class="main-img" src="../img/icono-nuevo.webp" alt="Icono nuevo">
+      </div>
     <main>
         <section class="principal">
             <div class="div-principal">
@@ -25,22 +38,25 @@
                 </div>
 
                 <div class="principal-grid">
-                    <div class="pri-grid grid-1">
-
-                    </div>
-                    <div class="pri-grid grid-2">
-
-                    </div>
-                    <div class="pri-grid grid-3">
-
-                    </div>
-                    <div class="pri-grid grid-4">
-
-                    </div>
+                    <div class="pri-grid grid-1"></div>
+                    <div class="pri-grid grid-2"></div>
+                    <div class="pri-grid grid-3"></div>
+                    <div class="pri-grid grid-4"></div>
                 </div>
             </div>
         </section>
     </main>
+    <script>
+        function openNav() {
+          document.getElementById("sidebar").style.width = "250px";
+          document.getElementById("openbtn").style.visibility = "hidden";
+        }
+    
+        function closeNav() {
+          document.getElementById("sidebar").style.width = "0";
+          document.getElementById("openbtn").style.visibility = "visible";
+        }
+      </script>
 </body>
 
 </html>

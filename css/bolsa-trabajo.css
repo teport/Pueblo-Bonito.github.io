@@ -1,68 +1,149 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-:root{
-    --titulo-importante-mobile:2.5em;
+:root {
+    --titulo-importante-mobile: 2.5em;
     --titulo-principal-mobile: 1.5em;
     --titulo-secundario-mobile: 1.2em;
     --padding-principal-mobile: 2em 1.5em;
-    --movile-p:.9em;
+    --movile-p: .9em;
 
-    --titulo-importante-tablet:3.2em;
+    --titulo-importante-tablet: 3.2em;
     --titulo-principal-tablet: 2.5em;
     --titulo-secundario-tablet: 2em;
-    --tablet-p:1.2em;
+    --tablet-p: 1.2em;
     --margen-principal: 1.5em;
 
-
-
-    --color-principal:rgb(0,0,128);
+    --color-principal: rgb(0, 0, 128);
     --shadow-fondo: 0 0 0 100vmax rgba(0, 0, 0, .5);
-    --shadow-sencillo:rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    --shadow-sencillo: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-.principal{
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 128);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 10px;
+}
+
+.closebtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    padding: 10px 10px;
+    border-radius: 9px;
+    border: 0;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 9px;
+    visibility: visible;
+    right: 0;
+    transition: .2s ease-in-out all;
+    margin: 1em;
+    background-color: rgba(255, 255, 255, 0.192);
+    backdrop-filter: blur(10px);
+}
+
+.sidebar a {
+    padding: 15px 8px 15px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    font-size: 25px;
+    font-weight: 200;
+    color: rgb(0, 0, 128);
+    background-color: white;
+    border-radius: 1px;
+    text-decoration: none;
+}
+
+.a-1{
+    background-color: rgba(245, 245, 245, 0.247);
+}
+
+.openbtn:hover {
+    background-color: #000080;
+    color: white;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 32px 32px 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-img{
+    max-width: 9em;
+}
+
+body {
     background: url(../img/inge.webp) no-repeat center/cover;
     position: relative;
-    height: 100vh;
+    min-height: 100vh;
 }
 
-.div-principal{
-    height: 100%;
+.div-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 1em;
+    height: 100%;
 }
 
-.principal-txt{
+.principal-txt {
     background-color: rgba(146, 146, 146, 0.226);
     backdrop-filter: blur(15px);
     border-radius: 15px;
-    padding: .9em;
+    padding: 1em;
     color: white;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+    width: 100%;
+    text-align: left;
+    height: auto;
+    max-height: none;
 }
 
-.principal-txt small{
+.principal-txt small {
     font-weight: 100;
 }
 
-.principal-txt h1{
+.principal-txt h1 {
     padding: .5em 0;
-    font-size: 1.8;
+    font-size: 2.5em;
 }
 
-.principal-txt p{
+.principal-txt p {
     padding-bottom: .5em;
     line-height: 1.5;
     font-size: var(--movile-p);
 }
 
-.principal-txt button{
+.principal-txt button {
     padding: .8em;
     border: none;
     border-radius: 15px;
@@ -70,114 +151,93 @@
     color: white;
 }
 
-@media screen and (min-width:400px){
-
-    .div-principal{
-        height: auto;
-        position: relative;
-        top: 50%;
-        transform: translateY(-50%);
-    }
-
-    .principal-txt{
-        top: 0;
-        transform: translate(0);
-        margin: 2em 0 0;
-    }
-
-    .principal-grid{
+/* Media Queries */
+@media screen and (min-width: 400px) {
+    .principal-grid {
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        height: 20em;
         gap: 1em;
         margin-top: 1em;
-        overflow: hidden;
+        min-height: 20em;
+        overflow: visible;
     }
 
-    .pri-grid{
+    .pri-grid {
         border-radius: 15px;
         box-shadow: var(--shadow-sencillo);
+        background-size: cover;
+        background-position: center;
     }
 
-    .grid-1{
+    .grid-1 {
         background: url(../img/parsela.webp) no-repeat center/cover;
     }
 
-    .grid-2{
+    .grid-2 {
         background: url(../img/inge-hablando.webp) no-repeat center/cover;
     }
 
-    .grid-3{
+    .grid-3 {
         background: url(../img/todo-parsela.webp) no-repeat center/cover;
     }
 
-    .grid-4{
+    .grid-4 {
         background: url(../img/evento.webp) no-repeat center/cover;
     }
 }
 
-@media screen and (min-width:750px) {
-    .div-principal{
-        top: 0;
-        transform: translateY(0);
-        height: auto;
-    }
-
-    .principal-txt{
-        height: 20em;
-        max-height: 20em;
-    }
-
-    .principal-txt h1{
+@media screen and (min-width: 750px) {
+    .principal-txt h1 {
         font-size: var(--titulo-principal-tablet);
     }
 
-    .principal-txt p{
+    .principal-txt p {
         font-size: var(--tablet-p);
         max-width: 50em;
     }
 
-    .principal-grid{
+    .principal-grid {
         gap: 1em 2em;
-        height: 28em;
+        height: auto;
         position: relative;
         left: 50%;
         transform: translateX(-50%);
     }
 }
 
-
-@media screen and (min-width:990px) {
-    .div-principal{
+@media screen and (min-width: 990px) {
+    .div-principal {
         display: grid;
-        grid-template-columns: 45em 1fr;
+        grid-template-columns: 60% 40%;
         gap: 1em;
         align-items: center;
-        top: 50%;
-        transform: translateY(-50%);
         max-width: 1250px;
-        position: relative;
         margin: 0 auto;
-        height: 40em;
+        height: auto;
+        padding: 2em;
     }
 
-    
-    .principal-txt{
-        height: 24em;
-        max-height: 25em;
+    .principal-txt {
+        height: auto;
+        max-height: none;
         backdrop-filter: blur(5px);
         background-color: rgba(71, 71, 71, 0.342);
-    }
-    
-    .principal-grid{
-        justify-content: center;
-        grid-template-columns: 15em;
-        grid-template-rows: repeat(3, 10em);
-        height: auto;
+        padding: 2em;
+        text-align: left;
     }
 
-    .grid-4{
-        display: none;
+    /* Cambiar la grilla a 1 columna y 3 filas para pantallas grandes */
+    .principal-grid {
+        display: grid;
+        grid-template-columns: 12em; /* 1 columna */
+        grid-template-rows: repeat(3, 10em); /* 3 filas */
+        gap: 2em;
+        height: auto;
+        justify-content: center;
+    }
+
+    .grid-4 {
+        display: block; /* Hacer que la imagen 4 se muestre en pantallas grandes */
     }
 }
