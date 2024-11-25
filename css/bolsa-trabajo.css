@@ -161,6 +161,7 @@ body {
         margin-top: 1em;
         min-height: 20em;
         overflow: visible;
+        width: 100%;
     }
 
     .pri-grid {
@@ -203,6 +204,7 @@ body {
         position: relative;
         left: 50%;
         transform: translateX(-50%);
+        grid-template-rows: repeat(2, 14em);
     }
 }
 
