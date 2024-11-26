@@ -150,6 +150,12 @@ body {
     border-radius: 15px;
     background-color: var(--color-principal);
     color: white;
+    transition: 0.4s ease-in-out all;
+}
+
+.principal-txt button:hover{
+    color: var(--color-principal);
+    background-color: white;
 }
 
 /* Media Queries */
