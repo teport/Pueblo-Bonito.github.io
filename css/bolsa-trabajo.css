@@ -214,6 +214,9 @@ body {
         grid-template-rows: repeat(2, 14em);
     }
 
+    .openbtn{
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
 }
 
 @media screen and (min-width: 990px) {
@@ -252,6 +255,6 @@ body {
     }
 
     .grid-4 {
-        display: block; /* Hacer que la imagen 4 se muestre en pantallas grandes */
+        display: none; /* Hacer que la imagen 4 se muestre en pantallas grandes */
     }
 }
