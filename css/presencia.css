@@ -133,4 +133,48 @@ main {
 .grid{
     box-shadow: var(--shadow-sencillo);
     border-radius: 10px;
+    position: relative;
+}
+
+.grid h2{
+    position: absolute;
+    bottom: 0;
+    margin: 1em;
+    color: white;
+}
+
+.grid-1{
+    background: url(../img/fresnillo.webp) no-repeat center/cover;
+}
+
+.grid-2{
+    background: url(../img/sistemaRiego.webp) no-repeat center/cover;
+}
+
+.grid-3{
+    background: url(../img/calera.webp) no-repeat center/cover;
+}
+
+.grid-4{
+    background: url(../img/ags.webp) no-repeat center/cover;
+}
+
+.grid-5{
+    background: url(../img/calera.webp) no-repeat center/cover;
+}
+
+.grid-6{
+    background: url(../img/dur.webp) no-repeat center/cover;
+}
+
+.grid-7{
+    background: url(../img/ags.webp) no-repeat center/cover;
+}
+
+.grid-8{
+    background: url(../img/calera.webp) no-repeat center/cover;
+}
+
+.grid-9{
+    background: url(../img/ags.webp) no-repeat center/cover;
 }
