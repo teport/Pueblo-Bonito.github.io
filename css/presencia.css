@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --titulo-importante-mobile: 2.5em;
+    --titulo-principal-mobile: 1.5em;
+    --titulo-secundario-mobile: 1.2em;
+    --padding-principal-mobile: 2em 1.5em;
+    --movile-p: .9em;
+
+    --titulo-importante-tablet: 3.2em;
+    --titulo-principal-tablet: 2.5em;
+    --titulo-secundario-tablet: 2em;
+    --tablet-p: 1.2em;
+    --margen-principal: 1.5em;
+
+
+
+    --color-principal: rgb(0, 0, 128);
+    --shadow-fondo: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    --shadow-sencillo: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 128);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 10px;
+}
+
+.closebtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    padding: 10px 10px;
+    border-radius: 9px;
+    border: 0;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    color: #000080;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 9px;
+    visibility: visible;
+    right: 0;
+    transition: .2s ease-in-out all;
+    margin: 1em;
+}
+
+.sidebar a {
+    padding: 15px 8px 15px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    font-size: 25px;
+    font-weight: 200;
+    color: rgb(0, 0, 128);
+    background-color: white;
+    border-radius: 1px;
+    text-decoration: none;
+}
+
+.a-1{
+    background-color: rgba(245, 245, 245, 0.247);
+}
+
+.openbtn:hover {
+    background-color: #000080;
+    color: white;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 32px 0px 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-img{
+    max-width: 9em;
+    margin-right: 1em;
+}
+
+main {
+    padding: var(--padding-principal-mobile);
+    position: relative;
+}
+
+.principal-txt {
+    text-align: center;
+}
+
+.principal-txt h1 {
+    font-size: var(--titulo-importante-mobile);
+    color: var(--color-principal);
+    padding-bottom: .5em;
+}
+
+.principal-txt p {
+    font-size: var(--movile-p);
+}
+
+
+.grid-general{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9,13em);
+    margin: 1em 0;
+    gap: 1em;
+}
+
+.grid{
+    box-shadow: var(--shadow-sencillo);
+    border-radius: 10px;
+}
