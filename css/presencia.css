@@ -148,19 +148,19 @@ main {
 }
 
 .grid-2{
-    background: url(../img/sistemaRiego.webp) no-repeat center/cover;
+    background: url(../img/calera.webp) no-repeat center/cover;
 }
 
 .grid-3{
-    background: url(../img/calera.webp) no-repeat center/cover;
-}
-
-.grid-4{
     background: url(../img/ags.webp) no-repeat center/cover;
 }
 
-.grid-5{
+.grid-4{
     background: url(../img/calera.webp) no-repeat center/cover;
+}
+
+.grid-5{
+    background: url(../img/dur.webp) no-repeat center/cover;
 }
 
 .grid-6{
@@ -168,7 +168,7 @@ main {
 }
 
 .grid-7{
-    background: url(../img/ags.webp) no-repeat center/cover;
+    background: url(../img/villa.webp) no-repeat center/cover;
 }
 
 .grid-8{
@@ -176,7 +176,7 @@ main {
 }
 
 .grid-9{
-    background: url(../img/ags.webp) no-repeat center/cover;
+    background: url(../img/sistemaRiego.webp) no-repeat center/cover;
 }
 
 @media screen and (min-width:700px) {
