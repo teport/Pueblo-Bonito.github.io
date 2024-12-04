@@ -3,69 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agroquimicos | Pueblo Bonito</title>
+    <title>Pueblo Bonito</title>
     <link rel="stylesheet" href="../css/agroquimicos.css">
-    <link rel="icon" href="img/favicon2.webp">
+    <link rel="icon" href="../img/favicon2.webp">
 </head>
-
 <body>
-
-    <div id="sidebar" class="sidebar">
-      <button class="closebtn" onclick="closeNav()">X</button>
-      <a href="../index.html" class="a-1">Inicio</a>
-      <a href="..#servicios" class="a-2">Servicios</a>
-      <a href="Presencia.html" class="a-1">Presencia</a>
-      <a href="bolsa-trabajo.html" class="a-2">Bolsa de Trabajo</a>
-      <a href="#" class="a-1">Nosotros</a>
+    <a href="https://wa.me/+5214931030981"><img class="logo-whats" src="../img/logo-nuevo-wh.webp"
+        alt="Logo de whatsapp"></a>
+    <div class="header">
+        <img class="logo" src="../img/favicon-azul.webp" alt="Icono de pueblo bonito">
+        <a href="../index.html"><img class="logo logo-2" src="../img/favicon-azul.webp" alt="icono de pueblo bonito en color azul"></a>
+        <button id="abrir" class="abrir-menu"><img src="../img/iconizer-align-right.svg" alt="Icono de menu"></button>
+        <nav class="nav" id="nav">
+            <div class="logos-nav-res">
+                <img class="logo-bar-mov" src="../img/favicon-azul.webp" alt="">
+                <button id="cerrar" class="cerrar-menu"><img src="img/x.svg" alt=""></button>
+            </div>
+            <ul class="nav-list">
+                <li class="li-1"><a href="../index.html">Inicio</a></li>
+                <li class="li-2"><a href="..#servicios" id="cerrar">Servicios</a></li>
+                <li class="li-1"><a href="../html/Presencia.html">Presencia</a></li>
+                <li class="li-2"><a href="../html/bolsa-trabajo.html">Bolsa de Trabajo</a></li>
+                <li class="li-1"><a href="#">Nosotros</a></li>
+            </ul>
+        </nav>
     </div>
+    <main>
+        <section class="principal">
+            <div class="principal-txt">
+                <h1>Agroquímicos de la mejor calidad</h1>
+                <p>La mejor elección para maximizar tu producción agrícola: productos de alta calidad y
+                    soluciones innovadoras para proteger tus cultivos, aumentar el rendimiento y garantizar tu
+                    éxito en el campo.</p>
+            </div>
+            <div class="principal-grid">
+                <div class="prin-grid p-grid-1">
+                    <h2>Herbicidas</h2>
+                </div>
+                <div class="prin-grid p-grid-2">
+                    <h2>Fungicidas</h2>
+                </div>
+                <div class="prin-grid p-grid-3">
+                    <h2>Fertilizantes</h2>
+                </div>
+                <div class="prin-grid p-grid-4">
+                    <h2>Insecticidas</h2>
+                </div>
+                <div class="prin-grid p-grid-5">
+                    <h2>Nutrición</h2>
+                </div>
+                <div class="prin-grid p-grid-6">
+                    <h2>Otros</h2>
+                </div>
+            </div>
+        </section>
+    </main>
 
-    <div id="main">
-      <button id="openbtn" class="openbtn" onclick="openNav()">☰</button>
-      <a href="../index.html"><img class="main-img" src="../img/favicon-azul.webp" alt="Icono nuevo"></a>
-    </div>
-      <main>
-          <section class="principal">
-              <div class="principal-txt">
-                  <h1>Agroquímicos de la mejor calidad</h1>
-                  <p>La mejor elección para maximizar tu producción agrícola: productos de alta calidad y
-                      soluciones innovadoras para proteger tus cultivos, aumentar el rendimiento y garantizar tu
-                      éxito en el campo.</p>
-              </div>
-              <div class="principal-grid">
-                  <div class="prin-grid p-grid-1">
-                      <h2>Herbicidas</h2>
-                  </div>
-                  <div class="prin-grid p-grid-2">
-                      <h2>Fungicidas</h2>
-                  </div>
-                  <div class="prin-grid p-grid-3">
-                      <h2>Fertilizantes</h2>
-                  </div>
-                  <div class="prin-grid p-grid-4">
-                      <h2>Insecticidas</h2>
-                  </div>
-                  <div class="prin-grid p-grid-5">
-                      <h2>Nutrición</h2>
-                  </div>
-                  <div class="prin-grid p-grid-6">
-                      <h2>Otros</h2>
-                  </div>
-              </div>
-          </section>
-      </main>
-  
-    <!-- Scripts -->
-    <script>
-      function openNav() {
-        document.getElementById("sidebar").style.width = "250px";
-        document.getElementById("openbtn").style.visibility = "hidden";
-      }
-  
-      function closeNav() {
-        document.getElementById("sidebar").style.width = "0";
-        document.getElementById("openbtn").style.visibility = "visible";
-      }
-    </script>
-  
-  </body>
+    <script src="../js/main.js"></script>
+</body>
 </html>
