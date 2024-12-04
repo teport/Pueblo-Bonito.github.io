@@ -1,0 +1,352 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root{
+    --titulo-importante-mobile:2.5em;
+    --titulo-principal-mobile: 1.5em;
+    --titulo-secundario-mobile: 1.2em;
+    --padding-principal-mobile: 2em 1.5em;
+    --movile-p:.9em;
+
+    --titulo-importante-tablet:3.2em;
+    --titulo-principal-tablet: 2.5em;
+    --titulo-secundario-tablet: 2em;
+    --tablet-p:1.2em;
+    --margen-principal: 1.5em;
+
+
+
+    --color-principal:rgb(0,0,128);
+    --shadow-fondo: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    --shadow-sencillo:rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.logo-whats{
+    max-width: 3.5em;
+    position: fixed;
+    z-index: 999;
+    bottom: 0;
+    right: 0;
+    margin: 1em;
+    padding: .5em;
+    background-color: white;
+    border-radius: 50%;
+    animation: pulse 1s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%{
+        scale: 1;
+    }
+
+    50%{
+        scale:.9;
+    }
+
+    100%{
+        scale: 1;
+    }
+}
+
+.no-scroll {
+    overflow: hidden; /* Desactiva el scroll */
+    height: 100%; /* Asegura que no haya espacio para desplazarse */
+}
+
+header{
+    background: url(../img/fresnillo.webp) no-repeat center/cover;
+    position: relative;
+    min-height: 80vh;
+    width: 100%;
+}
+
+.capa {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 128, 0.411);
+    z-index: 500;
+}
+
+.txt-header{
+    text-align: center;
+    color: white;
+    position: absolute;
+    z-index: 600;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: var(--padding-principal-mobile);
+}
+
+.txt-header h1{
+    font-size: var(--titulo-importante-mobile);
+}
+
+
+.header{
+    position: relative;
+    z-index: 998;
+    display: flex;
+    align-items: center;
+    padding: 1.5em;
+    justify-content: space-between;
+}
+
+.header .logo{
+    max-width: 7rem;
+}
+
+.header .logo-2{
+    display: none;
+}
+
+.btn-abrir{
+    border: none;
+}
+
+.nav{
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+    position: absolute;
+    top: 0;
+    text-align: left;
+    right: 0;
+    background-color: rgb(255, 255, 255);
+    bottom: 0;
+    box-shadow: var(--shadow-fondo);
+    height: 100vh;
+    width: 100%;
+}
+
+#nav {
+    display: none;
+    transition: opacity 0.3s ease;
+}
+
+#nav.visible {
+    display: block;
+    opacity: 1;
+}
+
+
+
+.logo-bar-mov{
+    max-width: 7rem;
+}
+
+.logos-nav-res{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 2em 0 2em;
+}
+
+.nav.visible{
+    opacity: 1;
+    visibility: visible;
+}
+
+.nav-list{
+    width: 100%;
+}
+
+.nav ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav li{
+    padding: 1em 2em;
+}
+
+.nav-list .li-1{
+    background-color: rgba(236, 236, 236, 0.527);
+}
+
+.nav li a{
+    text-decoration: none;
+    color: var(--color-principal);
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.abrir-menu, .cerrar-menu{
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.abrir-menu img, .cerrar-menu img{
+    width: 2.5em;
+}
+
+.grid-principal{
+    margin: var(--padding-principal-mobile);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 12em);
+    gap: 1em;
+}
+
+.p-grid{
+    border-radius: 10px;
+    box-sizing: var(--shadow-sencillo);
+}
+
+.capa-grid{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(51, 51, 51, 0.411);
+    z-index: 500;
+}
+
+.g-1{
+    position: relative;
+    background: url(../img/fondooooooooooooooooooooooooooo.webp) no-repeat center/cover;
+}
+
+.g-1 h2{
+    font-size: var(--titulo-principal-mobile);
+    color: white;
+    position: relative;
+    z-index: 700;
+    top: 50%;
+    transform: translatY(-50%);
+    text-align: ;
+}
+
+.g-2{
+    position: relative;
+    background: url(../img/fresnillo.webp) no-repeat center/cover;
+}
+
+.g-3{
+    position: relative;
+    background: url(../img/asessssss.webp) no-repeat center/cover;
+}
+
+.g-4{
+    position: relative;
+}
+
+.g-4 iframe{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.g-5{
+    position: relative;
+    background: url(../img/Persona-cultivando.webp) no-repeat center/cover;
+}
+
+
+@media screen and (min-width:750px) { 
+
+    .logo-whats {
+        max-width: 4em;
+        margin: 2em;
+    }
+
+    .header.sticky{
+        background-color: white;
+        position: fixed;
+        width: 100%;
+        color: var(--color-principal);
+        padding: 0 0;
+        gap: 0;
+        justify-content: space-between;
+    }
+
+    .header.sticky .logo{
+        display: none;
+    }
+
+    .header.sticky .logo-2{
+        display: block;
+        max-width: 8em;
+        margin-left: 4em;
+    }
+
+    .header.sticky #nav{
+        width: auto;
+    }
+
+
+    .header.sticky .nav-list li a{
+        color: var(--color-principal);
+        font-size: 1.2em;
+    }
+
+    .header.sticky .nav ul{
+        padding: 1em;
+        justify-content: end;
+    }
+
+    .header{
+        transition: .4s ease-in-out all;
+    }
+
+}
+
+@media screen and (min-width:990px) {
+
+    .header{
+            padding: 1em 2em;
+            justify-content: space-evenly;
+            gap: 4em;
+        }
+    
+        .header-center p{
+            padding: 0em 5em;
+        }
+        
+        .abrir-menu, .cerrar-menu, .logo-bar-mov, .logos-nav-res{
+            display: none;
+        }
+    
+        #nav{
+            display: flex; /* Mostrar siempre en desktop */
+            opacity: 1; /* Mantener visible */
+            visibility: visible; /* Mantener visible */
+            position: static; /* Cambiar posición para que no sea absoluta */
+            height: auto; /* Ajustar altura */
+            background-color: rgba(255, 255, 255, 0);
+            box-shadow: none;
+            flex-direction: row;
+        }
+    
+        .nav ul {
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+    
+        .nav li {
+            padding: 0 1em; /* Espaciado en horizontal */
+            background-color: rgba(245, 222, 179, 0);
+        }
+    
+        .nav-list li a {
+            font-size: 1.4em;
+            color: white;
+        }
+    
+        .nav-list .li-1 {
+            background-color: rgba(236, 236, 236, 0);
+        }
+    
+    }
