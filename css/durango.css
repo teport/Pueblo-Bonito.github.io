@@ -60,7 +60,7 @@
 }
 
 header {
-    background: url(../img/fresnillo.webp) no-repeat center/cover;
+    background: url(../img/dur.webp) no-repeat center/cover;
     position: relative;
     min-height: 100vh;
     width: 100%;
@@ -236,12 +236,12 @@ header {
 
 .g-2 {
     position: relative;
-    background: url(../img/fresnillo.webp) no-repeat center/cover;
+    background: url(../img/dur.webp) no-repeat center/cover;
 }
 
 .g-3 {
     position: relative;
-    background: url(../img/asesorai.webp) no-repeat center/cover;
+    background: url(../img/mostrador.webp) no-repeat center/cover;
 }
 
 .p-grid-txt {
