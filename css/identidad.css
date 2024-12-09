@@ -255,7 +255,23 @@ header {
         font-size: var(--tablet-p);
     }
 
+    .grid-principal{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
 
+    .grid-1:first-child{
+        grid-column: 1/3;
+    }
+
+    .grid-4:nth-child(4){
+        grid-column: 1/3;
+    }
+
+
+    .grid-p p{
+        font-size: var(--tablet-p);
+    }
 }
 
 @media screen and (min-width:990px) {
@@ -372,8 +388,6 @@ header {
     .grid-principal{
         display: grid;
         grid-template-columns: repeat(2,50%);
-        max-width: 1250px;
-        margin: 5em auto;
         gap: .5em;
         box-shadow: var(--shadow-sencillo);
     }
@@ -453,5 +467,16 @@ header {
         background-color: white;
         position: absolute;
         left: 50%;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .grid-principal {
+        max-width: 1250px;
+        margin: 5em auto;
+    }
+
+    .grid-p p{
+        font-size: 1em;
     }
 }
