@@ -195,6 +195,40 @@ header {
     width: 2.5em;
 }
 
+.grid-principal{
+    margin: var(--margen-principal);
+    display: grid;
+    gap: 1em;
+}
+
+.grid-p{
+    border-radius: 10px;
+    padding: 1em;
+    border: .2em solid var(--color-principal);
+}
+
+.grid-p h2{
+    background-color: var(--color-principal);
+    color: white;
+    display: inline;
+    padding: .2em;
+    border-radius: 10px;
+    font-size: var(--titulo-principal-mobile);
+}
+
+.grid-p p{
+    margin: .5em 0;
+    font-size: var(--movile-p);
+}
+
+.grid-p h3{
+    margin: .5em 0 0;
+    color: var(--color-principal);
+}
+
+.grid-p ul{
+    list-style: none;
+}
 
 @media screen and (min-width:750px) {
 
@@ -349,7 +383,6 @@ header {
         border: .2em solid var(--color-principal);
         padding: 1em;
         border-radius: 10px;
-        
     }
 
     .grid-p h2{
