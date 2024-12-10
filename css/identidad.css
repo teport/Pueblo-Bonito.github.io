@@ -175,6 +175,13 @@ header {
     flex-direction: column;
 }
 
+.nav-list a{
+    text-decoration: none;
+    color: var(--color-principal);
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
 .nav li {
     padding: 1em 2em;
 }
@@ -183,12 +190,7 @@ header {
     background-color: rgba(236, 236, 236, 0.527);
 }
 
-.nav li a {
-    text-decoration: none;
-    color: var(--color-principal);
-    font-size: 1.4rem;
-    font-weight: 700;
-}
+
 
 .abrir-menu,
 .cerrar-menu {
@@ -520,7 +522,7 @@ header {
     }
 
 
-    .header.sticky .nav-list li a {
+    .header.sticky .nav-list a {
         color: var(--color-principal);
         font-size: 1.2em;
     }
@@ -576,7 +578,7 @@ header {
         background-color: rgba(245, 222, 179, 0);
     }
 
-    .nav-list li a {
+    .nav-list a {
         font-size: 1.4em;
         color: white;
     }

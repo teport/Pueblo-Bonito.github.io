@@ -1,31 +1,31 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-:root{
-    --titulo-importante-mobile:2.5em;
+:root {
+    --titulo-importante-mobile: 2.5em;
     --titulo-principal-mobile: 1.5em;
     --titulo-secundario-mobile: 1.2em;
     --padding-principal-mobile: 2em 1.5em;
-    --movile-p:.9em;
+    --movile-p: .9em;
 
-    --titulo-importante-tablet:3.2em;
+    --titulo-importante-tablet: 3.2em;
     --titulo-principal-tablet: 2.5em;
     --titulo-secundario-tablet: 2em;
-    --tablet-p:1.2em;
+    --tablet-p: 1.2em;
     --margen-principal: 1.5em;
 
 
 
-    --color-principal:rgb(0,0,128);
+    --color-principal: rgb(0, 0, 128);
     --shadow-fondo: 0 0 0 100vmax rgba(0, 0, 0, .5);
-    --shadow-sencillo:rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    --shadow-sencillo: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-.logo-whats{
+.logo-whats {
     max-width: 3.5em;
     position: fixed;
     z-index: 999;
@@ -39,25 +39,27 @@
 }
 
 @keyframes pulse {
-    0%{
+    0% {
         scale: 1;
     }
 
-    50%{
-        scale:.9;
+    50% {
+        scale: .9;
     }
 
-    100%{
+    100% {
         scale: 1;
     }
 }
 
 .no-scroll {
-    overflow: hidden; /* Desactiva el scroll */
-    height: 100%; /* Asegura que no haya espacio para desplazarse */
+    overflow: hidden;
+    /* Desactiva el scroll */
+    height: 100%;
+    /* Asegura que no haya espacio para desplazarse */
 }
 
-.header{
+.header {
     position: relative;
     z-index: 998;
     display: flex;
@@ -66,19 +68,19 @@
     justify-content: space-between;
 }
 
-.header .logo{
+.header .logo {
     max-width: 10rem;
 }
 
-.header .logo-2{
+.header .logo-2 {
     display: none;
 }
 
-.btn-abrir{
+.btn-abrir {
     border: none;
 }
 
-.nav{
+.nav {
     opacity: 0;
     visibility: hidden;
     display: flex;
@@ -108,57 +110,59 @@
 
 
 
-.logo-bar-mov{
+.logo-bar-mov {
     max-width: 7rem;
 }
 
-.logos-nav-res{
+.logos-nav-res {
     width: 100%;
     display: flex;
     justify-content: space-between;
     padding: 2em 2em 0 2em;
 }
 
-.nav.visible{
+.nav.visible {
     opacity: 1;
     visibility: visible;
 }
 
-.nav-list{
+.nav-list {
     width: 100%;
 }
 
-.nav ul{
+.nav ul {
     list-style-type: none;
     display: flex;
     flex-direction: column;
 }
 
-.nav li{
+.nav li {
     padding: 1em 2em;
 }
 
-.nav-list .li-1{
+.nav-list .li-1 {
     background-color: rgba(236, 236, 236, 0.527);
 }
 
-.nav li a{
+.nav-list a {
     text-decoration: none;
     color: var(--color-principal);
     font-size: 1.4rem;
     font-weight: 700;
 }
 
-.abrir-menu, .cerrar-menu{
+.abrir-menu,
+.cerrar-menu {
     border: none;
     background-color: rgba(255, 255, 255, 0);
 }
 
-.abrir-menu img, .cerrar-menu img{
+.abrir-menu img,
+.cerrar-menu img {
     width: 2.5em;
 }
 
-.rol{
+.rol {
     height: 200vh;
 }
 
@@ -213,7 +217,7 @@ body {
     transition: 0.4s ease-in-out all;
 }
 
-.principal-txt button:hover{
+.principal-txt button:hover {
     color: white;
     background-color: var(--color-principal);
 }
@@ -255,14 +259,14 @@ body {
 }
 
 
-@media screen and (min-width:750px) { 
+@media screen and (min-width:750px) {
 
     .logo-whats {
         max-width: 4em;
         margin: 2em;
     }
 
-    .header.sticky{
+    .header.sticky {
         background-color: white;
         position: fixed;
         width: 100%;
@@ -272,32 +276,32 @@ body {
         justify-content: space-between;
     }
 
-    .header.sticky .logo{
+    .header.sticky .logo {
         display: none;
     }
 
-    .header.sticky .logo-2{
+    .header.sticky .logo-2 {
         display: block;
         max-width: 8em;
         margin-left: 4em;
     }
 
-    .header.sticky #nav{
+    .header.sticky #nav {
         width: auto;
     }
 
 
-    .header.sticky .nav-list li a{
+    .header.sticky .nav-list li a {
         color: var(--color-principal);
         font-size: 1.2em;
     }
 
-    .header.sticky .nav ul{
+    .header.sticky .nav ul {
         padding: 1em;
         justify-content: end;
     }
 
-    .header{
+    .header {
         transition: .4s ease-in-out all;
     }
 
@@ -323,83 +327,95 @@ body {
 
 @media screen and (min-width:990px) {
 
-    .header{
-            padding: 1em 2em;
-            justify-content: space-evenly;
-            gap: 4em;
-        }
-    
-        .header-center p{
-            padding: 0em 5em;
-        }
-        
-        .abrir-menu, .cerrar-menu, .logo-bar-mov, .logos-nav-res{
-            display: none;
-        }
-    
-        #nav{
-            display: flex; /* Mostrar siempre en desktop */
-            opacity: 1; /* Mantener visible */
-            visibility: visible; /* Mantener visible */
-            position: static; /* Cambiar posición para que no sea absoluta */
-            height: auto; /* Ajustar altura */
-            background-color: rgba(255, 255, 255, 0);
-            box-shadow: none;
-            flex-direction: row;
-        }
-    
-        .nav ul {
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-evenly;
-        }
-    
-        .nav li {
-            padding: 0 1em; /* Espaciado en horizontal */
-            background-color: rgba(245, 222, 179, 0);
-        }
-    
-        .nav-list li a {
-            font-size: 1.4em;
-            color: white;
-        }
-    
-        .nav-list .li-1 {
-            background-color: rgba(236, 236, 236, 0);
-        }
-
-        .div-principal {
-            display: grid;
-            grid-template-columns: 60% 40%;
-            gap: 1em;
-            align-items: center;
-            max-width: 1250px;
-            margin: 0 auto;
-            height: auto;
-            padding: 2em;
-        }
-    
-        .principal-txt {
-            height: auto;
-            max-height: none;
-            backdrop-filter: blur(5px);
-            background-color: rgba(71, 71, 71, 0.342);
-            padding: 2em;
-            text-align: left;
-        }
-    
-        /* Cambiar la grilla a 1 columna y 3 filas para pantallas grandes */
-        .principal-grid {
-            display: grid;
-            grid-template-columns: 12em; /* 1 columna */
-            grid-template-rows: repeat(3, 10em); /* 3 filas */
-            gap: 2em;
-            height: auto;
-            justify-content: center;
-        }
-    
-        .grid-4 {
-            display: none; /* Hacer que la imagen 4 se muestre en pantallas grandes */
-        }
-    
+    .header {
+        padding: 1em 2em;
+        justify-content: space-evenly;
+        gap: 4em;
     }
+
+    .header-center p {
+        padding: 0em 5em;
+    }
+
+    .abrir-menu,
+    .cerrar-menu,
+    .logo-bar-mov,
+    .logos-nav-res {
+        display: none;
+    }
+
+    #nav {
+        display: flex;
+        /* Mostrar siempre en desktop */
+        opacity: 1;
+        /* Mantener visible */
+        visibility: visible;
+        /* Mantener visible */
+        position: static;
+        /* Cambiar posición para que no sea absoluta */
+        height: auto;
+        /* Ajustar altura */
+        background-color: rgba(255, 255, 255, 0);
+        box-shadow: none;
+        flex-direction: row;
+    }
+
+    .nav ul {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .nav li {
+        padding: 0 1em;
+        /* Espaciado en horizontal */
+        background-color: rgba(245, 222, 179, 0);
+    }
+
+    .nav-list a {
+        font-size: 1.4em;
+        color: white;
+    }
+
+    .nav-list .li-1 {
+        background-color: rgba(236, 236, 236, 0);
+    }
+
+    .div-principal {
+        display: grid;
+        grid-template-columns: 60% 40%;
+        gap: 1em;
+        align-items: center;
+        max-width: 1250px;
+        margin: 0 auto;
+        height: auto;
+        padding: 2em;
+    }
+
+    .principal-txt {
+        height: auto;
+        max-height: none;
+        backdrop-filter: blur(5px);
+        background-color: rgba(71, 71, 71, 0.342);
+        padding: 2em;
+        text-align: left;
+    }
+
+    /* Cambiar la grilla a 1 columna y 3 filas para pantallas grandes */
+    .principal-grid {
+        display: grid;
+        grid-template-columns: 12em;
+        /* 1 columna */
+        grid-template-rows: repeat(3, 10em);
+        /* 3 filas */
+        gap: 2em;
+        height: auto;
+        justify-content: center;
+    }
+
+    .grid-4 {
+        display: none;
+        /* Hacer que la imagen 4 se muestre en pantallas grandes */
+    }
+
+}

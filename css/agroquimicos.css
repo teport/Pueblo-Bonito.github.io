@@ -142,7 +142,7 @@
     background-color: rgba(236, 236, 236, 0.527);
 }
 
-.nav li a{
+.nav-list a{
     text-decoration: none;
     color: var(--color-principal);
     font-size: 1.4rem;

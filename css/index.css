@@ -174,12 +174,13 @@ video{
     background-color: rgba(236, 236, 236, 0.527);
 }
 
-.nav li a{
+.nav-list a{
     text-decoration: none;
     color: var(--color-principal);
     font-size: 1.4rem;
     font-weight: 700;
 }
+
 
 .abrir-menu, .cerrar-menu{
     border: none;
@@ -689,7 +690,7 @@ footer{
     }
 
 
-    .header.sticky .nav-list li a{
+    .header.sticky .nav-list a{
         color: var(--color-principal);
         font-size: 1.2em;
     }
@@ -755,8 +756,7 @@ footer{
         padding: 0 1em; 
         background-color: rgba(245, 222, 179, 0);
     }
-
-    .nav-list li a {
+    .nav-list a {
         font-size: 1.4em;
         color: white;
     }
