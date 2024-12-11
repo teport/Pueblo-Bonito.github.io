@@ -547,9 +547,6 @@ footer{
         font-size: 1em;
     }
 
-    .nav-list li a{
-        font-size: var(--titulo-principal-tablet);
-    }
 
 
     .trio-img-ini{
