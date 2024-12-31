@@ -851,6 +851,7 @@ footer{
         transition: .4s ease-in-out;
     }
 
+
     .serv-grid:hover{
         scale: 1.01;
     }
