@@ -307,70 +307,7 @@ video{
 }
 
 
-/*Somos la mejor opcion*/
 
-.opcion{
-    background: url(../img/fondo-nuevo-azul.webp) no-repeat center/cover;
-}
-
-.opcion-info{
-    padding: var(--padding-principal-mobile);
-    gap: .5em;
-}
-
-
-.opcion-info-tit{
-    background-color: rgba(241, 241, 241, 0.39);
-    backdrop-filter: blur(5px);
-    padding: 1em;
-    border-radius: 10px;
-}
-
-
-.opcion-info-tit h1{
-    padding-bottom: .5em;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    font-size: var(--titulo-principal-mobile);
-}
-
-.opcion-info-tit p{
-    font-size: .8em;
-    text-align: center;
-    color: white;
-}
-
-.opc-info-div{
-    background-color: rgb(255, 255, 255);
-    margin: 1em 0;
-    border-radius: 10px;
-    padding: .6em ;
-    display: grid;
-    grid-template-columns: repeat(2,50%);
-}
-
-.opc-info-div-txt h2{
-    font-size: var(--titulo-principal-mobile);
-    padding: .8em 0 0;
-    color: var(--color-principal);
-    font-weight: 700;
-    position: relative;
-    z-index: 990;
-}
-
-.opc-info-div-txt p{
-    line-height: 1.5;
-    padding: 1em 0;
-}
-
-.opc-info-div-img img{
-    width: 100%;
-    border-radius: 10px;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
 
 /*Servicios*/
 
@@ -592,33 +529,7 @@ footer{
     .ident-grid:first-child{
         grid-column: 1/3;
     }
-    .opcion-info-div{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        gap: 1em;
-        padding: 3em 0em;
-    }
-    
-    .opcion{
-        background-attachment: fixed;
-    }
 
-    .opcion h1{
-        font-size: var(--titulo-principal-tablet);
-    }
-
-    .opcion p{
-        font-size: var(--tablet-p);
-    }
-
-    .opc-info-div-txt p{
-        line-height: 1.4;
-        padding-top: .7em;
-    }
-
-    .opcion h2{
-        font-size: var(--titulo-secundario-tablet);
-    }
 
     .servicios{
         padding: 4.5em 1.5em;
@@ -885,22 +796,6 @@ footer{
     .identidad-grid{
         max-width: 1250px;
         margin: 0 auto;
-    }
-
-    .opcion-info-tit{
-        max-width: 1250px;
-        margin: 0 auto;
-    }
-
-
-    .opcion-info-div{
-        max-width: 1250px;
-        margin: 0 auto;
-    }
-
-    .opc-info-div-txt p{
-        line-height: 1.8;
-        padding-top: .7em;
     }
 
     .servicios{
