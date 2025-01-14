@@ -224,7 +224,7 @@ body {
 
 @media screen and (min-width: 400px) {
     .principal-grid {
-        display: grid;
+        display: none;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
         gap: 1em;
@@ -315,6 +315,7 @@ body {
     }
 
     .principal-grid {
+        display: none;
         gap: 1em 2em;
         height: auto;
         position: relative;
