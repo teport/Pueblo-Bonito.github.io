@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pueblo Bonito</title>
+    <link rel="stylesheet" href="../css/dron.css">
+    <link rel="icon" href="../img/favicon-redondo.webp">
+</head>
+
+<body>
+    <a href="https://wa.me/+5214931030981"><img class="logo-whats" src="../img/logo-nuevo-wh.webp"
+            alt="Logo de whatsapp"></a>
+    <header>
+        <video src="../img/DRON ANIMACION.mp4" playsinline autoplay muted loop></video>
+        <div class="capa"></div>
+        <div class="header">
+            <img class="logo" src="../img/icono-nuevo.webp" alt="Icono de pueblo bonito">
+            <a href="../index.html"><img class="logo logo-2" src="../img/favicon-azul.webp"
+                    alt="icono de pueblo bonito en color azul"></a>
+            <button id="abrir" class="abrir-menu"><img src="../img/iconizer-align-right.svg"
+                    alt="Icono de menu"></button>
+            <nav class="nav" id="nav">
+                <div class="logos-nav-res">
+                    <img class="logo-bar-mov" src="../img/favicon-azul.webp" alt="">
+                    <button id="cerrar" class="cerrar-menu"><img src="img/x.svg" alt=""></button>
+                </div>
+                <ul class="nav-list">
+                    <li class="li-1"><a href="../index.html">Inicio</a></li>
+                    <li class="li-2"><a href="..#servicios" id="cerrar">Servicios</a></li>
+                    <li class="li-1"><a href="..#presencia">Presencia</a></li>
+                    <li class="li-2"><a href="#">Bolsa de Trabajo</a></li>
+                    <li class="li-1"><a href="#">Nosotros</a></li>
+                </ul>
+            </nav>
+        </div>
+        <section class="txt-header">
+            <h1>Aplicación Con Dron</h1>
+            <p>Optimiza tus cultivos con tecnología de drones. Logra una distribución precisa, incluso en terrenos difíciles, ahorrando recursos y maximizando la eficiencia. Innovación al servicio de tu producción.
+                ¡Revoluciona tu riego hoy!</p>
+            <a href="https://wa.me/+5214931030981"><button>Cotizar</button></a>
+        </section>
+        
+    </header>
+
+    <script src="../js/main.js"></script>
+    <script type="text/javascript">
+        window.addEventListener("scroll", function () {
+            var header = document.querySelector(".header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>
+</body>
+
+</html>
