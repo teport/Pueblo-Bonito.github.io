@@ -67,7 +67,7 @@ html{
 header {
     background: url(../img/fresnillo.webp) no-repeat center/cover;
     position: relative;
-    min-height: 100vh;
+    min-height: 70vh;
     width: 100%;
 }
 
@@ -470,6 +470,11 @@ header {
 
     .txt-header p {
         font-size: var(--tablet-p);
+        max-width: 80%;
+        left: 50%;
+        position: relative;
+        transform: translateX(-50%);
+        line-height: 1.5;
     }
 
     .grid-principal {

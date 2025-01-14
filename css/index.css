@@ -306,7 +306,13 @@ video{
     background: url(../img/cultivos-verdes.webp) no-repeat center/cover;
 }
 
-
+/*Seccion de Anajalsa*/
+.sec-anajalsa{
+    width: 100%;
+    min-height: 90vh;
+    background: url(../img/anajalsa.webp) no-repeat center/cover;
+    
+}
 
 
 /*Servicios*/
