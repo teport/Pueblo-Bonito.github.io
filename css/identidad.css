@@ -249,7 +249,7 @@ header {
     display: flex;
     background: rgba(255, 255, 255, 0.329);
     backdrop-filter: blur(10px);
-    gap: 1em;
+    gap: 3em;
     justify-content: space-evenly;
     list-style: none;
     padding: 1em;
@@ -266,9 +266,7 @@ header {
 }
 
 .linea-tiempo h3:hover{
-    background-color: white;
     border-radius: 10px;
-    padding: 0 .5em;
     font-size: 1.3em;
     color: var(--color-principal);
 }
@@ -474,7 +472,7 @@ header {
         left: 50%;
         position: relative;
         transform: translateX(-50%);
-        line-height: 1.5;
+        line-height: 1.5; 
     }
 
     .grid-principal {
@@ -537,6 +535,13 @@ header {
         justify-content: end;
     }
 
+    .linea-tiempo h3:hover{
+        border-radius: 10px;
+        font-size: 1.3em;
+        color: var(--color-principal);
+        background-color: white;
+        padding: .1em;
+    }
 
     .header {
         padding: 1em 2em;
