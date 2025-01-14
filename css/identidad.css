@@ -252,7 +252,7 @@ header {
     gap: 3em;
     justify-content: space-evenly;
     list-style: none;
-    padding: 1em;
+    padding: 1em 2em;
 }
 
 .li-linea a {
