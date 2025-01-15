@@ -52,10 +52,20 @@
     }
 }
 
+.no-scroll {
+    overflow: hidden; /* Desactiva el scroll */
+    height: 100%; /* Asegura que no haya espacio para desplazarse */
+}
+
+header{
+    position: relative;
+    min-height: 30em;
+}
+
 video{
     position: absolute;
     width: 100%;
-    height: 70%;
+    height: 100%;
     object-fit: cover;
     top: 0;
     left: 0;
@@ -65,16 +75,43 @@ video{
 .capa{
     position: absolute;
     width: 100%;
-    height: 70%;
+    height: 100%;
     top: 0;
     left: 0;
-    background-color: rgba(1, 22, 112, 0.151);
+    background-color: rgba(26, 26, 110, 0.445);
     z-index: 500;
 }
 
-.no-scroll {
-    overflow: hidden; /* Desactiva el scroll */
-    height: 100%; /* Asegura que no haya espacio para desplazarse */
+.txt-header {
+    text-align: center;
+    color: white;
+    position: absolute;
+    z-index: 600;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: var(--padding-principal-mobile);
+}
+
+.txt-header h1 {
+    font-size: var(--titulo-importante-mobile);
+    padding: .2em;
+}
+
+.txt-header p {
+    font-size: var(--movile-p);
+    padding: 1em;
+    line-height: 1.5;
+}
+
+.btn-dron{
+    position: relative;
+    bottom: 0;
+    padding: 1em 2em;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--color-principal);
+    color: white;
+    font-size: .8em;
 }
 
 .header{
@@ -178,28 +215,10 @@ video{
     width: 2.5em;
 }
 
-.txt-header {
-    text-align: center;
-    color: white;
-    position: absolute;
-    z-index: 600;
-    top: 40%;
-    transform: translateY(-50%);
-    margin: var(--padding-principal-mobile);
-}
 
-.txt-header h1 {
-    font-size: var(--titulo-importante-mobile);
-    padding: .2em;
-}
 
-.txt-header button{
-    margin: 2em 0;
-    padding:1.5em 3em;
-    border: none;
-    background-color: var(--color-principal);
-    color: white;
-    border-radius:10px;
+.rol{
+    height: 200vh;
 }
 
 
@@ -249,7 +268,6 @@ video{
         transition: .4s ease-in-out all;
     }
 
-    
     .txt-header h1 {
         font-size: var(--titulo-importante-tablet);
     }
@@ -260,9 +278,8 @@ video{
         left: 50%;
         position: relative;
         transform: translateX(-50%);
-        line-height: 1.5;
+        line-height: 1.5; 
     }
-
 }
 
 @media screen and (min-width:990px) {
@@ -311,9 +328,9 @@ video{
         .nav-list .li-1 {
             background-color: rgba(236, 236, 236, 0);
         }
-    
+
         .txt-header {
-            top: 40%;
+            top: 60%;
         }
     
         .txt-header h1 {
@@ -327,12 +344,65 @@ video{
             transform: translateX(-50%);
         }
 
-        .txt-header button{
+        .txt-header .btn-dron{
+            font-size: 1em;
+            position: relative;
+            top: 20px;
             transition: .4s ease-in-out all;
         }
 
-        .txt-header button:hover{
-            background-color: rgb(255, 255, 255);
+        .txt-header .btn-dron:hover{
+            background-color: white;
             color: var(--color-principal);
+            border: .1em solid var(--color-principal);
         }
+
+        .dron-principal{
+            position: relative;
+            margin: 6em 0 0;
+            flex-direction: column;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .dron-principal .img-dron{
+            max-width: 50%;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .dron-info ul{
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            list-style: none;
+            margin: 2em 0;
+            text-align: center;
+        }
+        
+        .dron-info ul li{
+            max-width: 20em;
+            position: relative;
+            margin: 0 1em;
+        }
+
+        .dron-info ul li img{
+            max-width: 15em;
+        }
+
+        .dron-info ul li h2{
+            font-size: 1.5em;
+            color: var(--color-principal);
+            margin-bottom: .8em;
+        }
+
+        .dron-info ul li p{
+            font-size: .9em;
+            max-width: 70%;
+            position: relative;
+            margin: 0 auto;
+        }
+            position: relative;
     }
