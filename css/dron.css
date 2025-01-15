@@ -215,13 +215,46 @@ video{
     width: 2.5em;
 }
 
-
-
-.rol{
-    height: 200vh;
+.dron-principal{
+    margin: 4em 1.5em;
 }
 
+.dron-info{
+    position: relative;
+}
 
+.dron-info ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 2em 0;
+    text-align: center;
+    gap: 2em;
+}
+
+.dron-info ul img{
+    max-width: 50%;
+}
+
+.img-dron{
+    max-width: 100%;
+}
+
+.dron-info ul li{
+    max-width: 100%;
+}
+
+.dron-info ul li h2{
+    font-size: var(--titulo-principal-mobile);
+    color: var(--color-principal);
+    margin-bottom: .2em;
+}
+
+.dron-info ul li p{
+    font-size: var(--movile-p);
+    max-width: 80%;
+    margin: 0 auto;
+}
 @media screen and (min-width:750px) { 
 
     .logo-whats {
@@ -404,5 +437,5 @@ video{
             position: relative;
             margin: 0 auto;
         }
-            position: relative;
+        
     }
