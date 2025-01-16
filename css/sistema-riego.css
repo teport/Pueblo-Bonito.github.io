@@ -216,6 +216,54 @@ video {
     line-height: 1.5;
 }
 
+.grid-principal{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 10em) repeat(2, 13em);
+    gap: 1em;
+    padding: 1em;
+    margin: 2em auto;
+    max-width: 600px;
+}
+
+.grid{
+    border-radius: 10px;
+    position: relative;
+}
+
+.capa-grid{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.329);
+    z-index: 100;
+    border-radius: 10px;
+}
+
+.grid h2{
+    position: absolute;
+    z-index: 200;
+    color: white;;
+    bottom: .5em;
+    padding: .5em;
+}
+
+.g-1{
+    background: url(../img/Instalacion.webp) no-repeat center/cover;
+}
+
+.g-2{
+    background: url(../img/Reparacion.webp) no-repeat center/cover;
+}
+
+.g-3{
+    background: url(../img/proyectos.webp) no-repeat center/cover;
+}
+
+.g-4{
+    background: url(../img/asesoramiento.webp) no-repeat center/cover;
+}
+
 
 @media screen and (min-width:750px) { 
 
@@ -278,6 +326,14 @@ video {
         position: relative;
         transform: translateX(-50%);
         line-height: 1.5;
+    }
+
+    .grid-principal{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 15em);
+        gap: 1em;
+        padding: 1em;
+        max-width: 990px;
     }
 }
 
