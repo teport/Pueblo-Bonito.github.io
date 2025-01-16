@@ -1,31 +1,31 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-:root{
-    --titulo-importante-mobile:2.5em;
+:root {
+    --titulo-importante-mobile: 2.5em;
     --titulo-principal-mobile: 1.5em;
     --titulo-secundario-mobile: 1.2em;
     --padding-principal-mobile: 2em 1.5em;
-    --movile-p:.9em;
+    --movile-p: .9em;
 
-    --titulo-importante-tablet:3.2em;
+    --titulo-importante-tablet: 3.2em;
     --titulo-principal-tablet: 2.5em;
     --titulo-secundario-tablet: 2em;
-    --tablet-p:1.2em;
+    --tablet-p: 1.2em;
     --margen-principal: 1.5em;
 
 
 
-    --color-principal:rgb(0,0,128);
+    --color-principal: rgb(0, 0, 128);
     --shadow-fondo: 0 0 0 100vmax rgba(0, 0, 0, .5);
-    --shadow-sencillo:rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    --shadow-sencillo: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-.logo-whats{
+.logo-whats {
     max-width: 3.5em;
     position: fixed;
     z-index: 999;
@@ -39,30 +39,32 @@
 }
 
 @keyframes pulse {
-    0%{
+    0% {
         scale: 1;
     }
 
-    50%{
-        scale:.9;
+    50% {
+        scale: .9;
     }
 
-    100%{
+    100% {
         scale: 1;
     }
 }
 
 .no-scroll {
-    overflow: hidden; /* Desactiva el scroll */
-    height: 100%; /* Asegura que no haya espacio para desplazarse */
+    overflow: hidden;
+    /* Desactiva el scroll */
+    height: 100%;
+    /* Asegura que no haya espacio para desplazarse */
 }
 
-header{
+header {
     position: relative;
     min-height: 30em;
 }
 
-video{
+video {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -72,7 +74,7 @@ video{
     z-index: 20;
 }
 
-.capa{
+.capa {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -103,7 +105,7 @@ video{
     line-height: 1.5;
 }
 
-.btn-dron{
+.btn-dron {
     position: relative;
     bottom: 0;
     padding: 1em 2em;
@@ -114,7 +116,7 @@ video{
     font-size: .8em;
 }
 
-.header{
+.header {
     position: relative;
     z-index: 998;
     display: flex;
@@ -123,19 +125,19 @@ video{
     justify-content: space-between;
 }
 
-.header .logo{
+.header .logo {
     max-width: 10rem;
 }
 
-.header .logo-2{
+.header .logo-2 {
     display: none;
 }
 
-.btn-abrir{
+.btn-abrir {
     border: none;
 }
 
-.nav{
+.nav {
     opacity: 0;
     visibility: hidden;
     display: flex;
@@ -165,104 +167,101 @@ video{
 
 
 
-.logo-bar-mov{
+.logo-bar-mov {
     max-width: 7rem;
 }
 
-.logos-nav-res{
+.logos-nav-res {
     width: 100%;
     display: flex;
     justify-content: space-between;
     padding: 2em 2em 0 2em;
 }
 
-.nav.visible{
+.nav.visible {
     opacity: 1;
     visibility: visible;
 }
 
-.nav-list{
+.nav-list {
     width: 100%;
 }
 
-.nav ul{
+.nav ul {
     list-style-type: none;
     display: flex;
     flex-direction: column;
 }
 
-.nav li{
+.nav li {
     padding: 1em 2em;
 }
 
-.nav-list .li-1{
+.nav-list .li-1 {
     background-color: rgba(236, 236, 236, 0.527);
 }
 
-.nav li a{
+.nav li a {
     text-decoration: none;
     color: var(--color-principal);
     font-size: 1.4rem;
     font-weight: 700;
 }
 
-.abrir-menu, .cerrar-menu{
+.abrir-menu,
+.cerrar-menu {
     border: none;
     background-color: rgba(255, 255, 255, 0);
 }
 
-.abrir-menu img, .cerrar-menu img{
+.abrir-menu img,
+.cerrar-menu img {
     width: 2.5em;
 }
 
-.dron-principal{
+.dron-principal {
     margin: 4em 1.5em;
 }
 
-.dron-info{
-    position: relative;
+.dron-principal .img-dron {
+    max-width: 100%;
 }
 
-.dron-info ul{
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    margin: 2em 0;
-    text-align: center;
-    gap: 2em;
-}
-
-.dron-info ul img{
+.dron-info img {
     max-width: 50%;
 }
 
-.img-dron{
-    max-width: 100%;
+.dron-info ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+    text-align: center;
+    grid-row: 1;
+    list-style: none;
+    gap: 1em;
 }
 
-.dron-info ul li{
-    max-width: 100%;
-}
 
-.dron-info ul li h2{
-    font-size: var(--titulo-principal-mobile);
+
+.dron-info ul li h2 {
+    font-size: 1.2em;
     color: var(--color-principal);
-    margin-bottom: .2em;
+    margin-bottom: .4em;
 }
 
-.dron-info ul li p{
-    font-size: var(--movile-p);
-    max-width: 80%;
+.dron-info ul li p {
+    font-size: .9em;
+    max-width: 70%;
     margin: 0 auto;
 }
-@media screen and (min-width:750px) { 
+
+@media screen and (min-width:750px) {
 
     .logo-whats {
         max-width: 4em;
         margin: 2em;
     }
 
-    .header.sticky{
+    .header.sticky {
         background-color: white;
         position: fixed;
         width: 100%;
@@ -272,32 +271,32 @@ video{
         justify-content: space-between;
     }
 
-    .header.sticky .logo{
+    .header.sticky .logo {
         display: none;
     }
 
-    .header.sticky .logo-2{
+    .header.sticky .logo-2 {
         display: block;
         max-width: 8em;
         margin-left: 4em;
     }
 
-    .header.sticky #nav{
+    .header.sticky #nav {
         width: auto;
     }
 
 
-    .header.sticky .nav-list li a{
+    .header.sticky .nav-list li a {
         color: var(--color-principal);
         font-size: 1.2em;
     }
 
-    .header.sticky .nav ul{
+    .header.sticky .nav ul {
         padding: 1em;
         justify-content: end;
     }
 
-    .header{
+    .header {
         transition: .4s ease-in-out all;
     }
 
@@ -311,131 +310,141 @@ video{
         left: 50%;
         position: relative;
         transform: translateX(-50%);
-        line-height: 1.5; 
+        line-height: 1.5;
     }
 }
 
 @media screen and (min-width:990px) {
 
-    .header{
-            padding: 1em 2em;
-            justify-content: space-evenly;
-            gap: 4em;
-        }
-    
-        .header-center p{
-            padding: 0em 5em;
-        }
-        
-        .abrir-menu, .cerrar-menu, .logo-bar-mov, .logos-nav-res{
-            display: none;
-        }
-    
-        #nav{
-            display: flex; /* Mostrar siempre en desktop */
-            opacity: 1; /* Mantener visible */
-            visibility: visible; /* Mantener visible */
-            position: static; /* Cambiar posición para que no sea absoluta */
-            height: auto; /* Ajustar altura */
-            background-color: rgba(255, 255, 255, 0);
-            box-shadow: none;
-            flex-direction: row;
-        }
-    
-        .nav ul {
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-evenly;
-        }
-    
-        .nav li {
-            padding: 0 1em; /* Espaciado en horizontal */
-            background-color: rgba(245, 222, 179, 0);
-        }
-    
-        .nav-list li a {
-            font-size: 1.4em;
-            color: white;
-        }
-    
-        .nav-list .li-1 {
-            background-color: rgba(236, 236, 236, 0);
-        }
-
-        .txt-header {
-            top: 60%;
-        }
-    
-        .txt-header h1 {
-            font-size: 5em;
-        }
-    
-        .txt-header p {
-            max-width: 50%;
-            left: 50%;
-            position: relative;
-            transform: translateX(-50%);
-        }
-
-        .txt-header .btn-dron{
-            font-size: 1em;
-            position: relative;
-            top: 20px;
-            transition: .4s ease-in-out all;
-        }
-
-        .txt-header .btn-dron:hover{
-            background-color: white;
-            color: var(--color-principal);
-            border: .1em solid var(--color-principal);
-        }
-
-        .dron-principal{
-            position: relative;
-            margin: 6em 0 0;
-            flex-direction: column;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-
-        .dron-principal .img-dron{
-            max-width: 50%;
-            position: relative;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-
-        .dron-info ul{
-            position: relative;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
-            list-style: none;
-            margin: 2em 0;
-            text-align: center;
-        }
-        
-        .dron-info ul li{
-            max-width: 20em;
-            position: relative;
-            margin: 0 1em;
-        }
-
-        .dron-info ul li img{
-            max-width: 15em;
-        }
-
-        .dron-info ul li h2{
-            font-size: 1.5em;
-            color: var(--color-principal);
-            margin-bottom: .8em;
-        }
-
-        .dron-info ul li p{
-            font-size: .9em;
-            max-width: 70%;
-            position: relative;
-            margin: 0 auto;
-        }
-        
+    .header {
+        padding: 1em 2em;
+        justify-content: space-evenly;
+        gap: 4em;
     }
+
+    .header-center p {
+        padding: 0em 5em;
+    }
+
+    .abrir-menu,
+    .cerrar-menu,
+    .logo-bar-mov,
+    .logos-nav-res {
+        display: none;
+    }
+
+    #nav {
+        display: flex;
+        /* Mostrar siempre en desktop */
+        opacity: 1;
+        /* Mantener visible */
+        visibility: visible;
+        /* Mantener visible */
+        position: static;
+        /* Cambiar posición para que no sea absoluta */
+        height: auto;
+        /* Ajustar altura */
+        background-color: rgba(255, 255, 255, 0);
+        box-shadow: none;
+        flex-direction: row;
+    }
+
+    .nav ul {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .nav li {
+        padding: 0 1em;
+        /* Espaciado en horizontal */
+        background-color: rgba(245, 222, 179, 0);
+    }
+
+    .nav-list li a {
+        font-size: 1.4em;
+        color: white;
+    }
+
+    .nav-list .li-1 {
+        background-color: rgba(236, 236, 236, 0);
+    }
+
+    .txt-header {
+        top: 60%;
+    }
+
+    .txt-header h1 {
+        font-size: 5em;
+    }
+
+    .txt-header p {
+        max-width: 50%;
+        left: 50%;
+        position: relative;
+        transform: translateX(-50%);
+    }
+
+    .txt-header .btn-dron {
+        font-size: 1em;
+        position: relative;
+        top: 20px;
+        transition: .4s ease-in-out all;
+    }
+
+    .txt-header .btn-dron:hover {
+        background-color: white;
+        color: var(--color-principal);
+        border: .1em solid var(--color-principal);
+    }
+
+    .dron-principal {
+        position: relative;
+        margin: 6em 0 0;
+        flex-direction: column;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .dron-principal .img-dron {
+        max-width: 50%;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .dron-info ul {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        list-style: none;
+        margin: 2em 0;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+
+    .dron-info ul li {
+        max-width: 20em;
+        position: relative;
+        margin: 0 0em;
+    }
+
+    .dron-info ul li img {
+        max-width: 15em;
+    }
+
+    .dron-info ul li h2 {
+        font-size: 1.5em;
+        color: var(--color-principal);
+        margin-bottom: .8em;
+    }
+
+    .dron-info ul li p {
+        font-size: .9em;
+        max-width: 70%;
+        position: relative;
+        margin: 0 auto;
+    }
+
+}
