@@ -419,4 +419,8 @@ body {
         /* Hacer que la imagen 4 se muestre en pantallas grandes */
     }
 
+    .header.sticky .nav-list a {
+        color: var(--color-principal);
+        font-size: 1.2em;
+    }
 }

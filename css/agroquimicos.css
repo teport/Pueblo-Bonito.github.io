@@ -496,5 +496,10 @@ video {
             color: var(--color-principal);
             border: .1em solid var(--color-principal);
         }
+
+        .header.sticky .nav-list a {
+            color: var(--color-principal);
+            font-size: 1.2em;
+        }
     
     }

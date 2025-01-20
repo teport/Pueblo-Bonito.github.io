@@ -471,4 +471,9 @@ header {
     .g-5:hover {
         scale: 1.04;
     }
+
+    .header.sticky .nav-list a {
+        color: var(--color-principal);
+        font-size: 1.2em;
+    }
 }

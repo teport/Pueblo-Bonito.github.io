@@ -427,4 +427,9 @@ video {
             grid-column: 2/3;
             grid-row: 1/3;
         }
+
+        .header.sticky .nav-list a {
+            color: var(--color-principal);
+            font-size: 1.2em;
+        }
     }

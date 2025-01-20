@@ -696,6 +696,11 @@ header {
         position: absolute;
         left: 50%;
     }
+
+    .header.sticky .nav-list a {
+        color: var(--color-principal);
+        font-size: 1.2em;
+    }
 }
 
 @media screen and (min-width:1200px) {
