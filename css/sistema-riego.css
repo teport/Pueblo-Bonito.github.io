@@ -416,6 +416,15 @@ video {
         .grid-principal{
             grid-template-columns: repeat(3, 1fr);
             max-width: 1200px;
+            gap: .5em;
+        }
+
+        .grid{
+            transition: .4s ease-in-out all;
+        }
+
+        .grid:hover{
+            transform: scale(1.01);
         }
 
         .g-3{
