@@ -313,8 +313,29 @@ header {
 .c-grid{
     border-radius: 10px;
     border: .1em solid;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: none;
 }
 
+.c-g-1 {
+    background: url(../img/Promocion-Ajo.webp) no-repeat center/cover;
+}
+
+.c-g-2{
+    background: url(../img/Promocion-maiz.webp) no-repeat center/cover;
+}
+
+.c-g-3{
+    background: url(../img/Promocion-rafia.webp) no-repeat center/cover;
+}
+
+.c-g-4{
+    background: url(../img/CLENPLEX\ PROMO.webp) no-repeat center/cover;
+}
+
+.c-g-5{
+    background: url(../img/nunhems\ cebolla\ 212.webp) no-repeat center/cover;
+}
 
 @media screen and (min-width:750px) {
 
