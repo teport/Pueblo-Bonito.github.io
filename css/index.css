@@ -306,31 +306,7 @@ video{
     background: url(../img/cultivos-verdes.webp) no-repeat center/cover;
 }
 
-/*Seccion de Anajalsa*/
-.sec-anajalsa{
-    width: 100%;
-    min-height: 90vh;
-    background: url(../img/anajalsa.webp) no-repeat center/cover;
-    position: relative;
-}
-
-.sec-anajalsa button{
-    position: absolute;
-    padding: 1em 2em;
-    border-radius: 10px;
-    text-align: center;
-    bottom: 6%;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: white;
-    color: var(--color-principal);
-    background-color: rgba(255, 255, 255, 0.322);
-    backdrop-filter: blur(10px);
-    border: none;
-    font-size: var(--movile-p);
-    font-weight: 700;
-}
-
+/*Lo Destacado*/
 
 /*Servicios*/
 
@@ -459,6 +435,58 @@ footer{
     color: white;
 }
 
+.carrusel-txt{
+    margin: 2.5em 1.5em 0 1.5em;
+}
+
+.carrusel-txt h1{
+    font-size: var(--titulo-principal-mobile);
+    color: var(--color-principal);
+}
+
+.carrusel-grid {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 13rem;
+    grid-template-rows: 18rem;
+    gap: 1.5rem;
+    padding: .8em 1.5em 1rem 1.5em;
+    overflow-x: auto;
+    overscroll-behavior-x: center;
+    scroll-padding: 1em;
+}
+
+.snap-align {
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+.c-grid{
+    border-radius: 10px;
+    border: .1em solid;
+    border: none;
+}
+
+.c-g-1 {
+    background: url(../img/Promocion-Ajo.webp) no-repeat center/cover;
+}
+
+.c-g-2{
+    background: url(../img/Promocion-maiz.webp) no-repeat center/cover;
+}
+
+.c-g-3{
+    background: url(../img/Promocion-rafia.webp) no-repeat center/cover;
+}
+
+.c-g-4{
+    background: url(../img/CLENPLEX\ PROMO.webp) no-repeat center/cover;
+}
+
+.c-g-5{
+    background: url(../img/nunhems\ cebolla\ 212.webp) no-repeat center/cover;
+}
+
 @media screen and (min-width:700px) { 
 
     .logo-whats{
@@ -552,7 +580,33 @@ footer{
     .ident-grid:first-child{
         grid-column: 1/3;
     }
+    .opcion-info-div{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 1em;
+        padding: 3em 0em;
+    }
+    
+    .opcion{
+        background-attachment: fixed;
+    }
 
+    .opcion h1{
+        font-size: var(--titulo-principal-tablet);
+    }
+
+    .opcion p{
+        font-size: var(--tablet-p);
+    }
+
+    .opc-info-div-txt p{
+        line-height: 1.4;
+        padding-top: .7em;
+    }
+
+    .opcion h2{
+        font-size: var(--titulo-secundario-tablet);
+    }
 
     .servicios{
         padding: 4.5em 1.5em;
@@ -594,9 +648,17 @@ footer{
         justify-content: space-around;
     }
 
-    .sec-anajalsa button{
-        font-size: var(--tablet-p);
+    .carrusel-txt h1{
+        font-size: var(--titulo-principal-tablet);
+    }
 
+    .carrusel-txt small{
+        font-size: var(--tablet-p);
+    }
+
+    .carrusel-grid {
+        grid-auto-columns: 15rem;
+        grid-template-rows: 20rem;
     }
 }
 
@@ -756,11 +818,12 @@ footer{
 
     
     .servicios-grid {
-        margin: 2.5em 0;
+        margin: 2.5em auto;
         display: grid;
         grid-template-columns: repeat(2, 1fr) 35%;
         grid-template-rows: repeat(2, 20em);
         gap: 1em;
+        max-width: 1250px;
     }
 
     .servicios{
@@ -790,7 +853,6 @@ footer{
         transition: .4s ease-in-out;
     }
 
-
     .serv-grid:hover{
         scale: 1.01;
     }
@@ -812,16 +874,36 @@ footer{
         margin: 0;
     }
 
-    .sec-anajalsa button{
-        font-size: .9em;
-        transition: .4s ease-in-out all;
-        
+    .carrusel-info{
+        background-color: var(--color-principal);
+    }
+    
+    .carrusel-txt{
+        padding: 2.2em 0em 1em;
+        max-width: 1250px;
+        margin: 0 auto;
     }
 
-    .sec-anajalsa button:hover{
-        background-color: var(--color-principal);
+    .carrusel-txt h1, small{
         color: white;
     }
+
+    .carrusel-grid {
+        grid-auto-columns: 20rem;
+        grid-template-rows: 25rem;
+        padding: .7em 3em 2.5em;
+    }
+
+    .c-grid{
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border: none;
+        transition: .4s ease-in-out all;
+    }
+
+    .c-grid:hover{
+        scale: 1.02;
+    }
+
 }
 
 @media screen and (min-width:1200px) {
@@ -837,16 +919,60 @@ footer{
         margin: 0 auto;
     }
 
-    .servicios{
+    .opcion-info-tit{
         max-width: 1250px;
-        margin: 4em auto;
-        padding: 0 0px;
+        margin: 0 auto;
+    }
+
+
+    .opcion-info-div{
+        max-width: 1250px;
+        margin: 0 auto;
+    }
+
+    .opc-info-div-txt p{
+        line-height: 1.8;
+        padding-top: .7em;
+    }
+
+    .servicios{
+        padding: 4em;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .servicios h1{
+        color: rgb(0,0,128);
+    }
+
+    .servicios small{
+        color: black;
     }
 
     .header-footer{
         max-width: 1250px;
         margin: 0 auto;
         height: 30em;
+    }
+
+    .serv-grid{
+        position: relative;
+    }
+
+    .serv-grid h2{
+        position: absolute;
+        z-index: 998;
+
+    }
+
+    .capa-ser{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        border-radius: 10px;
+        z-index: 500;
+        background-color: rgba(0, 0, 0, 0.219);
     }
 
 }
