@@ -27,7 +27,7 @@
 
 html{
     scroll-behavior: smooth;
-    scroll-padding-top: 100px;
+    scroll-padding-top: 50px;
 }
 
 .logo-whats{
@@ -435,20 +435,30 @@ footer{
     color: white;
 }
 
+.carrusel-info{
+    background-color: var(--color-principal);
+    padding: 1.5em 0;
+    margin: 2em 0;
+}
+
 .carrusel-txt{
-    margin: 2.5em 1.5em 0 1.5em;
+    padding: 1em 1.2em;
 }
 
 .carrusel-txt h1{
     font-size: var(--titulo-principal-mobile);
-    color: var(--color-principal);
+    color: white;
+}
+
+.carrusel-txt small{
+    color: white;
 }
 
 .carrusel-grid {
     display: grid;
     grid-auto-flow: column;
-    grid-auto-columns: 13rem;
-    grid-template-rows: 18rem;
+    grid-auto-columns: 15rem;
+    grid-template-rows: 22rem;
     gap: 1.5rem;
     padding: .8em 1.5em 1rem 1.5em;
     overflow-x: auto;
@@ -873,20 +883,17 @@ footer{
     .opc-info-div{
         margin: 0;
     }
-
-    .carrusel-info{
-        background-color: var(--color-principal);
-    }
     
+    .carrusel-info{
+        margin: 1em 0;
+    }
+
     .carrusel-txt{
         padding: 2.2em 0em 1em;
         max-width: 1250px;
         margin: 0 auto;
     }
 
-    .carrusel-txt h1, small{
-        color: white;
-    }
 
     .carrusel-grid {
         grid-auto-columns: 20rem;
@@ -895,7 +902,6 @@ footer{
     }
 
     .c-grid{
-        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
         border: none;
         transition: .4s ease-in-out all;
     }
