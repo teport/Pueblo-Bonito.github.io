@@ -126,7 +126,7 @@ video {
 }
 
 .header .logo {
-    max-width: 10rem;
+    max-width: 7rem;
 }
 
 .header .logo-2 {
@@ -311,6 +311,10 @@ video {
         position: relative;
         transform: translateX(-50%);
         line-height: 1.5;
+    }
+
+    .header .logo {
+        max-width: 10rem;
     }
 }
 

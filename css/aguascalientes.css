@@ -102,7 +102,7 @@ header {
 }
 
 .header .logo {
-    max-width: 7rem;
+    max-width: 10rem;
 }
 
 .header .logo-2 {
@@ -389,6 +389,10 @@ header {
     .carrusel-grid {
         grid-auto-columns: 15rem;
         grid-template-rows: 20rem;
+    }
+
+    .header .logo {
+        max-width: 10rem;
     }
 
 }

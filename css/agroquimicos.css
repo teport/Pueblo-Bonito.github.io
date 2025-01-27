@@ -104,7 +104,7 @@ video {
 
 
 .header .logo{
-    max-width: 10rem;
+    max-width: 7rem;
 }
 
 .header .logo-2{
@@ -338,6 +338,10 @@ video {
     .header.sticky .nav ul{
         padding: 1em;
         justify-content: end;
+    }
+
+    .header .logo{
+        max-width: 10rem;
     }
 
     .header{

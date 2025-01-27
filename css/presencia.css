@@ -69,7 +69,7 @@
 }
 
 .header .logo {
-    max-width: 10rem;
+    max-width: 7rem;
 }
 
 .header .logo-2 {
@@ -267,6 +267,9 @@ main {
         margin: 0 auto;
     }
 
+    .header .logo {
+        max-width: 10rem;
+    }
 }
 
 @media screen and (min-width:990px) {

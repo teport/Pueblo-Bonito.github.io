@@ -392,6 +392,9 @@ header {
         grid-template-rows: 20rem;
     }
 
+    .header .logo {
+        max-width: 10rem;
+    }
 }
 
 @media screen and (min-width:990px) {
