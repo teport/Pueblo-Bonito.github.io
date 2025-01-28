@@ -497,10 +497,10 @@ footer{
     background: url(../img/nunhems\ cebolla\ 212.webp) no-repeat center/cover;
 }
 
-/*
+
 .carrusel-info button{
     display: none;
-}*/
+}
 
 @media screen and (min-width:700px) { 
 
@@ -917,7 +917,7 @@ footer{
         scale: 1.02;
     }
 
-    /*.carrusel-info{
+    .carrusel-info{
         position: relative;
     }
 
@@ -925,10 +925,28 @@ footer{
         display: block;
         position: absolute;
         top: 50%;
-        transform: translateY(-50%);
         z-index: 850;
-    }*/
+        margin: 0 1em;
+    }
 
+    .carrusel-info .btn-arrow-right{
+        right: 0;
+    }
+
+    .carrusel-info button{
+        font-size: 1.5em;
+        padding: .7em .9em;
+        border-radius: 15px;
+        border: none;
+        background-color: rgba(187, 187, 187, 0.247);
+        color: white;
+        backdrop-filter: blur(10px);
+        transition: .4s ease-in-out all;
+    }
+
+    .carrusel-info button:hover{
+        background-color: rgba(187, 187, 187, 0.432);
+    }
 }
 
 @media screen and (min-width:1200px) {
