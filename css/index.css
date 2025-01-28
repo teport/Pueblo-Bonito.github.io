@@ -497,6 +497,11 @@ footer{
     background: url(../img/nunhems\ cebolla\ 212.webp) no-repeat center/cover;
 }
 
+/*
+.carrusel-info button{
+    display: none;
+}*/
+
 @media screen and (min-width:700px) { 
 
     .logo-whats{
@@ -911,6 +916,18 @@ footer{
     .c-grid:hover{
         scale: 1.02;
     }
+
+    /*.carrusel-info{
+        position: relative;
+    }
+
+    .carrusel-info button{
+        display: block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 850;
+    }*/
 
 }
 
