@@ -492,6 +492,10 @@ header {
     .grid-p p {
         font-size: var(--tablet-p);
     }
+
+    .header .logo {
+        max-width: 10rem;
+    }
 }
 
 @media screen and (min-width:990px) {

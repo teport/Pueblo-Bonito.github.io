@@ -904,7 +904,9 @@ footer{
     .c-grid{
         border: none;
         transition: .4s ease-in-out all;
+        position: relative;
     }
+
 
     .c-grid:hover{
         scale: 1.02;

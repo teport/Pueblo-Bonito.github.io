@@ -325,6 +325,10 @@ header {
         grid-column: 2/3;
     }
 
+    .header .logo {
+        max-width: 10rem;
+    }
+
 }
 
 @media screen and (min-width:990px) {
