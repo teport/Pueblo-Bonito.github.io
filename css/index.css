@@ -478,7 +478,7 @@ footer{
 }
 
 .c-g-1 {
-    background: url(../img/Promocion-Ajo.webp) no-repeat center/cover;
+    background: url(../img/Bioteksa-publicidad.webp) no-repeat center/cover;
 }
 
 .c-g-2{
@@ -831,7 +831,11 @@ footer{
         padding-top: .7em;
     }
 
-    
+    .servicios-txt{
+        max-width: 1250px;
+        margin: 0 auto;
+    }
+
     .servicios-grid {
         margin: 2.5em auto;
         display: grid;
@@ -921,19 +925,17 @@ footer{
         position: relative;
     }
 
-    .carrusel-info button{
-        display: block;
-        position: absolute;
-        top: 50%;
-        z-index: 850;
-        margin: 0 1em;
-    }
 
     .carrusel-info .btn-arrow-right{
         right: 0;
     }
 
     .carrusel-info button{
+        display: block;
+        position: absolute;
+        top: 50%;
+        z-index: 850;
+        margin: 0 1em;
         font-size: 1.5em;
         padding: .7em .9em;
         border-radius: 15px;
@@ -942,6 +944,7 @@ footer{
         color: white;
         backdrop-filter: blur(10px);
         transition: .4s ease-in-out all;
+        font-weight: 700;
     }
 
     .carrusel-info button:hover{
