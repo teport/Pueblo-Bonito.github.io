@@ -216,6 +216,24 @@ video {
     line-height: 1.5;
 }
 
+.txt-principal{
+    margin: var(--margen-principal);
+    text-align: center;
+}
+
+.txt-principal h2{
+    font-size: var(--titulo-principal-mobile);
+    padding: .5em;
+    color: var(--color-principal);
+}
+
+.txt-principal  p{
+    font-size: var(--movile-p);
+    left: 50%;
+    position: relative;
+    transform: translateX(-50%);
+}
+
 .grid-principal{
     display: grid;
     grid-template-columns: 1fr;
@@ -271,53 +289,6 @@ video {
         max-width: 4em;
         margin: 2em;
     }
-
-    .header.sticky{
-        background-color: white;
-        position: fixed;
-        width: 100%;
-        color: var(--color-principal);
-        padding: 0 0;
-        gap: 0;
-        justify-content: space-between;
-    }
-
-    .header.sticky .logo{
-        display: none;
-    }
-
-    .header.sticky .logo-2{
-        display: block;
-        max-width: 8em;
-        margin-left: 4em;
-    }
-
-    .header.sticky #nav{
-        width: auto;
-    }
-
-    .header .logo{
-        max-width: 10rem;
-    }
-
-    .header .nav-list li {
-        color: white;
-    }
-
-
-    .header.sticky .nav-list li {
-        color: var(--color-principal);
-    }
-
-    .header.sticky .nav ul{
-        padding: 1em;
-        justify-content: end;
-    }
-
-    .header{
-        transition: .4s ease-in-out all;
-    }
-
 
     .txt-header h1 {
         font-size: var(--titulo-importante-tablet);
@@ -386,6 +357,52 @@ video {
     
         .nav-list .li-1 {
             background-color: rgba(236, 236, 236, 0);
+        }
+
+        .header.sticky{
+            background-color: white;
+            position: fixed;
+            width: 100%;
+            color: var(--color-principal);
+            padding: 0 0;
+            gap: 0;
+            justify-content: space-between;
+        }
+    
+        .header.sticky .logo{
+            display: none;
+        }
+    
+        .header.sticky .logo-2{
+            display: block;
+            max-width: 8em;
+            margin-left: 4em;
+        }
+    
+        .header.sticky #nav{
+            width: auto;
+        }
+    
+        .header .logo{
+            max-width: 10rem;
+        }
+    
+        .header .nav-list li {
+            color: white;
+        }
+    
+    
+        .header.sticky .nav-list li {
+            color: var(--color-principal);
+        }
+    
+        .header.sticky .nav ul{
+            padding: 1em;
+            justify-content: end;
+        }
+    
+        .header{
+            transition: .4s ease-in-out all;
         }
 
         .txt-header {

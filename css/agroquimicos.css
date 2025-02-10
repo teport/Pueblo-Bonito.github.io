@@ -302,52 +302,6 @@ video {
         margin: 2em;
     }
 
-    .header.sticky{
-        background-color: white;
-        position: fixed;
-        width: 100%;
-        color: var(--color-principal);
-        padding: 0 0;
-        gap: 0;
-        justify-content: space-between;
-    }
-
-    .header.sticky .logo{
-        display: none;
-    }
-
-    .header.sticky .logo-2{
-        display: block;
-        max-width: 8em;
-        margin-left: 4em;
-    }
-
-    .header.sticky #nav{
-        width: auto;
-    }
-
-    .header .nav-list li {
-        color: white;
-    }
-
-
-    .header.sticky .nav-list li {
-        color: var(--color-principal);
-    }
-
-    .header.sticky .nav ul{
-        padding: 1em;
-        justify-content: end;
-    }
-
-    .header .logo{
-        max-width: 10rem;
-    }
-
-    .header{
-        transition: .4s ease-in-out all;
-    }
-
     .principal-txt {
         padding-bottom: 2em;
     }
@@ -430,6 +384,52 @@ video {
     
         .nav-list .li-1 {
             background-color: rgba(236, 236, 236, 0);
+        }
+
+        .header.sticky{
+            background-color: white;
+            position: fixed;
+            width: 100%;
+            color: var(--color-principal);
+            padding: 0 0;
+            gap: 0;
+            justify-content: space-between;
+        }
+    
+        .header.sticky .logo{
+            display: none;
+        }
+    
+        .header.sticky .logo-2{
+            display: block;
+            max-width: 8em;
+            margin-left: 4em;
+        }
+    
+        .header.sticky #nav{
+            width: auto;
+        }
+    
+        .header .nav-list li {
+            color: white;
+        }
+    
+    
+        .header.sticky .nav-list li {
+            color: var(--color-principal);
+        }
+    
+        .header.sticky .nav ul{
+            padding: 1em;
+            justify-content: end;
+        }
+    
+        .header .logo{
+            max-width: 10rem;
+        }
+    
+        .header{
+            transition: .4s ease-in-out all;
         }
 
         .principal-txt {
