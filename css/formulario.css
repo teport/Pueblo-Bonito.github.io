@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.banner{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 100vh;
+    position: relative;
+}
+
+
+.banner_imagen{
+    background-image: url(../img/inge-calera.webp);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.banner_imagen p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2.3rem;
+    text-align: center;
+    z-index: 850;
+}
+
+.banner-capa{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.534);
+    width: 100%;
+    height: 100%;
+    z-index: 800;
+}
+
+.formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(233, 233, 233, 0);
+    flex-direction: column;
+}
+
+.formulario h1{
+    font-size: 2rem;
+    margin-bottom: 1em;
+    color: rgba(0, 0, 128);
+    font-weight: bold;
+}
+
+tbody{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    line-height: 2;
+}
+
+table{
+    background: rgba(160, 160, 160, 0.466);
+    border-radius: 10px 10px 0 0;
+}
+
+
+tr{
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+tr:nth-child(2){
+    display: none;
+}
+
+tr:nth-child(3){
+    display: none;
+}
+
+tr:nth-child(4){
+    display: none;
+}
+
+tr:nth-child(8){
+    grid-column: 1/3;
+}
+
+textarea{
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    min-height: 10em;
+}
+
+input{
+    padding: 1em;
+    border: none;
+    border-radius: 10px;
+}
+
+label{
+    font-weight: bold;
+}
+
+input[type="submit"]{
+    width: 100%;
+    background-color: #000080;
+    color: white;
+    padding: 1em;
+    border: none;
+    cursor: pointer;
+    border-radius: 0 0 10px 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
