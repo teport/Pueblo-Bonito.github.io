@@ -679,106 +679,7 @@ footer{
 
 @media screen and (min-width:990px) {
 
-    .header.sticky{
-        background-color: white;
-        position: fixed;
-        width: 100%;
-        color: var(--color-principal);
-        padding: 0 0;
-        gap: 0;
-        justify-content: space-between;
-    }
-
-    .header.sticky .logo{
-        display: none;
-    }
-
-    .header.sticky .logo-2{
-        display: block;
-        max-width: 8em;
-        margin-left: 4em;
-    }
-
-    .header.sticky #nav{
-        width: auto;
-    }
-
-
-    .header.sticky .nav-list a{
-        color: var(--color-principal);
-        font-size: 1.2em;
-    }
-
-    .header.sticky .nav ul{
-        padding: 1em;
-        justify-content: end;
-    }
-
-    .header{
-        transition: .4s ease-in-out all;
-    }
-
-    header{
-        height: 115vh;
-    }
-
-    .header{
-        padding: 1em 2em;
-        justify-content: space-evenly;
-        gap: 4em;
-    }
-
-    .header-center{
-        top: 50%;
-    }
-
-    .header-center .btn-header{
-        transition: .4s ease-in-out;
-    }
-
-    .header-center .btn-header:hover{
-        background-color: var(--color-principal);
-        color: white;
-    }
-
-    .header-center p{
-        padding: 0em 5em;
-    }
     
-    .abrir-menu, .cerrar-menu, .logo-bar-mov, .logos-nav-res{
-        display: none;
-    }
-
-    #nav{
-        display: flex; 
-        opacity: 1; 
-        visibility: visible; 
-        position: static; 
-        height: auto; 
-        background-color: rgba(255, 255, 255, 0);
-        box-shadow: none;
-        flex-direction: row;
-    }
-
-    .nav ul {
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-evenly;
-    }
-
-    .nav li {
-        padding: 0 1em; 
-        background-color: rgba(245, 222, 179, 0);
-    }
-    .nav-list a {
-        font-size: 1.4em;
-        color: white;
-    }
-
-    .nav-list .li-1 {
-        background-color: rgba(236, 236, 236, 0);
-    }
-
     .trio-img-ini{
         justify-content: space-evenly;
     }
@@ -952,7 +853,109 @@ footer{
     }
 }
 
-@media screen and (min-width:1200px) {
+@media screen and (min-width: 1200px) {
+
+    .header.sticky{
+        background-color: white;
+        position: fixed;
+        width: 100%;
+        color: var(--color-principal);
+        padding: 0 0;
+        gap: 0;
+        justify-content: space-between;
+    }
+
+    .header.sticky .logo{
+        display: none;
+    }
+
+    .header.sticky .logo-2{
+        display: block;
+        max-width: 8em;
+        margin-left: 4em;
+    }
+
+    .header.sticky #nav{
+        width: auto;
+    }
+
+
+    .header.sticky .nav-list a{
+        color: var(--color-principal);
+        font-size: 1.2em;
+    }
+
+    .header.sticky .nav ul{
+        padding: 1em;
+        justify-content: end;
+    }
+
+    .header{
+        transition: .4s ease-in-out all;
+    }
+
+    header{
+        height: 115vh;
+    }
+
+    .header{
+        padding: 1em 2em;
+        justify-content: space-evenly;
+        gap: 4em;
+    }
+
+    .header-center{
+        top: 50%;
+    }
+
+    .header-center .btn-header{
+        transition: .4s ease-in-out;
+    }
+
+    .header-center .btn-header:hover{
+        background-color: var(--color-principal);
+        color: white;
+    }
+
+    .header-center p{
+        padding: 0em 5em;
+    }
+    
+    .abrir-menu, .cerrar-menu, .logo-bar-mov, .logos-nav-res{
+        display: none;
+    }
+
+    #nav{
+        display: flex; 
+        opacity: 1; 
+        visibility: visible; 
+        position: static; 
+        height: auto; 
+        background-color: rgba(255, 255, 255, 0);
+        box-shadow: none;
+        flex-direction: row;
+    }
+
+    .nav ul {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .nav li {
+        padding: 0 1em; 
+        background-color: rgba(245, 222, 179, 0);
+    }
+    .nav-list a {
+        font-size: 1.4em;
+        color: white;
+    }
+
+    .nav-list .li-1 {
+        background-color: rgba(236, 236, 236, 0);
+    }
+
+
     .trio-img-ini{
         max-width: 63em;
         position: relative;
