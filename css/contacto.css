@@ -1,0 +1,362 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --titulo-importante-mobile: 2.5em;
+    --titulo-principal-mobile: 1.5em;
+    --titulo-secundario-mobile: 1.2em;
+    --padding-principal-mobile: 2em 1.5em;
+    --movile-p: .9em;
+
+    --titulo-importante-tablet: 3.2em;
+    --titulo-principal-tablet: 2.5em;
+    --titulo-secundario-tablet: 2em;
+    --tablet-p: 1.2em;
+    --margen-principal: 1.5em;
+
+
+
+    --color-principal: rgb(0, 0, 128);
+    --shadow-fondo: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    --shadow-sencillo: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.logo-whats {
+    max-width: 3.5em;
+    position: fixed;
+    z-index: 999;
+    bottom: 0;
+    right: 0;
+    margin: 1em;
+    padding: .5em;
+    background-color: white;
+    border-radius: 50%;
+    animation: pulse 1s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0% {
+        scale: 1;
+    }
+
+    50% {
+        scale: .9;
+    }
+
+    100% {
+        scale: 1;
+    }
+}
+
+.no-scroll {
+    overflow: hidden;
+    /* Desactiva el scroll */
+    height: 100%;
+    /* Asegura que no haya espacio para desplazarse */
+}
+
+.header {
+    position: relative;
+    z-index: 998;
+    display: flex;
+    align-items: center;
+    padding: 1.5em;
+    justify-content: space-between;
+}
+
+.header .logo {
+    max-width: 7rem;
+}
+
+.header .logo-2 {
+    display: none;
+}
+
+.btn-abrir {
+    border: none;
+}
+
+.nav {
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+    position: absolute;
+    top: 0;
+    text-align: left;
+    right: 0;
+    background-color: rgb(255, 255, 255);
+    bottom: 0;
+    box-shadow: var(--shadow-fondo);
+    height: 100vh;
+    width: 100%;
+}
+
+#nav {
+    display: none;
+    transition: opacity 0.3s ease;
+}
+
+#nav.visible {
+    display: block;
+    opacity: 1;
+}
+
+
+
+.logo-bar-mov {
+    max-width: 7rem;
+}
+
+.logos-nav-res {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 2em 0 2em;
+}
+
+.nav.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.nav-list {
+    width: 100%;
+}
+
+.nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav li {
+    padding: 1em 2em;
+}
+
+.nav-list .li-1 {
+    background-color: rgba(236, 236, 236, 0.527);
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: var(--color-principal);
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.abrir-menu,
+.cerrar-menu {
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.abrir-menu img,
+.cerrar-menu img {
+    width: 2.5em;
+}
+
+.rol {
+    height: 200vh;
+}
+
+body {
+    background: url(../img/inge.webp) no-repeat center/cover;
+}
+
+.banner{
+    margin: var(--margen-principal);
+    background-color: rgba(131, 131, 131, 0.384);
+    backdrop-filter: blur(5px);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: .5em;
+    border-radius:10px;
+}
+
+.banner-formulario h1{
+    color: white;
+    text-align: center;
+}
+
+table{
+    min-width: 100%;
+}
+
+tbody{
+    display: grid;
+    flex-direction: column;
+    gap: 1em;
+    margin: 1em 0;
+    min-width: 100%;
+}
+
+tr{
+    display: flex;
+    flex-direction: column;
+    gap: .2em;
+}
+
+tr:nth-child(3){
+    display: none;
+}
+
+tr:nth-child(4){
+    display: none;
+}
+
+tr:nth-child(5){
+    display: none;
+}
+
+input{
+    padding: .8em;
+    border: none;
+    border-radius: 5px;
+    min-width: 100%;
+}
+
+input[type="submit"]
+{
+    color: white;
+    background-color: var(--color-principal);
+}
+
+label{
+    color: white;
+    font-size: var(--titulo-secundario-mobile);
+}
+
+textarea{
+    padding: 1em;
+    border: none;
+    border-radius: 5px;
+    min-width: 100% ;
+}
+
+@media screen and (min-width: 400px) {
+
+}
+
+
+@media screen and (min-width:750px) {
+
+    .logo-whats {
+        max-width: 4em;
+        margin: 2em;
+    }
+
+    .header.sticky {
+        background-color: white;
+        position: fixed;
+        width: 100%;
+        color: var(--color-principal);
+        padding: 0 0;
+        gap: 0;
+        justify-content: space-between;
+    }
+
+    .header.sticky .logo {
+        display: none;
+    }
+
+    .header.sticky .logo-2 {
+        display: block;
+        max-width: 8em;
+        margin-left: 4em;
+    }
+
+    .header.sticky #nav {
+        width: auto;
+    }
+
+
+    .header.sticky .nav-list li a {
+        color: var(--color-principal);
+        font-size: 1.2em;
+    }
+
+    .header.sticky .nav ul {
+        padding: 1em;
+        justify-content: end;
+    }
+
+    .header {
+        transition: .4s ease-in-out all;
+    }
+
+    .header .logo {
+        max-width: 10rem;
+    }
+}
+
+@media screen and (min-width:990px) {
+
+    .header {
+        padding: 1em 2em;
+        justify-content: space-evenly;
+        gap: 4em;
+    }
+
+    .header-center p {
+        padding: 0em 5em;
+    }
+
+    .abrir-menu,
+    .cerrar-menu,
+    .logo-bar-mov,
+    .logos-nav-res {
+        display: none;
+    }
+
+    #nav {
+        display: flex;
+        /* Mostrar siempre en desktop */
+        opacity: 1;
+        /* Mantener visible */
+        visibility: visible;
+        /* Mantener visible */
+        position: static;
+        /* Cambiar posición para que no sea absoluta */
+        height: auto;
+        /* Ajustar altura */
+        background-color: rgba(255, 255, 255, 0);
+        box-shadow: none;
+        flex-direction: row;
+    }
+
+    .nav ul {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .nav li {
+        padding: 0 1em;
+        /* Espaciado en horizontal */
+        background-color: rgba(245, 222, 179, 0);
+    }
+
+    .nav-list a {
+        font-size: 1.4em;
+        color: white;
+    }
+
+    .nav-list .li-1 {
+        background-color: rgba(236, 236, 236, 0);
+    }
+
+
+    .header.sticky .nav-list a {
+        color: var(--color-principal);
+        font-size: 1.2em;
+    }
+}
