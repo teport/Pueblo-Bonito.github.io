@@ -12,7 +12,7 @@
     --padding-principal-mobile: 2em 1.5em;
     --movile-p:.9em;
 
-    --titulo-importante-tablet:3.2em;
+    --titulo-importante-tablet:2.7em;
     --titulo-principal-tablet: 2.5em;
     --titulo-secundario-tablet: 2em;
     --tablet-p:1.2em;
@@ -550,9 +550,6 @@ footer{
         font-size: 1em;
     }
 
-
-
-
     .trio-img-ini{
         display: flex;
         justify-content: space-evenly;
@@ -799,7 +796,7 @@ footer{
     }
 
     .carrusel-txt{
-        padding: 2.2em 0em 1em;
+        padding: 2.2em 1.4em 1em;
         max-width: 1250px;
         margin: 0 auto;
     }

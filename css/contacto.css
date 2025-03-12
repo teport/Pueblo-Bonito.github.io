@@ -260,47 +260,37 @@ textarea{
         margin: 2em;
     }
 
-    .header.sticky {
-        background-color: white;
-        position: fixed;
-        width: 100%;
-        color: var(--color-principal);
-        padding: 0 0;
-        gap: 0;
-        justify-content: space-between;
-    }
-
-    .header.sticky .logo {
-        display: none;
-    }
-
-    .header.sticky .logo-2 {
-        display: block;
-        max-width: 8em;
-        margin-left: 4em;
-    }
-
-    .header.sticky #nav {
-        width: auto;
-    }
-
-
-    .header.sticky .nav-list li a {
-        color: var(--color-principal);
-        font-size: 1.2em;
-    }
-
-    .header.sticky .nav ul {
-        padding: 1em;
-        justify-content: end;
-    }
-
-    .header {
-        transition: .4s ease-in-out all;
-    }
-
     .header .logo {
         max-width: 10rem;
+    }
+
+    .banner-formulario h1{
+        font-size: var(--titulo-principal-tablet);
+    }
+
+    .banner{
+        min-height: 100vh;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    tbody{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1em;
+    }
+
+    .banner-formulario{
+        width: ;
+    }
+
+    tr:nth-child(10){
+        grid-column: 1/3;
+    }
+    
+    label{
+        font-size: var(--titulo-secundario-tablet);
     }
 }
 
@@ -364,5 +354,57 @@ textarea{
     .header.sticky .nav-list a {
         color: var(--color-principal);
         font-size: 1.2em;
+    }
+
+    .logo-whats {
+        max-width: 4em;
+        margin: 2em;
+    }
+
+    .header.sticky {
+        background-color: white;
+        position: fixed;
+        width: 100%;
+        color: var(--color-principal);
+        padding: 0 0;
+        gap: 0;
+        justify-content: space-between;
+    }
+
+    .header.sticky .logo {
+        display: none;
+    }
+
+    .header.sticky .logo-2 {
+        display: block;
+        max-width: 8em;
+        margin-left: 4em;
+    }
+
+    .header.sticky #nav {
+        width: auto;
+    }
+
+
+    .header.sticky .nav-list li a {
+        color: var(--color-principal);
+        font-size: 1.2em;
+    }
+
+    .header.sticky .nav ul {
+        padding: 1em;
+        justify-content: end;
+    }
+
+    .header {
+        transition: .4s ease-in-out all;
+    }
+
+    .header .logo {
+        max-width: 10rem;
+    }
+
+    .banner{
+        min-height: 100vh;
     }
 }
