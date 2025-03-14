@@ -247,8 +247,40 @@ video {
 }
 
 .card-prin{
-    border: .1em solid;
     border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.card-1{
+    background: url(../img/paisaje-tomate-abajo.webp) no-repeat center/cover;
+}
+
+.card-2{
+    background: url(../img/inge-hablando.webp) no-repeat center/cover;
+}
+
+.card-3{
+    background: url(../img/inge-calera.webp) no-repeat center/cover;
+}
+
+.card-4{
+    background: url(../img/inge-lupita-nacho.webp) no-repeat center/cover;
+}
+
+.card-5{
+    background: url(../img/paisaje-tomates.webp) no-repeat center/cover;
+}
+
+.card-6{
+    background: url(../img/fotos-inges-conjunto.webp) no-repeat center/cover;
+}
+
+.card-7{
+    background: url(../img/Instalacion.webp) no-repeat center/cover;
+}
+
+.card-8{
+    background: url(../img/inge-parsela.webp) no-repeat center/cover;
 }
 
 
