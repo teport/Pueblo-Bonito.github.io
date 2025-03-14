@@ -57,12 +57,7 @@ html{
     }
 }
 
-.no-scroll {
-    overflow: hidden;
-    /* Desactiva el scroll */
-    height: 100%;
-    /* Asegura que no haya espacio para desplazarse */
-}
+
 
 header {
     background: url(../img/fresnillo.webp) no-repeat center/cover;
@@ -97,7 +92,12 @@ header {
     padding: .2em;
 }
 
-
+.no-scroll {
+    overflow: hidden;
+    /* Desactiva el scroll */
+    height: 100%;
+    /* Asegura que no haya espacio para desplazarse */
+}
 .header {
     position: relative;
     z-index: 998;
