@@ -227,6 +227,8 @@ video {
 
 .principal-txt {
     text-align: center;
+    line-height: 1.5;
+    padding-bottom: .5em;
 }
 
 .principal-txt h1 {

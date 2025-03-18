@@ -221,8 +221,12 @@ video {
     text-align: center;
 }
 
+.div-principal{
+    margin: 7em 0;
+}
+
 .txt-principal h2{
-    font-size: var(--titulo-principal-mobile);
+    font-size: var(--titulo-importante-mobile);
     padding: .5em;
     color: var(--color-principal);
 }
@@ -232,6 +236,7 @@ video {
     left: 50%;
     position: relative;
     transform: translateX(-50%);
+    line-height: 1.5;
 }
 
 .grid-principal{
@@ -240,7 +245,7 @@ video {
     grid-template-rows: repeat(2, 10em) repeat(2, 13em);
     gap: 1em;
     padding: 1em;
-    margin: 2em auto;
+    margin: 0em auto;
     max-width: 600px;
 }
 
