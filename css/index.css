@@ -241,7 +241,7 @@ video{
     text-align: center;
     color:var(--color-principal);
     font-weight: 700;
-    font-size: var(--titulo-principal-mobile);
+    font-size: var(--titulo-importante-mobile);
     line-height: 1.75rem;
     padding-bottom: .5em;
 }
@@ -318,7 +318,7 @@ video{
 .servicios h1{
     color: var(--color-principal);
     text-align: center;
-    font-size: var(--titulo-principal-mobile);
+    font-size: var(--titulo-importante-mobile);
 }
 
 .servicios small{
