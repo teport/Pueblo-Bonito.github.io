@@ -281,7 +281,7 @@ video{
 }
 
 .ident-grid-img h2{
-    font-size: var(--titulo-secundario-mobile);
+    font-size: var(--titulo-principal-mobile);
     position: absolute;
     bottom: 0;
     margin: 1.5em 0 1.5em .5em;
