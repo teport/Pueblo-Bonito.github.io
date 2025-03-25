@@ -311,7 +311,7 @@ video{
 /*Servicios*/
 
 .servicios{
-    padding: var(--margen-principal);
+    padding: 3em 1.2em;
     text-align: center;
 }
 
@@ -367,6 +367,7 @@ video{
 footer{
     background-color: var(--color-principal);
     padding: var(--padding-principal-mobile);
+
 }
 
 .header-footer{
@@ -452,6 +453,7 @@ footer{
 
 .carrusel-txt small{
     color: white;
+    font-size: 1.2em;
 }
 
 .carrusel-grid {
@@ -1020,5 +1022,6 @@ footer{
         z-index: 500;
         background-color: rgba(0, 0, 0, 0.219);
     }
+
 
 }       
