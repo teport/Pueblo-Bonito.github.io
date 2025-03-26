@@ -307,7 +307,75 @@ video{
 }
 
 /*Lo Destacado*/
+/*Opcion de informacion*/
 
+.carrusel-info{
+    background-color: var(--color-principal);
+    padding: 1.5em 0;
+    margin: 2em 0;
+}
+
+.carrusel-txt{
+    padding: 1em 1.2em;
+}
+
+.carrusel-txt h1{
+    font-size: var(--titulo-importante-mobile);
+    color: white;
+}
+
+.carrusel-txt small{
+    color: white;
+    font-size: 1.2em;
+}
+
+.carrusel-grid {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 15rem;
+    grid-template-rows: 22rem;
+    gap: 1.5rem;
+    padding: .8em 1.5em 1rem 1.5em;
+    overflow-x: auto;
+    overscroll-behavior-x: center;
+    scroll-padding: 1em;
+}
+
+.snap-align {
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+.c-grid{
+    border-radius: 10px;
+    border: .1em solid;
+    border: none;
+}
+
+.c-g-1 {
+    background: url(../img/Bioteksa-publicidad.webp) no-repeat center/cover;
+}
+
+.c-g-2{
+    background: url(../img/Promocion-maiz.webp) no-repeat center/cover;
+}
+
+.c-g-3{
+    background: url(../img/Promocion-rafia.webp) no-repeat center/cover;
+}
+
+.c-g-4{
+    background: url(../img/CLENPLEX\ PROMO.webp) no-repeat center/cover;
+}
+
+.c-g-5{
+    background: url(../img/nunhems\ cebolla\ 212.webp) no-repeat center/cover;
+}
+
+
+.carrusel-info button{
+    display: none;
+}
 /*Servicios*/
 
 .servicios{
@@ -416,93 +484,60 @@ footer{
     color: var(--color-principal);
 }
 
-.footer-fot{
-    padding: 1.5em 0 0 0;
-    max-width: 1250px;
-    margin: 0 auto;
+.footer-content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1.5em 0;
+    gap: 1em;
 }
 
-.footer-fot ul{
-    list-style: none;
+.footer-content-logo img{
+    max-width: 12em;
 }
 
-.footer-fot ul li{
-    padding: 1em 0 0 0;
-    color:white;
-}
-
-.footer-fot ul li a{
-    text-decoration: none;
+.footer-content h3{
+    font-size: var(--titulo-principal-mobile);
     color: white;
+    text-align: center;
 }
 
-.carrusel-info{
-    background-color: var(--color-principal);
-    padding: 1.5em 0;
-    margin: 2em 0;
-}
-
-.carrusel-txt{
-    padding: 1em 1.2em;
-}
-
-.carrusel-txt h1{
-    font-size: var(--titulo-importante-mobile);
+.footer-content p{
+    font-size: var(--movile-p);
     color: white;
+    margin: 1em 0;
+    line-height: 1.5;
+    text-align: center;
 }
 
-.carrusel-txt small{
-    color: white;
-    font-size: 1.2em;
-}
-
-.carrusel-grid {
-    display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: 15rem;
-    grid-template-rows: 22rem;
-    gap: 1.5rem;
-    padding: .8em 1.5em 1rem 1.5em;
-    overflow-x: auto;
-    overscroll-behavior-x: center;
-    scroll-padding: 1em;
-}
-
-.snap-align {
-    scroll-behavior: smooth;
-    scrollbar-width: none;
-}
-
-.c-grid{
+.footer-content-txt button{
+    padding: .8em 1em;
     border-radius: 10px;
-    border: .1em solid;
     border: none;
+    color: var(--color-principal);
+    font-size: var(--movile-p);
+    left: 50%;
+    position: relative;
+    transform: translateX(-50%);
 }
 
-.c-g-1 {
-    background: url(../img/Bioteksa-publicidad.webp) no-repeat center/cover;
+.footer-content-info ul{
+    list-style: none;
+    display: flex;
+    gap: 1em;
+    justify-content: center;
 }
 
-.c-g-2{
-    background: url(../img/Promocion-maiz.webp) no-repeat center/cover;
-}
-
-.c-g-3{
-    background: url(../img/Promocion-rafia.webp) no-repeat center/cover;
-}
-
-.c-g-4{
-    background: url(../img/CLENPLEX\ PROMO.webp) no-repeat center/cover;
-}
-
-.c-g-5{
-    background: url(../img/nunhems\ cebolla\ 212.webp) no-repeat center/cover;
+.footer-content-info img{
+    max-width: 2em;
 }
 
 
-.carrusel-info button{
-    display: none;
-}
+
+
+
 
 @media screen and (min-width:700px) { 
 
@@ -1024,4 +1059,4 @@ footer{
     }
 
 
-}       
+}           
