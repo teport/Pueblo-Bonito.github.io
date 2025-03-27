@@ -457,10 +457,6 @@ header {
         transition: .4s ease-in-out all;
     }
 
-    .header .logo {
-        max-width: 10em;
-    }
-
 
     .txt-header h1 {
         font-size: var(--titulo-importante-tablet);
@@ -504,41 +500,6 @@ header {
         min-height: 70vh;
     }
 
-    .header.sticky {
-        background-color: white;
-        position: fixed;
-        width: 100%;
-        color: var(--color-principal);
-        padding: 0 0;
-        gap: 0;
-        justify-content: space-between;
-    }
-
-    .header.sticky .logo {
-        display: none;
-    }
-
-    .header.sticky .logo-2 {
-        display: block;
-        max-width: 8em;
-        margin-left: 4em;
-    }
-
-    .header.sticky #nav {
-        width: auto;
-    }
-
-
-    .header.sticky .nav-list a {
-        color: var(--color-principal);
-        font-size: 1.2em;
-    }
-
-    .header.sticky .nav ul {
-        padding: 1em;
-        justify-content: end;
-    }
-
     .linea-tiempo h3:hover{
         border-radius: 10px;
         font-size: 1.3em;
@@ -546,59 +507,6 @@ header {
 
     }
 
-    .header {
-        padding: 1em 2em;
-        justify-content: space-evenly;
-        gap: 4em;
-    }
-
-    .header-center p {
-        padding: 0em 5em;
-    }
-
-    .abrir-menu,
-    .cerrar-menu,
-    .logo-bar-mov,
-    .logos-nav-res {
-        display: none;
-    }
-
-    #nav {
-        display: flex;
-        /* Mostrar siempre en desktop */
-        opacity: 1;
-        /* Mantener visible */
-        visibility: visible;
-        /* Mantener visible */
-        position: static;
-        /* Cambiar posición para que no sea absoluta */
-        height: auto;
-        /* Ajustar altura */
-        background-color: rgba(255, 255, 255, 0);
-        box-shadow: none;
-        flex-direction: row;
-    }
-
-    .nav ul {
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-evenly;
-    }
-
-    .nav li {
-        padding: 0 1em;
-        /* Espaciado en horizontal */
-        background-color: rgba(245, 222, 179, 0);
-    }
-
-    .nav-list a {
-        font-size: 1.4em;
-        color: white;
-    }
-
-    .nav-list .li-1 {
-        background-color: rgba(236, 236, 236, 0);
-    }
 
     .txt-header {
         top: 65%;
@@ -715,4 +623,95 @@ header {
     .grid-p p {
         font-size: 1em;
     }
+
+    .header.sticky {
+        background-color: white;
+        position: fixed;
+        width: 100%;
+        color: var(--color-principal);
+        padding: 0 0;
+        gap: 0;
+        justify-content: space-between;
+    }
+
+    .header.sticky .logo {
+        display: none;
+    }
+
+    .header.sticky .logo-2 {
+        display: block;
+        max-width: 8em;
+        margin-left: 4em;
+    }
+
+    .header.sticky #nav {
+        width: auto;
+    }
+
+
+    .header.sticky .nav-list a {
+        color: var(--color-principal);
+        font-size: 1.2em;
+    }
+
+    .header.sticky .nav ul {
+        padding: 1em;
+        justify-content: end;
+    }
+
+
+    .header {
+        padding: 1em 2em;
+        justify-content: space-evenly;
+        gap: 4em;
+    }
+
+    .header-center p {
+        padding: 0em 5em;
+    }
+
+    .abrir-menu,
+    .cerrar-menu,
+    .logo-bar-mov,
+    .logos-nav-res {
+        display: none;
+    }
+
+    #nav {
+        display: flex;
+        /* Mostrar siempre en desktop */
+        opacity: 1;
+        /* Mantener visible */
+        visibility: visible;
+        /* Mantener visible */
+        position: static;
+        /* Cambiar posición para que no sea absoluta */
+        height: auto;
+        /* Ajustar altura */
+        background-color: rgba(255, 255, 255, 0);
+        box-shadow: none;
+        flex-direction: row;
+    }
+
+    .nav ul {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .nav li {
+        padding: 0 1em;
+        /* Espaciado en horizontal */
+        background-color: rgba(245, 222, 179, 0);
+    }
+
+    .nav-list a {
+        font-size: 1.4em;
+        color: white;
+    }
+
+    .nav-list .li-1 {
+        background-color: rgba(236, 236, 236, 0);
+    }
+
 }

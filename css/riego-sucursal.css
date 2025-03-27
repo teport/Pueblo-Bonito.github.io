@@ -60,7 +60,7 @@
 }
 
 header {
-    background: url(../img/villa.webp) no-repeat center/cover;
+    background: url(../img/sistemaRiego.webp) no-repeat center/cover;
     position: relative;
     min-height: 100vh;
     width: 100%;
@@ -236,7 +236,7 @@ header {
 
 .g-2 {
     position: relative;
-    background: url(../img/villa.webp) no-repeat center/cover;
+    background: url(../img/sistemaRiego.webp) no-repeat center/cover;
 }
 
 .g-3 {
