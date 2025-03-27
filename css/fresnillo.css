@@ -419,11 +419,9 @@ header {
     }
 
     .grid-principal {
-        max-width: 1150px;
-        margin: 2.5em auto;
         grid-template-columns: repeat(2, 1fr) 5em 5em repeat(2, 1fr);
         grid-template-rows: repeat(2, 13em);
-        margin-top: 7em;
+        margin: 7em 2em;
     }
 
     .g-1:first-child {
@@ -568,5 +566,10 @@ header {
 
     .nav-list .li-1 {
         background-color: rgba(236, 236, 236, 0);
+    }
+
+    .grid-principal{
+        max-width: 1150px;
+        margin: 7em auto;
     }
 }
