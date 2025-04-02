@@ -339,6 +339,132 @@ header {
     background: url(../img/nunhems\ cebolla\ 212.webp) no-repeat center/cover;
 }
 
+footer{
+    background-color: var(--color-principal);
+    padding: var(--padding-principal-mobile);
+}
+
+.header-footer{
+    background: url(../img/fotos-inges-conjunto.webp) no-repeat center/cover;
+    border-radius: 10px;
+    height: 25em;
+    position: relative;
+
+}
+
+.header-footer-txt{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.capa-footer{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.26);
+    border-radius: 10px;
+}
+
+.header-footer-txt h1{
+    font-size: var(--titulo-principal-mobile);
+    color: white;
+}
+
+.header-footer-txt small{
+    font-size: var(--movile-p);
+    color: white;
+}
+
+.header-footer-txt button{
+    padding: 1em 2em;
+    border-radius: 10px;
+    border: none;
+    margin: 1em 0 0 0;
+    color: var(--color-principal);
+}
+
+.footer-content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 1.5em 0;
+    gap: 1em;
+}
+
+.footer-content-logo img{
+    max-width: 12em;
+}
+
+.footer-content h3{
+    font-size: var(--titulo-principal-mobile);
+    color: white;
+
+}
+
+.footer-content p{
+    font-size: var(--movile-p);
+    color: white;
+    margin: .5em 0 1em;
+    line-height: 1.5;
+}
+
+.footer-content-txt{
+    position: relative;
+    margin: 2em 0 1em;
+}
+
+.footer-content-txt::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    top: -10px;
+    left: 0;
+}
+
+.footer-content-txt button{
+    padding: .8em 1em;
+    border-radius: 10px;
+    border: none;
+    color: var(--color-principal);
+    font-size: var(--movile-p);
+    left: 50%;
+}
+
+.footer-content-info{
+    position: relative;
+    margin: 1em 0;
+}
+
+.footer-content-info::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    top: -10px;
+    left: 0;
+}
+
+.footer-content-info ul{
+    list-style: none;
+    display: flex;
+    gap: 1em;
+
+}
+
+.footer-content-info img{
+    max-width: 2em;
+}
+
 @media screen and (min-width:750px) {
 
     .logo-whats {
@@ -394,6 +520,64 @@ header {
 
     .header .logo {
         max-width: 10rem;
+    }
+
+    .header-footer h1{
+        font-size: var(--titulo-importante-tablet);
+    }
+
+    .footer-content{ 
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        align-items: center;
+    }
+
+    .footer-content-logo{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-content-logo img{
+        max-width: 13em;
+    }
+
+    .footer-content-logo:first-child{
+        grid-row: 1/3;
+    }
+
+    .footer-content-txt::after{
+        content: "";
+        position: absolute;
+        width: 2px;
+        height: 10em;
+        background-color: white;
+        top: 50%;
+        left: -15px;
+        transform: translateY(-50%);
+    }
+
+    .footer-content-txt button{
+        border: .1em solid;
+        transition: .4s ease-in-out all;
+    }
+
+    .footer-content-txt button:hover{
+        background-color: var(--color-principal);
+        color: white;
+        border: .1em solid white;
+    }
+
+    .footer-content-info::after{
+        content: "";
+        position: absolute;
+        width: 2px;
+        height: 10em;
+        background-color: white;
+        top: 50%;
+        left: -15px;
+        transform: translateY(-50%);
     }
 }
 
@@ -473,6 +657,35 @@ header {
 
     .c-grid:hover{
         scale: 1.02;
+    }
+
+    .header-footer button{
+        transition: .4s ease-in-out;
+    }
+
+    .header-footer button:hover{
+        background-color: var(--color-principal);
+        color: white;
+    }
+
+    .header-footer-txt small {
+        font-size: var(--tablet-p);
+    }
+
+
+    .footer-content{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        max-width: 1250px;
+        margin: 3em auto;
+    }
+
+    .footer-content-logo:first-child{
+        grid-row: 1/2;
+    }
+
+    .footer-content-logo img{
+        max-width: 17em;
     }
 }
 
@@ -571,5 +784,11 @@ header {
     .grid-principal{
         max-width: 1150px;
         margin: 7em auto;
+    }
+
+    .header-footer{
+        max-width: 1250px;
+        margin: 0 auto;
+        height: 30em;
     }
 }
