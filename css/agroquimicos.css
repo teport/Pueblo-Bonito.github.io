@@ -232,6 +232,10 @@ video {
     font-size: var(--titulo-importante-mobile);
 }
 
+.introduccion-tit small{
+    font-size: 1.4em
+}
+
 .introduccion-grid{
     padding: 0 1.5em;
     display: grid;
@@ -453,6 +457,25 @@ footer{
         line-height: 1.5;
     }
 
+    /*Introduccion*/
+    .introduccion-grid{
+        padding: 0 2em;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 1em;
+    }
+
+    .introduccion-tit small{
+        margin: 1em 0;
+        font-size: 1.5em;
+        font-weight: 700;
+    }
+    /*Productos*/
+    .scroll-productos{
+        grid-auto-columns: 15rem;
+        grid-template-rows: 20rem;
+    }
     /*Footer*/
 
     .header-footer h1{
@@ -536,6 +559,7 @@ footer{
             position: relative;
             top: 20px;
             transition: .4s ease-in-out all;
+            border: .1em solid var(--color-principal);
         }
     
         .txt-header .btn-dron:hover {
@@ -561,7 +585,27 @@ footer{
         .header-footer-txt small {
             font-size: var(--tablet-p);
         }
+
+        .introduccion{
+            margin: 7em 0 0;
+        }
+
+        .introduccion-grid{
+            padding: 2em;
+        }
+
+        .intro-grid{
+            padding: 1em 1em;
+            transition: .2s ease-in-out all;
+            border: .1em solid var(--color-principal);
+            border-radius: 10px;
+        }
     
+          .intro-grid:hover{
+            scale: 1.01;
+            box-shadow: rgba(0, 0, 128, 0.473) 0px 3px 6px, rgba(0, 0, 78, 0.459) 0px 3px 6px;        
+            border-radius: 10px;
+          }
     
         .footer-content{
             grid-template-columns: repeat(3, 1fr);
@@ -670,6 +714,34 @@ footer{
 
     .header{
         transition: .4s ease-in-out all;
+    }
+
+    /*Introduccion*/
+    .introduccion-grid{
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,1fr);
+        max-width: 1200px;
+        margin: 0 auto 4em;
+        gap: .5em;
+    }
+
+    .grid-productos-tit{
+        padding: 2em 4.5em 0em;
+    }
+
+    .s-fert, .s-fung, .s-insec{
+        transition: .4s ease-in-out all;
+    }
+
+    .s-fert:hover,.s-fung:hover,.s-insec:hover{
+        scale: 1.02;
+    }
+
+    .scroll-productos{
+        grid-auto-columns: 20em;
+        grid-template-rows: 25em;
+        margin: 1em 0;
+        padding: 1em 4em;
     }
 
     /*Footer*/
