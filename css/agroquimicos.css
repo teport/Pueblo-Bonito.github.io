@@ -235,7 +235,10 @@ video {
 .introduccion-grid{
     padding: 0 1.5em;
     display: grid;
+    grid-template-columns: repeat(3,17em);
+    grid-template-rows: repeat(2,1fr);
     gap: 1em;
+    overflow-x: auto;
 }
 
 .intro-grid{
@@ -287,8 +290,8 @@ video {
 
 .scroll-productos{
     display: grid;
-    grid-auto-columns: 12em;
-    grid-auto-rows: 15em;
+    grid-auto-columns: 14em;
+    grid-auto-rows: 17em;
     grid-auto-flow: column;
     padding: 1em 2em;
     gap: 1em;
