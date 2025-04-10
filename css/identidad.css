@@ -319,7 +319,7 @@ header {
 
 .img-box-1{
     position: relative;
-    background: url(../img/inge-lupit-calera.webp) no-repeat bottom/cover;
+    background: url(../img/fresnillo.webp) no-repeat center/cover;
     border-radius: 0px 0px 10px 10px;
 }
 
@@ -337,13 +337,13 @@ header {
 
 .img-box-4{
     position: relative;
-    background: url(../img/asessssss.webp) no-repeat center/cover;
+    background: url(../img/cultivos\ maiz.webp) no-repeat center/cover;
     border-radius: 0px 0px 10px 10px;
 }
 
 .img-box-5{
     position: relative;
-    background: url(../img/parsela.webp) no-repeat center/cover;
+    background: url(../img/camion-apb.webp) no-repeat center/cover;
     border-radius: 0px 0px 10px 10px;
 }
 
