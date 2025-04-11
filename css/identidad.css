@@ -253,6 +253,8 @@ header {
     justify-content: space-evenly;
     list-style: none;
     padding: 1em 2em;
+    overflow-x: auto;
+    scrollbar-width: none;
 }
 
 .li-linea a {
@@ -305,7 +307,7 @@ header {
     height: 23em;
     backdrop-filter: blur(10px);
     display: grid;
-    grid-template-rows: 45% 60%;
+    grid-template-rows: 55% 55%;
 }
 
 
@@ -376,7 +378,7 @@ header {
 
 
 .text-box p{
-    font-size: 15px;
+    font-size: 16px;
     line-height: 1.5;
 }
 
@@ -544,14 +546,21 @@ footer{
         width: 100%;
         padding-left: 80px;
         padding-right: 25px;
+        grid-template-rows: 60% 40%;
     }
 
     .text-box {
         font-size: 13px;
+        padding: 10px 15px;
+    }
+
+    .text-box p{
+        line-height: 1.2;
     }
 
     .text-box small {
-        margin-bottom: 10px;
+        margin-bottom: 0px;
+        font-size: 1em;
     }
 
     .right-container {
@@ -579,13 +588,19 @@ footer{
     }
 }
 
+@media screen and (min-width:600px) and (max-width:1050px) {
+    .container{
+        grid-template-rows: 65% 35%;
+    }
+}
+
+
 @media screen and (min-width:750px) {
 
     .logo-whats {
         max-width: 4em;
         margin: 2em;
     }
-
 
     .header {
         transition: .4s ease-in-out all;
