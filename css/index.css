@@ -366,7 +366,7 @@ video{
 }
 
 .c-g-1 {
-    background: url(../img/Metpock.webp) no-repeat center/cover;
+    background: url(../img/maiz.webp) no-repeat center/cover;
 }
 
 .c-g-2{
@@ -1156,7 +1156,7 @@ footer{
 
     .serv-grid h2{
         position: absolute;
-        z-index: 998;
+        z-index: 600;
 
     }
 
