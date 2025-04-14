@@ -279,7 +279,7 @@ video {
 }
 
 .card-7{
-    background: url(../img/Instalacion.webp) no-repeat center/cover;
+    background: url(../img/camion-apb.webp) no-repeat center/cover;
 }
 
 .card-8{
@@ -686,7 +686,10 @@ footer{
             max-width: 1000px;
             margin: 0 auto;
         }
-
+        
+        .btn-dron{
+            border: .1em solid var(--color-principal);
+        }
         
         .cards{
             grid-auto-columns: 17em;
