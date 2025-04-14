@@ -60,7 +60,7 @@
 }
 
 header {
-    background: url(../img/fresnillo.webp) no-repeat center/cover;
+    background: url(../img/apb-fresnillo.webp) no-repeat center center/cover;
     position: relative;
     min-height: 30em;
     width: 100%;
@@ -292,7 +292,7 @@ blockquote{
 }
 
 .p-g-2{
-    background: url(../img/fresnillo.webp) no-repeat center/cover;
+    background: url(../img/apb-fresnillo.webp) no-repeat center/cover;
 }
 /*Carrusel*/
 

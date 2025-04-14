@@ -203,10 +203,22 @@ main {
     bottom: 0;
     margin: 1em;
     color: white;
+    z-index: 600;
 }
 
 .grid-1 {
-    background: url(../img/fresnillo.webp) no-repeat center/cover;
+    background: url(../img/apb-fresnillo.webp) no-repeat center/cover;
+}
+
+.capa-fres{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.103);
+    border-radius: 10px;
+    z-index: 1;
 }
 
 .grid-2 {
