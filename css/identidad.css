@@ -327,31 +327,55 @@ header {
 
 .img-box-2{
     position: relative;
-    background: url(../img/inge.webp) no-repeat center/cover;
+    background: url(../img/apb-fresnillo.webp) no-repeat center/cover;
     border-radius: 0px 0px 10px 10px;
 }
 
 .img-box-3{
     position: relative;
-    background: url(../img/paisaje-tomates.webp) no-repeat bottom/cover;
+    background: url(../img/sistemaRiego.webp) no-repeat center/cover;
     border-radius: 0px 0px 10px 10px;
 }
 
 .img-box-4{
     position: relative;
-    background: url(../img/cultivos\ maiz.webp) no-repeat center/cover;
+    background: url(../img/dur.webp) no-repeat center/cover;
     border-radius: 0px 0px 10px 10px;
 }
 
 .img-box-5{
     position: relative;
-    background: url(../img/camion-apb.webp) no-repeat center/cover;
+    background: url(../img/ags.webp) no-repeat center/cover;
     border-radius: 0px 0px 10px 10px;
 }
 
 .img-box-6{
     position: relative;
-    background: url(../img/ags.webp) no-repeat bottom/cover;
+    background: url(../img/inge.webp) no-repeat center/cover;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.img-box-7{
+    position: relative;
+    background: url(../img/villa.webp) no-repeat center/cover;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.img-box-8{
+    position: relative;
+    background: url(../img/camion-apb.webp) no-repeat center/cover;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.img-box-9{
+    position: relative;
+    background: url(../img/calera.webp) no-repeat bottom/cover;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.img-box-10{
+    position: relative;
+    background: url(../img/inge-rebeles\ \(6\).webp) no-repeat center/cover;
     border-radius: 0px 0px 10px 10px;
 }
 
