@@ -46,32 +46,56 @@
         </nav>
     </div>
     <main>
-        <section class="banner">
-            <div class="banner-img">
-                <p>"La agricultura es nuestra actividad más inteligente porque al final contribuirá más a la verdadera riqueza, la buena moral y la felicidad"</p>
+        <section class="principal">
+            <div class="div-txt">
+                <h2>Lo que piensan nuestros ingenieros</h2>
+                <ul>
+                    <li>
+                        <p>“El campo no es solo trabajo, es pasión por la tierra que nos da vida. Cada decisión es una
+                            siembra para el futuro.”</p>
+                        <h3>- Ing. Carlos López, Especialista en Fertilización</h3>
+                    </li>
+                    <li>
+                        <p>“El agro es ciencia y arte. Con la mezcla adecuada, podemos lograr cosechas más saludables y
+                            productivas.”</p>
+                        <h3>- Ing. Fernanda García, Consultora Agrícola</h3>
+                    </li>
+                    <li>
+                        <p>“Cada cultivo tiene su propio ciclo, pero siempre podemos optimizarlo con las herramientas
+                            correctas.”</p>
+                        <h3>- Ing. Luis Pérez, Técnico Agrónomo</h3>
+                    </li>
+                </ul>
             </div>
-            <div class="banner-formulario">
-                <h1>Mejora tus productos, con nosotros</h1>
+            <div class="formulario">
+                <div class="formulario-txt">
+                    <h2>Contactanos</h2>
+                    <p>Por favor llena el siguiente formulario para que podamos ponernos en contacto contigo.</p>
+                </div>
                 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-                <form id="__vtigerWebForm" name="Formulario 2"
+                <form id="__vtigerWebForm" name="Formulario Oficial"
                     action="https://apb.mantic360.mx/modules/Webforms/capture.php" method="post" accept-charset="utf-8"
                     enctype="multipart/form-data"><input type="hidden" name="__vtrftk"
-                        value="sid:69e54d30995b8a6b5af56cf7c278e37c20b4823b,1741374276"><input type="hidden"
-                        name="publicid" value="18b4737edb59c5e05896d5f8301acf09"><input type="hidden"
-                        name="urlencodeenable" value="1"><input type="hidden" name="name" value="Formulario 2">
+                        value="sid:b1f73e7d900cff63a68dd0a816e640a218b02e6d,1744824036"><input type="hidden"
+                        name="publicid" value="d7724b7e05622c6fb8bd48d29623a5d4"><input type="hidden"
+                        name="urlencodeenable" value="1"><input type="hidden" name="name" value="Formulario Oficial">
                     <table>
                         <tbody>
                             <tr>
                                 <td><label>Nombres*</label></td>
-                                <td><input type="text" placeholder="Ejem: Luis" name="firstname" data-label="" value="" required=""></td>
+                                <td><input type="text" name="firstname" placeholder="Ejem: Luis" data-label="" value="" required=""></td>
                             </tr>
                             <tr>
                                 <td><label>Apellidos*</label></td>
-                                <td><input type="text" placeholder="Ejem: Torres Rojas" name="lastname" data-label="" value="" required=""></td>
+                                <td><input type="text" name="lastname" placeholder="Ejem: Rico Lopez" data-label="" value="" required=""></td>
                             </tr>
                             <tr>
-                                <td><input type="hidden" name="cf_1200" data-label=""
-                                        value="Escribe las necesidades del cliente" required=""></td>
+                                <td><label>Teléfono móvil*</label></td>
+                                <td><input type="text" name="mobile" placeholder="Ejem: 493 93 89 120" data-label="" value="" required=""></td>
+                            </tr>
+                            <tr>
+                                <td><label>E-mail*</label></td>
+                                <td><input type="email" name="email" placeholder="Ejem: LuisRLopez@gmail.com" data-label="" value="" required=""></td>
                             </tr>
                             <tr>
                                 <td><select name="rating" data-label="rating" required="" hidden="">
@@ -83,32 +107,19 @@
                                     </select></td>
                             </tr>
                             <tr>
-                                <td><select name="cf_1202" data-label="label:Tipo+de+prospecto" required="" hidden="">
-                                        <option value="">Seleccionar valor</option>
-                                        <option value="Normal" selected="">Normal</option>
-                                        <option value="Fuerte">Fuerte</option>
-                                        <option value="Debil">Debil</option>
-                                    </select></td>
+                                <td><label>Ciudad*</label></td>
+                                <td><input type="text" name="city" placeholder="Ejem: Durango" data-label="" value="" required=""></td>
                             </tr>
                             <tr>
-                                <td><label>Teléfono móvil</label></td>
-                                <td><input type="text" placeholder="Ejem: 493 202 02 15" name="mobile" data-label="" value=""></td>
+                                <td><textarea name="lane" required="" hidden="">.</textarea></td>
                             </tr>
                             <tr>
-                                <td><label>E-mail</label></td>
-                                <td><input type="email" placeholder="Ejem: luisrojas@gmail.com" name="email" data-label="" value=""></td>
+                                <td><label>Estado*</label></td>
+                                <td><input type="text" name="state" placeholder="Ejem: Durango" data-label="" value="" required=""></td>
                             </tr>
                             <tr>
-                                <td><label>Código postal</label></td>
-                                <td><input type="text" placeholder="Ejem: 99232" name="code" data-label="" value=""></td>
-                            </tr>
-                            <tr>
-                                <td><label>Estado</label></td>
-                                <td><input type="text" placeholder="Ejem: Aguascalientes" name="state" data-label="" value=""></td>
-                            </tr>
-                            <tr>
-                                <td><label>Descripción</label></td>
-                                <td><textarea name="description" placeholder="Ejem: Me gustaria preguntar sobre un producto, sobre una consulta o donde se encuentran...."></textarea></td>
+                                <td><label>Descripción*</label></td>
+                                <td><textarea name="description" placeholder="Ejem: Quiero saber el precio de la rafia...."> </textarea></td>
                             </tr>
                         </tbody>
                     </table><input type="hidden" name="captcha_no_active" id="captcha_no_active" value="true"><input
