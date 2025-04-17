@@ -167,7 +167,7 @@
 }
 
 body {
-    background: url(../img/inge.webp) no-repeat center/cover;
+    background: url(../img/camion-apb.webp) no-repeat center/cover;
     position: relative;
     min-height: 100vh;
 }
@@ -242,15 +242,15 @@ body {
     }
 
     .grid-1 {
-        background: url(../img/camion-apb.webp) no-repeat center/cover;
+        background: url(../img/cultivos.webp) no-repeat center/cover;
     }
 
     .grid-2 {
-        background: url(../img/asgrow-grande.webp) no-repeat center/cover;
+        background: url(../img/tomate-rojo.webp) no-repeat center/cover;
     }
 
     .grid-3 {
-        background: url(../img/cultivos\ maiz.webp) no-repeat center/cover;
+        background: url(../img/paisaje-tomate-abajo.webp) no-repeat center/cover;
     }
 
     .grid-4 {

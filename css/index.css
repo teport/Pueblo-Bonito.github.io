@@ -998,6 +998,7 @@ footer{
         transition: .4s ease-in-out all;
         font-weight: 700;
     }
+    
 
     .carrusel-info button:hover{
         background-color: rgba(187, 187, 187, 0.432);

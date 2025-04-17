@@ -60,7 +60,7 @@
 }
 
 header {
-    background: url(../img/ags.webp) no-repeat center/cover;
+    background: url(../img/loreto.webp) no-repeat center center/cover;
     position: relative;
     min-height: 30em;
     width: 100%;
@@ -261,7 +261,7 @@ header {
 }
 
 .p-g-1{
-    background: url(../img/basf-cultivos.webp) no-repeat center/cover;
+    background: url(../img/inge-lupita-corteva.webp) no-repeat center/cover;
     position: relative;
 }
 
@@ -292,14 +292,17 @@ blockquote{
 }
 
 .p-g-2{
-    background: url(../img/ags.webp) no-repeat center/cover;
+    background: url(../img/loreto.webp) no-repeat center/cover;
 }
 /*Carrusel*/
 
 
 .carrusel-info{
     margin: 5em 0;
-    position: relative;
+}
+
+.carrusel-info button{
+    display: none;
 }
 
 .carrusel-txt{
@@ -344,19 +347,19 @@ blockquote{
 }
 
 .c-g-2{
-    background: url(../img/fly\ animado.webp) no-repeat center/cover;
+    background: url(../img/Rockot.webp) no-repeat center/cover;
 }
 
 .c-g-3{
-    background: url(../img/Botmidy.webp) no-repeat center/cover;
-}
-
-.c-g-4{
     background: url(../img/fosfonitrato.webp) no-repeat center/cover;
 }
 
-.c-g-5{
+.c-g-4{
     background: url(../img/Metpock.webp) no-repeat center/cover;
+}
+
+.c-g-5{
+    background: url(../img/Silvizone.webp) no-repeat center/cover;
 }
 
 /*Ingenieros*/
@@ -391,10 +394,6 @@ blockquote{
     line-height: 1.5;
     color: var(--color-principal);
     margin: 0 0.8em;
-}
-
-.carrusel-info button{
-    display: none;
 }
 
 .snap-align {
@@ -469,7 +468,6 @@ blockquote{
     transition: height 0.5s;
     z-index: 850;
     color: white;
-    text-align: left;
 }
 
 .overflow h4{
@@ -484,7 +482,7 @@ blockquote{
 
 .overflow p{
     color: white;
-    font-size: 1.2em;
+    font-size: 1em;
     margin: 0.4em 0;
 }
 
@@ -520,7 +518,7 @@ footer{
 }
 
 .header-footer{
-    background: url(../img/asgrow-grande.webp) no-repeat center/cover;
+    background: url(../img/camion-apb.webp) no-repeat center/cover;
     border-radius: 10px;
     height: 25em;
     position: relative;
@@ -846,8 +844,8 @@ footer{
         padding: 1em 0;
     }
 
-    .carrusel-txt{
-        padding: 2.2em 4em 1em;
+    .carrusel-info{
+        position: relative;
     }
 
     .carrusel-info button{
@@ -875,10 +873,22 @@ footer{
         left: 50px;
     }
 
+    .carrusel-info button:hover{
+        background-color: rgba(187, 187, 187, 0.432);
+    }
+
+    .carrusel-txt{
+        padding: 2.2em 4em 1em;
+    }
+
     .carrusel-grid {
         grid-auto-columns: 20rem;
         grid-template-rows: 25rem;
         padding: .7em 6em 2.5em;
+    }
+
+    .cards{
+        justify-content: center;
     }
 
     .c-grid{
@@ -1025,6 +1035,17 @@ footer{
     }
 
     .cards{
-        justify-content: center;
+        grid-auto-columns: 18em;
+        grid-template-rows: 27em;
+    }
+
+    .card h4{
+        text-align: left;
+        padding: 0;
+    }
+
+    .overflow p{
+        line-height: 1.5;
+        text-align: left;
     }
 }
