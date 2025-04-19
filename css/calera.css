@@ -314,6 +314,10 @@ blockquote{
     font-size: 1.2em;
 }
 
+.carrusel-info button{
+    display: none;
+}
+
 .carrusel-grid {
     display: grid;
     grid-auto-flow: column;
@@ -339,23 +343,23 @@ blockquote{
 }
 
 .c-g-1 {
-    background: url() no-repeat center/cover;
+    background: url(../img/Botmidy.webp) no-repeat center/cover;
 }
 
 .c-g-2{
-    background: url() no-repeat center/cover;
+    background: url(../img/fly\ animado.webp) no-repeat center/cover;
 }
 
 .c-g-3{
-    background: url() no-repeat center/cover;
+    background: url(../img/fosfonitrato.webp) no-repeat center/cover;
 }
 
 .c-g-4{
-    background: url() no-repeat center/cover;
+    background: url(../img/Metpock.webp) no-repeat center/cover;
 }
 
 .c-g-5{
-    background: url() no-repeat center/cover;
+    background: url(../img/Rockot.webp) no-repeat center/cover;
 }
 
 /*Ingenieros*/
@@ -820,6 +824,39 @@ footer{
         max-width: 1200px;
         margin: 0em auto;
         gap: .5em;
+    }
+
+    .carrusel-info{
+        position: relative;
+    }
+
+    .carrusel-info button{
+        display: block;
+        position: absolute;
+        top: 50%;
+        z-index: 850;
+        margin: 0 1em;
+        font-size: 1.5em;
+        padding: .7em .9em;
+        border-radius: 15px;
+        border: none;
+        background-color: rgba(187, 187, 187, 0.247);
+        color: white;
+        backdrop-filter: blur(10px);
+        transition: .4s ease-in-out all;
+        font-weight: 700;
+    }
+
+    .btn-arrow-right{
+        right: 0;
+    }
+
+    .btn-arrow-left{
+        left: 50px;
+    }
+
+    .carrusel-info button:hover{
+        background-color: rgba(187, 187, 187, 0.432);
     }
 
     .ingenieros-txt{
