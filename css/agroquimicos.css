@@ -348,6 +348,26 @@ video {
     background: url(../img/Rally.webp) no-repeat center/cover;
 }
 
+.insec-1{
+    background: url(../img/Botmidy.webp) no-repeat center/cover;
+}
+
+.insec-2{
+    background: url(../img/alika.webp) no-repeat center/cover;
+}
+
+.insec-3{
+    background: url(../img/anagor.webp) no-repeat center/cover;
+}
+
+.insec-4{
+    background: url(../img/exalt.webp) no-repeat center/cover;
+}
+
+.insec-5{
+    background: url(../img/Matacari.webp) no-repeat center/cover;
+}
+
 /*Footer*/
 
 footer{
