@@ -306,7 +306,47 @@ video {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
+.fert-1{
+    background: url(../img/fosfonitrato.webp) no-repeat center/cover;
+}
 
+
+.fert-2{
+    background: url(../img/Aurora.webp) no-repeat center/cover;
+}
+
+.fert-3{
+    background: url(../img/enduro.webp) no-repeat center/cover;
+}
+
+
+.fert-4{
+    background: url(../img/Enetec.webp) no-repeat center/cover;
+}
+
+.fert-5{
+    background: url(../img/poly.webp) no-repeat center/cover;
+}
+
+.fung-1{
+    background: url(../img/Silvizone.webp) no-repeat center/cover;
+}
+
+.fung-2{
+    background: url(../img/Bilko.webp) no-repeat center/cover;
+}
+
+.fung-3{
+    background: url(../img/Fidomil.webp) no-repeat center/cover;
+}
+
+.fung-4{
+    background: url(../img/Funkil.webp) no-repeat center/cover;
+}
+
+.fung-5{
+    background: url(../img/Rally.webp) no-repeat center/cover;
+}
 
 /*Footer*/
 
