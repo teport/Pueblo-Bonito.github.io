@@ -306,6 +306,10 @@ video {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
+.fert-1{
+    background: url(../img/Cintilla.webp) no-repeat center/cover;
+}
+
 /*Footer*/
 
 footer{
