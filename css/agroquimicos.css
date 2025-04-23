@@ -286,6 +286,10 @@ video {
     font-size: 1em;
 }
 
+.grid-productos button{
+    display: none;
+}
+
 .snap{
     scroll-behavior: smooth;
     scrollbar-width: none;
@@ -670,6 +674,35 @@ footer{
             box-shadow: rgba(0, 0, 128, 0.473) 0px 3px 6px, rgba(0, 0, 78, 0.459) 0px 3px 6px;        
             border-radius: 10px;
           }
+
+          .grid-productos button{
+            display: block;
+            position: absolute;
+            top: 50%;
+            z-index: 850;
+            margin: 0 1em;
+            font-size: 1.5em;
+            padding: .7em .9em;
+            border-radius: 15px;
+            border: none;
+            background-color: rgba(187, 187, 187, 0.247);
+            color: white;
+            backdrop-filter: blur(10px);
+            transition: .4s ease-in-out all;
+            font-weight: 700;
+        }
+    
+        .btn-arrow-right{
+            right: 0;
+        }
+    
+        .btn-arrow-left{
+            left: 50px;
+        }
+    
+        .grid-productos button:hover{
+            background-color: rgba(187, 187, 187, 0.432);
+        }
     
         .footer-content{
             grid-template-columns: repeat(3, 1fr);

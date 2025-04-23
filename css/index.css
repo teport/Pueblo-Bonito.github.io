@@ -389,6 +389,10 @@ video{
     background: url(../img/Botmidy.webp) no-repeat center/cover;
 }
 
+.c-g-7{
+    background: url(../img/Metpock.webp) no-repeat center/cover;
+}
+
 
 .carrusel-info button{
     display: none;

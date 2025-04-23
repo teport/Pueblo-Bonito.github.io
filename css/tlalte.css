@@ -60,7 +60,7 @@
 }
 
 header {
-    background: url(../img/calera.webp) no-repeat center/cover;
+    background: url(../img/tlalte.webp) no-repeat center center/cover;
     position: relative;
     min-height: 30em;
     width: 100%;
@@ -261,7 +261,7 @@ header {
 }
 
 .p-g-1{
-    background: url(../img/WhatsApp\ Image\ 2025-04-10\ at\ 2.02.55\ PM\ \(1\).webp) no-repeat center/cover;
+    background: url(../img/inge-lupita-corteva.webp) no-repeat center/cover;
     position: relative;
 }
 
@@ -292,13 +292,17 @@ blockquote{
 }
 
 .p-g-2{
-    background: url(../img/calera.webp) no-repeat center/cover;
+    background: url(../img/tlalte.webp) no-repeat center/cover;
 }
 /*Carrusel*/
 
 
 .carrusel-info{
     margin: 5em 0;
+}
+
+.carrusel-info button{
+    display: none;
 }
 
 .carrusel-txt{
@@ -312,10 +316,6 @@ blockquote{
 
 .carrusel-txt small{
     font-size: 1.2em;
-}
-
-.carrusel-info button{
-    display: none;
 }
 
 .carrusel-grid {
@@ -347,7 +347,7 @@ blockquote{
 }
 
 .c-g-2{
-    background: url(../img/fly\ animado.webp) no-repeat center/cover;
+    background: url(../img/Rockot.webp) no-repeat center/cover;
 }
 
 .c-g-3{
@@ -359,10 +359,6 @@ blockquote{
 }
 
 .c-g-5{
-    background: url(../img/Rockot.webp) no-repeat center/cover;
-}
-
-.c-g-6{
     background: url(../img/Silvizone.webp) no-repeat center/cover;
 }
 
@@ -466,7 +462,7 @@ blockquote{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 0 20px;
+    padding: 0 10px;
     text-align: center;
     font-size: 14px;
     transition: height 0.5s;
@@ -486,15 +482,15 @@ blockquote{
 
 .overflow p{
     color: white;
-    font-size: 1.2em;
+    font-size: 1em;
     margin: 0.4em 0;
-    text-align: left;
 }
 
 .overflow ul{
     list-style: none;
     padding: 0;
     margin: 0;
+    text-align: left;
 }
 
 .overflow ul li{
@@ -522,7 +518,7 @@ footer{
 }
 
 .header-footer{
-    background: url(../img/inge-calera.webp) no-repeat top center/cover;
+    background: url(../img/camion-apb.webp) no-repeat center/cover;
     border-radius: 10px;
     height: 25em;
     position: relative;
@@ -640,85 +636,6 @@ footer{
 
 .footer-content-info img{
     max-width: 2em;
-}
-
-/*/*Modal*/
-.modal {
-    display: none; /* Oculta el modal por defecto */
-    position: fixed; /* Mantiene el modal en una posición fija */
-    z-index: 999; /* Asegura que el modal esté sobre otros elementos */
-    left: 0;
-    top: 0;
-    width: 100%; /* Ocupa todo el ancho de la pantalla */
-    height: 100%; /* Ocupa todo el alto de la pantalla */
-    overflow: auto; /* Permite el desplazamiento si el contenido es grande */
-    background-color: rgba(231, 231, 231, 0.4); /* Fondo oscuro y semitransparente */
-}
-
-.modal-content {
-    background-color: #fefefe;
-    margin: 2% auto; /* Centra el modal verticalmente */
-    padding: 20px;
-    width: 10%; /* Ancho del modal */
-    max-width: 500px; /* Ancho máximo del modal */
-    min-width: 400px;
-    height: 80%;
-    /*min-height: 500px;*/
-    max-height: 500px;
-    border-radius: 15px;
-    background-image: url(../img/rafia.webp);
-    background-position: center right;
-    background-repeat: no-repeat;
-    background-size: contain;
-    z-index: 999;
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-    position: relative;
-}
-
-.modal-content button{
-    position: absolute;
-    padding: 1em 2em;
-    bottom: 10px;
-    left: 50%; 
-    transform: translateX(-50%);   
-    border-radius: 10px;
-    border: none;
-    background-color: var(--color-principal);
-    color: white;
-    transition: .4s ease-in-out all;
-}
-
-.modal-content button:hover{
-    background-color: rgb(2, 2, 80);
-    color: white;
-}
-
-.modal-content p{
-    bottom: 0;
-    text-align: center;
-    color: black;
-    position: absolute;
-    padding: 5%;
-    left: 50%;
-    transform: translateX(-50%);
-    font-weight: 100;
-    font-size: .6rem;
-}
-
-
-.close {
-    color: #ffffff;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    z-index: 999;
-}
-
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
 }
 
 @media screen and (min-width:750px) {
@@ -910,6 +827,23 @@ footer{
         gap: .5em;
     }
 
+    .ingenieros-txt{
+        max-width: 1000px;
+        margin: 5em auto 2em;
+        text-align: center;
+    }
+
+    .ingenieros-txt h2{
+        color: var(--color-principal);
+        font-size: var(--titulo-importante-tablet);
+    }
+
+    .ingenieros-txt p{
+        font-size: 1.2em;
+        line-height: 1.5;
+        padding: 1em 0;
+    }
+
     .carrusel-info{
         position: relative;
     }
@@ -943,23 +877,6 @@ footer{
         background-color: rgba(187, 187, 187, 0.432);
     }
 
-    .ingenieros-txt{
-        max-width: 1000px;
-        margin: 5em auto 2em;
-        text-align: center;
-    }
-
-    .ingenieros-txt h2{
-        color: var(--color-principal);
-        font-size: var(--titulo-importante-tablet);
-    }
-
-    .ingenieros-txt p{
-        font-size: 1.2em;
-        line-height: 1.5;
-        padding: 1em 0;
-    }
-
     .carrusel-txt{
         padding: 2.2em 4em 1em;
     }
@@ -968,6 +885,10 @@ footer{
         grid-auto-columns: 20rem;
         grid-template-rows: 25rem;
         padding: .7em 6em 2.5em;
+    }
+
+    .cards{
+        justify-content: center;
     }
 
     .c-grid{
@@ -1114,6 +1035,17 @@ footer{
     }
 
     .cards{
-        justify-content: center;
+        grid-auto-columns: 18em;
+        grid-template-rows: 27em;
+    }
+
+    .card h4{
+        text-align: left;
+        padding: 0;
+    }
+
+    .overflow p{
+        line-height: 1.5;
+        text-align: left;
     }
 }
