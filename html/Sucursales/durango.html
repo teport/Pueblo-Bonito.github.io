@@ -44,7 +44,12 @@
         </section>
     </header>
     <main>
-
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <a href="../../html/contacto.html"><button>Cotizar</button></a>
+            </div>
+        </div>
         <section class="sec-principal">
             <div class="principal-tit">
                 <h2>Sucursal Durango</h2>
@@ -69,6 +74,8 @@
         </section>
 
         <section class="carrusel-info">
+            <button class="btn-arrow-left"> < </button>
+            <button class="btn-arrow-right"> > </button>
             <div class="carrusel-txt">
                 <h1>Lo Nuevo de Durango</h1>
                 <small>Lo mejor del sector</small>
@@ -90,7 +97,7 @@
             <div class="cards snap-align">
                 <div class="card-1 card">
                   <div class="capa-card"></div>
-                  <img src="../../img/Inge-dug.webp" alt="Foto de ingeniero APB">
+                  <img src="../../img/ing-burciaga.webp" alt="Foto de ingeniero APB">
                   <h3>Jose <br>Burciaga </h3>
           
                   <div class="overflow">
@@ -118,9 +125,43 @@
                       <li> Ingeniero Campo </li>
                       <li> Ingeniero Campo </li>
                     </ul>
-                    <a href=""><button>Contactar</button></a>
+                    <a href="https://wa.me/+5216181895933"><button>Contactar</button></a>
                   </div>
                 </div>
+
+                <div class="card-3 card">
+                    <div class="capa-card"></div>
+                    <img src="../../img/Inge-dug.webp" alt="Foto de ingeniero APB">
+                    <h3>Ing. <br>Jaime </h3>
+                    <div class="overflow">
+                      <h4>Jaime Rueda</h4>
+                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis aliquam delectus non illo dolorem distinctio.</p>
+                      <ul>
+                        <li> Ingeniero Campo </li>
+                        <li> Ingeniero Campo </li>
+                        <li> Ingeniero Campo </li>
+                        <li> Ingeniero Campo </li>
+                      </ul>
+                      <a href="https://wa.me/+5214931030292"><button>Contactar</button></a>
+                    </div>
+                  </div>
+
+                  <div class="card-4 card">
+                    <div class="capa-card"></div>
+                    <img src="../../img/inge-dug-mujer.webp" alt="Foto de ingeniero APB">
+                    <h3>Ing. <br>Jaime </h3>
+                    <div class="overflow">
+                      <h4>Jaime Rueda</h4>
+                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis aliquam delectus non illo dolorem distinctio.</p>
+                      <ul>
+                        <li> Ingeniero Campo </li>
+                        <li> Ingeniero Campo </li>
+                        <li> Ingeniero Campo </li>
+                        <li> Ingeniero Campo </li>
+                      </ul>
+                      <a href="https://wa.me/+5214931030292"><button>Contactar</button></a>
+                    </div>
+                  </div>
               </div>
         </section>
 
@@ -158,8 +199,10 @@
         </footer>
 
     </main>
-    <script src="../../js/main.js"></script>
-    <script type="text/javascript">
+    <script defer src="../../js/main.js"></script>
+    <script defer src="../../js/btn-carrusel.js"></script>
+    <script defer src="../../js/modal.js"></script>
+    <script defer type="text/javascript">
         window.addEventListener("scroll", function () {
             var header = document.querySelector(".header");
             header.classList.toggle("sticky", window.scrollY > 0);

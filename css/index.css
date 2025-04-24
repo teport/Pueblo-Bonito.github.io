@@ -374,7 +374,7 @@ video{
 }
 
 .c-g-3{
-    background: url(../img/Rockot.webp) no-repeat center/cover;
+    background: url(../img/rafia.webp) no-repeat center/cover;
 }
 
 .c-g-4{
@@ -393,6 +393,9 @@ video{
     background: url(../img/Metpock.webp) no-repeat center/cover;
 }
 
+.c-g-8{
+    background: url(../img/Rockot.webp) no-repeat center/cover;
+}
 
 .carrusel-info button{
     display: none;

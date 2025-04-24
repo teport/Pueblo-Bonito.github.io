@@ -12,7 +12,7 @@
 <body>
     <header>
         <div class="capa"></div>
-        <a href="https://wa.me/+5214931030981"><img class="logo-whats" src="../../img/logo-nuevo-wh.webp"
+        <a href="https://wa.me/+5214931112271"><img class="logo-whats" src="../../img/logo-nuevo-wh.webp"
                 alt="Logo de whatsapp"></a>
         <div class="header">
             <img class="logo" src="../../img/icono-nuevo.webp" alt="Icono de pueblo bonito">
@@ -37,14 +37,20 @@
         </div>
 
         <section class="txt-header">
-            <h1>Sucursal Loreto</h1>
+            <h1>Sucursal Tlaltenango</h1>
             <p>Acércate a nuestra sucursal en Loreto, Zacatecas y experimenta la facilidad de
                 tenernos cerca. Estamos aquí para atender tus necesidades con un servicio
                 personalizado y siempre a tu disposición. ¡Visítanos hoy mismo!</p>
         </section>
     </header>
     <main>
-
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <a href="../../html/contacto.html"><button>Cotizar</button></a>
+            </div>
+        </div>
+        
         <section class="sec-principal">
             <div class="principal-tit">
                 <h2>Sucursal Tlaltenango</h2>
@@ -92,11 +98,11 @@
             <div class="cards snap-align">
                 <div class="card-1 card">
                   <div class="capa-card"></div>
-                  <img src="../../img/ingeniera guadalupe - lor.webp" alt="">
-                  <h3>Guadalupe <br>Carrera </h3>
+                  <img src="../../img/bahena.webp" alt="">
+                  <h3>Ing.<br>Bahena</h3>
           
                   <div class="overflow">
-                    <h4>Guadalupe Carrera</h4>  
+                    <h4>Raul Bahena</h4>  
                     <p>Con una actitud siempre amable y una sólida formación agropecuaria, brinda asesoría personalizada, resolviendo dudas y guiando al productor hacia las mejores decisiones para el campo.</p>
                     <ul>
                       <li> - Ingeniería en Agronomía </li>
@@ -104,23 +110,7 @@
                       <li> - Curso en Manejo Integrado de Plagas  </li>
                       <li> - Asesoría Técnica en Insumos Agrícolas </li>
                     </ul>
-                    <a href=""><button>Contactar</button></a>
-                  </div>
-                </div>
-                <div class="card-2 card">
-                  <div class="capa-card"></div>
-                  <img src="../../img/inge andres - lor.webp" alt="">
-                  <h3>Andres <br>Ramirez </h3>
-                  <div class="overflow">
-                    <h4>Andres Ramirez</h4>
-                    <p> Visita productores, brinda asesoría técnica personalizada y acompaña cada etapa del proceso productivo. Su compromiso y experiencia en el terreno lo convierten en un aliado clave para mejorar el rendimiento y la sostenibilidad de cada cultivo.</p>
-                    <ul>
-                      <li> - Ingeniería en Producción Agropecuaria </li>
-                      <li> - Diplomado en Fertilidad de Suelos </li>
-                      <li> - Certificación en Buenas Prácticas Agrícolas </li>
-                      <li> - Curso de Diagnóstico y Manejo de Plagas </li>
-                    </ul>
-                    <a href=""><button>Contactar</button></a>
+                    <a href="https://wa.me/+5214931112271"><button>Contactar</button></a>
                   </div>
                 </div>
               </div>
@@ -160,9 +150,10 @@
         </footer>
 
     </main>
-    <script src="../../js/main.js"></script>
-    <script src="../../js/btn-carrusel.js"></script>
-    <script type="text/javascript">
+    <script defer src="../../js/main.js"></script>
+    <script defer src="../../js/btn-carrusel.js"></script>
+    <script defer src="../../js/modal.js"></script>
+    <script defer type="text/javascript">
         window.addEventListener("scroll", function () {
             var header = document.querySelector(".header");
             header.classList.toggle("sticky", window.scrollY > 0);

@@ -44,7 +44,12 @@
         </section>
     </header>
     <main>
-
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <a href="../../html/contacto.html"><button>Cotizar</button></a>
+            </div>
+        </div>    
         <section class="sec-principal">
             <div class="principal-tit">
                 <h2>Sucursal Loreto</h2>
@@ -93,7 +98,7 @@
                 <div class="card-1 card">
                   <div class="capa-card"></div>
                   <img src="../../img/ingeniera guadalupe - lor.webp" alt="">
-                  <h3>Guadalupe <br>Carrera </h3>
+                  <h3>Ing. <br>Lupita </h3>
           
                   <div class="overflow">
                     <h4>Guadalupe Carrera</h4>  
@@ -110,7 +115,7 @@
                 <div class="card-2 card">
                   <div class="capa-card"></div>
                   <img src="../../img/inge andres - lor.webp" alt="">
-                  <h3>Andres <br>Ramirez </h3>
+                  <h3>Ing. <br>Andres </h3>
                   <div class="overflow">
                     <h4>Andres Ramirez</h4>
                     <p> Visita productores, brinda asesoría técnica personalizada y acompaña cada etapa del proceso productivo. Su compromiso y experiencia en el terreno lo convierten en un aliado clave para mejorar el rendimiento y la sostenibilidad de cada cultivo.</p>
@@ -160,9 +165,10 @@
         </footer>
 
     </main>
-    <script src="../../js/main.js"></script>
-    <script src="../../js/btn-carrusel.js"></script>
-    <script type="text/javascript">
+    <script defer src="../../js/main.js"></script>
+    <script defer src="../../js/btn-carrusel.js"></script>
+    <script defer src="../../js/modal.js"></script>
+    <script defer type="text/javascript">
         window.addEventListener("scroll", function () {
             var header = document.querySelector(".header");
             header.classList.toggle("sticky", window.scrollY > 0);

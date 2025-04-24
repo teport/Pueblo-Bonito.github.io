@@ -310,6 +310,54 @@ video {
     background: url(../img/Cintilla.webp) no-repeat center/cover;
 }
 
+.fert-2{
+    background: url(../img/riego-mangera.webp) no-repeat center/cover;
+}
+
+.fert-3{
+    background: url(../img/riego-mangerota.webp) no-repeat center/cover;
+}
+
+.fert-4{
+    background: url(../img/riego-terreno.webp) no-repeat center/cover;
+}
+
+.fert-5{
+    background: url(../img/riego-valvulas.webp) no-repeat center/cover;
+}
+
+.fung-1{
+    background: url(../img/aspersion-1.webp) no-repeat center/cover;
+}
+
+.fung-2{
+    background: url(../img/aspersion-2.webp) no-repeat center/cover;
+}
+
+.fung-3{
+    background: url(../img/aspersion-3.webp) no-repeat center/cover;
+}
+
+.insec-1{
+    background: url(../img/accesorio-1.webp) no-repeat center/cover;
+}
+
+.insec-2{
+    background: url(../img/accersorio-2.webp) no-repeat center/cover;
+}
+
+.insec-3{
+    background: url(../img/accesorio-3.webp) no-repeat center/cover;
+}
+
+.insec-4{
+    background: url(../img/accesorio-4.webp) no-repeat center/cover;
+}
+
+.insec-5{
+    background: url(../img/accesorio.webp) no-repeat center/cover;
+}
+
 /*Footer*/
 
 footer{

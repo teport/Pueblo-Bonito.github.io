@@ -44,7 +44,12 @@
         </section>
     </header>
     <main>
-
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <a href="../../html/contacto.html"><button>Cotizar</button></a>
+            </div>
+        </div>
         <section class="sec-principal">
             <div class="principal-tit">
                 <h2>Sucursal Aguascalientes</h2>
@@ -192,9 +197,10 @@
         </footer>
 
     </main>
-    <script src="../../js/main.js"></script>
-    <script src="../../js/btn-carrusel.js"></script>
-    <script type="text/javascript">
+    <script defer src="../../js/main.js"></script>
+    <script defer src="../../js/btn-carrusel.js"></script>
+    <script defer src="../../js/modal.js"></script>
+    <script defer type="text/javascript">
         window.addEventListener("scroll", function () {
             var header = document.querySelector(".header");
             header.classList.toggle("sticky", window.scrollY > 0);
