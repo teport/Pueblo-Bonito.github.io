@@ -276,6 +276,10 @@ video {
     margin: 0 2em;
 }
 
+.grid-productos button{
+    display: none;
+}
+
 .grid-productos-tit h2{
     color: var(--color-principal);
     font-size: var(--titulo-importante-mobile);
@@ -643,6 +647,36 @@ footer{
             transition: .2s ease-in-out all;
             border: .1em solid var(--color-principal);
             border-radius: 10px;
+        }
+
+        
+        .grid-productos button{
+            display: block;
+            position: absolute;
+            top: 50%;
+            z-index: 850;
+            margin: 0 1em;
+            font-size: 1.5em;
+            padding: .7em .9em;
+            border-radius: 15px;
+            border: none;
+            background-color: rgba(187, 187, 187, 0.247);
+            color: white;
+            backdrop-filter: blur(10px);
+            transition: .4s ease-in-out all;
+            font-weight: 700;
+        }
+    
+        .btn-arrow-right{
+            right: 0;
+        }
+    
+        .btn-arrow-left{
+            left: 50px;
+        }
+    
+        .grid-productos button:hover{
+            background-color: rgba(187, 187, 187, 0.432);
         }
     
           .intro-grid:hover{

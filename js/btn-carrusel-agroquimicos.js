@@ -1,19 +1,23 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const container = document.querySelector('.scroll-productos');
-    const leftArrow = document.querySelector('.btn-arrow-left');
-    const rightArrow = document.querySelector('.btn-arrow-right');
+    const carruseles = document.querySelectorAll('.grid-productos');
 
-    leftArrow.addEventListener('click', function () {
-        container.scrollBy({
-            left: -container.clientWidth,
-            behavior: 'smooth'
+    carruseles.forEach(function (carrusel) {
+        const container = carrusel.querySelector('.scroll-productos');
+        const leftArrow = carrusel.querySelector('.btn-arrow-left');
+        const rightArrow = carrusel.querySelector('.btn-arrow-right');
+
+        leftArrow.addEventListener('click', function () {
+            container.scrollBy({
+                left: -container.clientWidth,
+                behavior: 'smooth'
+            });
         });
-    });
 
-    rightArrow.addEventListener('click', function () {
-        container.scrollBy({
-            left: container.clientWidth,
-            behavior: 'smooth'
+        rightArrow.addEventListener('click', function () {
+            container.scrollBy({
+                left: container.clientWidth,
+                behavior: 'smooth'
+            });
         });
     });
 });

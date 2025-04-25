@@ -2,7 +2,7 @@ window.onload = function() {
     const modal = document.getElementById('modal');
     const closeSpan = document.querySelector('.close');
 
-    const delay = 900; 
+    const delay = 400; 
 
     setTimeout(function() {
         modal.style.display = 'block';
