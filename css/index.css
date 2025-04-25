@@ -378,7 +378,7 @@ video{
 }
 
 .c-g-4{
-    background: url(../img/Silvizone.webp) no-repeat center/cover;
+    background: url(../img/promocion.webp) no-repeat center/cover;
 }
 
 .c-g-5{
@@ -395,6 +395,10 @@ video{
 
 .c-g-8{
     background: url(../img/Rockot.webp) no-repeat center/cover;
+}
+
+.c-g-9{
+    background: url(../img/Silvizone.webp) no-repeat center/cover;
 }
 
 .carrusel-info button{
