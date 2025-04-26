@@ -837,6 +837,22 @@ footer{
     }
 }
 
+@media (max-width: 768px) {
+    .modal-content {
+        width: 90%; /* Ancho del modal */
+        min-width: 300px;
+        max-width: 400px; /* Ancho máximo del modal */
+        height: 70%;
+        max-height: 500px;
+    }
+    .modal-content button{
+        padding: 1em 2em;
+        bottom: 10px;
+        left: 50%; 
+        transform: translateX(-50%);   
+    }
+}   
+
 @media screen and (min-width:990px) {
 
     header {
