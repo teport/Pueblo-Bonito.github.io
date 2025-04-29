@@ -382,7 +382,7 @@ video{
 }
 
 .c-g-5{
-    background: url(../img/fly\ animado.webp) no-repeat center/cover;
+    background: url(../img/machetazo.webp) no-repeat center/cover;
 }
 
 .c-g-6{
@@ -399,6 +399,10 @@ video{
 
 .c-g-9{
     background: url(../img/Silvizone.webp) no-repeat center/cover;
+}
+
+.c-g-10{
+    background: url(../img/fly\ animado.webp) no-repeat center/cover;
 }
 
 .carrusel-info button{
