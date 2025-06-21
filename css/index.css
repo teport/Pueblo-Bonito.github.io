@@ -374,7 +374,7 @@ video{
 }
 
 .c-g-3{
-    background: url(../img/rafia.webp) no-repeat center/cover;
+    background: url(../img/Bioteksa-producto-2.webp) no-repeat center/cover;
 }
 
 .c-g-4{
@@ -403,6 +403,14 @@ video{
 
 .c-g-10{
     background: url(../img/fly\ animado.webp) no-repeat center/cover;
+}
+
+.c-g-11{
+    background: url(../img/Bioteksa-producto-1.webp) no-repeat center/cover;
+}
+
+.c-g-12{
+    background: url(../img/Bioteksa-producto-3.webp) no-repeat center/cover;
 }
 
 .carrusel-info button{
