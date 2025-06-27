@@ -225,6 +225,10 @@ video {
 
 /*Informacion*/
 
+.eventos-2{
+    margin: 5em 0;
+}
+
 .informacion{
     position: relative;
     display: flex;
@@ -301,7 +305,7 @@ video {
 
 .info-grid:nth-child(4){
     grid-column: 2/4;
-    background: url(../img/paisaje-eventos-2.webp) no-repeat center/cover;
+    background: url(../img/paisaje-eventos-2.webp) no-repeat top center/cover;
 }
 
 .btn-info{
@@ -309,7 +313,6 @@ video {
     padding: 1em 2em;
     border-radius: 10px;
     border: .1em solid var(--color-principal);
-    border: none;
     color: white;
     font-size: var(--movile-p);
     margin-top: 3em;
