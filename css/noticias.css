@@ -300,7 +300,7 @@ video {
 .info-grid:nth-child(3){
     grid-column: 4/5;
     grid-row: 1/4;
-    background: url(../img/paisaje-evento.webp) no-repeat center left/cover;
+    background: url(../img/Flayer-Cebolla.webp) no-repeat center left/cover;
 }
 
 .info-grid:nth-child(4){
