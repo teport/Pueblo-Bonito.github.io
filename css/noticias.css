@@ -269,7 +269,7 @@
         gap: 1em;
         grid-auto-flow: column;
         overflow-x: auto;
-        padding: 0 3em;
+        padding: 1.2em 3em;
     }
 
     .info-grid,
