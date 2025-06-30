@@ -215,166 +215,6 @@ header {
 
 /*Introduccion*/
 
-.introduccion{
-    margin: 4em 0;
-}
-
-.introduccion-tit{
-    text-align: center;
-    margin: 2em;
-}
-
-.introduccion-tit h1{
-    color: var(--color-principal);
-    font-size: var(--titulo-importante-mobile);
-}
-
-.introduccion-tit small{
-    font-size: 1.4em
-}
-
-.introduccion-grid{
-    padding: 0 1.5em;
-    display: grid;
-    grid-template-columns: repeat(3,17em);
-    grid-template-rows: repeat(2,1fr);
-    gap: 1em;
-    overflow-x: auto;
-}
-
-.intro-grid{
-    border: .1em solid var(--color-principal);
-    border-radius: 10px;
-    padding: 1em;
-    text-decoration: none;
-}
-
-.intro-grid h3{
-    color: var(--color-principal);
-    font-size: var(--titulo-principal-mobile);
-}
-
-.intro-grid p{
-    line-height: 1.5;
-    color: black;
-}
-
-.intro-grid img{
-    max-width: 35%;
-    margin: 0;
-}
-
-/*Seccion de productos*/
-
-.grid-productos{
-    position: relative;
-    margin: 4em 0;
-}
-
-.scroll-productos {
-    text-decoration: none;
-}
-
-.grid-productos-tit{
-    margin: 0 2em;
-}
-
-.grid-productos-tit h2{
-    color: var(--color-principal);
-    font-size: var(--titulo-importante-mobile);
-}
-
-.grid-productos-tit small{
-    font-weight: 500;
-    font-size: 1em;
-}
-
-.grid-productos button{
-    display: none;
-}
-
-.snap{
-    scroll-behavior: smooth;
-    scrollbar-width: none;
-}
-
-.scroll-productos{
-    display: grid;
-    grid-auto-columns: 15em;
-    grid-auto-rows: 22em;
-    grid-auto-flow: column;
-    padding: 1em 2em;
-    gap: 1em;
-    overflow-x: auto;
-}
-
-.s-fert, .s-fung, .s-insec{
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-
-.fert-1{
-    background: url(../img/fosfonitrato.webp) no-repeat center/cover;
-}
-
-
-.fert-2{
-    background: url(../img/Aurora.webp) no-repeat center/cover;
-}
-
-.fert-3{
-    background: url(../img/enduro.webp) no-repeat center/cover;
-}
-
-
-.fert-4{
-    background: url(../img/Enetec.webp) no-repeat center/cover;
-}
-
-.fert-5{
-    background: url(../img/poly.webp) no-repeat center/cover;
-}
-
-.fung-1{
-    background: url(../img/Silvizone.webp) no-repeat center/cover;
-}
-
-.fung-2{
-    background: url(../img/Bilko.webp) no-repeat center/cover;
-}
-
-.fung-3{
-    background: url(../img/Fidomil.webp) no-repeat center/cover;
-}
-
-.fung-4{
-    background: url(../img/Funkil.webp) no-repeat center/cover;
-}
-
-.fung-5{
-    background: url(../img/Rally.webp) no-repeat center/cover;
-}
-
-.insec-1{
-    background: url(../img/Botmidy.webp) no-repeat center/cover;
-}
-
-.insec-2{
-    background: url(../img/alika.webp) no-repeat center/cover;
-}
-
-.insec-3{
-    background: url(../img/anagor.webp) no-repeat center/cover;
-}
-
-.insec-4{
-    background: url(../img/exalt.webp) no-repeat center/cover;
-}
-
-.insec-5{
-    background: url(../img/Matacari.webp) no-repeat center/cover;
-}
-
 /*Footer*/
 
 footer{
@@ -384,7 +224,7 @@ footer{
 }
 
 .header-footer{
-    background: url(../img/inge-calera.webp) no-repeat top center/cover;
+    background: url(../img/paisaje-evento.webp) no-repeat top center/cover;
     border-radius: 10px;
     height: 25em;
     position: relative;
@@ -525,24 +365,7 @@ footer{
     }
 
     /*Introduccion*/
-    .introduccion-grid{
-        padding: 0 2em;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        gap: 1em;
-    }
 
-    .introduccion-tit small{
-        margin: 1em 0;
-        font-size: 1.5em;
-        font-weight: 700;
-    }
-    /*Productos*/
-    .scroll-productos{
-        grid-auto-columns: 15rem;
-        grid-template-rows: 20rem;
-    }
     /*Footer*/
 
     .header-footer h1{
@@ -653,59 +476,6 @@ footer{
             font-size: var(--tablet-p);
         }
 
-        .introduccion{
-            margin: 7em 0 0;
-        }
-
-        .introduccion-tit{
-            margin: 2em 2em 0;
-        }
-
-        .introduccion-grid{
-            padding: 2em;
-        }
-
-        .intro-grid{
-            padding: 1em 1em;
-            transition: .2s ease-in-out all;
-            border: .1em solid var(--color-principal);
-            border-radius: 10px;
-        }
-    
-          .intro-grid:hover{
-            scale: 1.01;
-            box-shadow: rgba(0, 0, 128, 0.473) 0px 3px 6px, rgba(0, 0, 78, 0.459) 0px 3px 6px;        
-            border-radius: 10px;
-          }
-
-          .grid-productos button{
-            display: block;
-            position: absolute;
-            top: 50%;
-            z-index: 850;
-            margin: 0 1em;
-            font-size: 1.5em;
-            padding: .7em .9em;
-            border-radius: 15px;
-            border: none;
-            background-color: rgba(187, 187, 187, 0.247);
-            color: white;
-            backdrop-filter: blur(10px);
-            transition: .4s ease-in-out all;
-            font-weight: 700;
-        }
-    
-        .btn-arrow-right{
-            right: 0;
-        }
-    
-        .btn-arrow-left{
-            left: 50px;
-        }
-    
-        .grid-productos button:hover{
-            background-color: rgba(187, 187, 187, 0.432);
-        }
     
         .footer-content{
             grid-template-columns: repeat(3, 1fr);
@@ -817,33 +587,7 @@ footer{
     }
 
     /*Introduccion*/
-    .introduccion-grid{
-        grid-template-columns: repeat(3,1fr);
-        grid-template-rows: repeat(2,1fr);
-        max-width: 1200px;
-        margin: 0 auto 4em;
-        gap: .5em;
-    }
-
-    .grid-productos-tit{
-        padding: 2em 4.5em 0em;
-    }
-
-    .s-fert, .s-fung, .s-insec{
-        transition: .4s ease-in-out all;
-    }
-
-    .s-fert:hover,.s-fung:hover,.s-insec:hover{
-        scale: 1.02;
-    }
-
-    .scroll-productos{
-        grid-auto-columns: 20em;
-        grid-template-rows: 25em;
-        margin: 1em 0;
-        padding: 1em 6em 2em;
-    }
-
+ 
     /*Footer*/
     .header-footer{
         max-width: 1250px;
