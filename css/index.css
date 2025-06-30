@@ -465,6 +465,7 @@ video{
     text-decoration: none;
     font-size: var(--titulo-principal-mobile);
     z-index: 600;
+    text-align: left;
 }
 
 .ser-g-1{
