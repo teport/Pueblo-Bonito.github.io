@@ -270,11 +270,11 @@ input[type="submit"] {
         gap: 1em;
     }
 
-    tr:nth-child(5){
+    tr:nth-child(6){
         display: none;
     }
 
-    tr:nth-child(7){
+    tr:nth-child(4){
         display: none;
     }
 
