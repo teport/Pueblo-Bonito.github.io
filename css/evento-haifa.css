@@ -283,7 +283,7 @@ header {
     }
 
     .info-grid:nth-child(3) {
-        background: url(../img/haifa-2.webp) no-repeat center/cover;
+        background: url(../img/foto-evento-H.webp) no-repeat center/cover;
     }
 
     .info-grid:nth-child(4) {
@@ -586,7 +586,7 @@ footer{
         .info-grid:nth-child(3) {
             grid-column: 2/4;
             grid-row: 3/4;
-            background-position: top;
+            background-position: center;
         }
 
         .info-grid-2:nth-child(3) {
